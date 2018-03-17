@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.menu-ul li{
+ background: black;
+    color: #ffffff;
+    display: inline;
+    padding: 0;
+    margin-right: 14px;
+    line-height: 25px;
+    text-transform: uppercase;
+
+}
+
+.Join-now{
+    background: #FFFFFF;
+}
+.Login{
+    color:#A6FF4D;
+}
