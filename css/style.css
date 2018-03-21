@@ -282,8 +282,7 @@ button .btn, button .btn-lg {
 }
 
 .wrapper-headings {
-    margin: 60px 0;
-    padding: 0 10%;
+    padding: 60px 0;
 }
 
 .whitepaper h2 {
@@ -387,5 +386,36 @@ button .btn, button .btn-lg {
     color: white;
     text-decoration: none;
     background: linear-gradient(to right, #165370, #2CA0C8);
+}
+
+@media (max-width: 1200px) {
+    .whitepaper-info-text{
+        padding-right: 60px;
+    }
+}
+
+@media (max-width: 768px) {
+    .wrapper-block-whitepaper{
+        padding: 0;
+    }
+
+    .wrapper-block{
+        min-height: 750px;
+    }
+
+    .wrapper-block-transform{
+        display: none;
+    }
+
+    .whitepaper-info-text{
+        padding: 0;
+        text-align: center!important;
+        margin-bottom: 40px;
+    }
+
+    .wrapper-download-button, .wrapper-download-text{
+        margin: 20px auto;
+        float: unset;
+    }
 }
 /* Section whitepaper end */
