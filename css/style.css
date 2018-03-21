@@ -223,10 +223,20 @@ button .btn, button .btn-lg {
 
 }
 
+.Our-vision h2{
+    font-size: 60px;
+    font-family: OpenSans-Regular;
+
+   padding-top: 90px;
+}
+
 .h2-vision p {
     font-family: OpenSans-Light;
     font-size: 30px;
+
+    margin-top: 45px;
 }
+
 
 .h2-vision h2 {
     font-size: 60px;
@@ -239,22 +249,23 @@ button .btn, button .btn-lg {
     background-repeat: no-repeat;
 }
 
-.img-diagrams img {
-    width: 100%;
-    height: 100%;
-    position: relative;
+.bg-first_1001 {
+    width: 1000px; height: 700px;
+    background: url('../images/css_sprite.png') -3630px -1830px;
 }
 
-.description-out-img {
+.description-out-img{
     margin-top: 100px;
 }
-
 .description-out-img p {
-    font-size: 30px;
-    font-family: OpenSans-Bold;
+    font-size: 26px;
+    font-family: OpenSans-Regular;
     color: white;
-
+    line-height: 45px;
+    padding-left: 10%;
+    text-align: center;
 }
+
 
 .img-girl-phone img {
     width: 50%;
@@ -264,16 +275,77 @@ button .btn, button .btn-lg {
 
 .Business-model {
     width: 100%;
-    min-height: 800px;
+    min-height: 1000px;
 }
 
 .btn-download {
-    background: #2CA5E0;
-    width: 150px;
-    height: 30px;
-    color: white;
-    border-radius: 32px;
+    border-radius: 50px;
+    background: rgba(44, 165, 224, 1);
+    background: -moz-linear-gradient(left, rgba(44, 165, 224, 1) 0%, rgba(44, 165, 224, 1) 5%, rgba(41, 155, 210, 1) 19%, rgba(35, 133, 180, 1) 48%, rgba(22, 83, 112, 1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(44, 165, 224, 1)), color-stop(5%, rgba(44, 165, 224, 1)), color-stop(19%, rgba(41, 155, 210, 1)), color-stop(48%, rgba(35, 133, 180, 1)), color-stop(100%, rgba(22, 83, 112, 1)));
+    background: -webkit-linear-gradient(left, rgba(44, 165, 224, 1) 0%, rgba(44, 165, 224, 1) 5%, rgba(41, 155, 210, 1) 19%, rgba(35, 133, 180, 1) 48%, rgba(22, 83, 112, 1) 100%);
+    background: -o-linear-gradient(left, rgba(44, 165, 224, 1) 0%, rgba(44, 165, 224, 1) 5%, rgba(41, 155, 210, 1) 19%, rgba(35, 133, 180, 1) 48%, rgba(22, 83, 112, 1) 100%);
+    background: -ms-linear-gradient(left, rgba(44, 165, 224, 1) 0%, rgba(44, 165, 224, 1) 5%, rgba(41, 155, 210, 1) 19%, rgba(35, 133, 180, 1) 48%, rgba(22, 83, 112, 1) 100%);
+    background: linear-gradient(to right, rgba(44, 165, 224, 1) 0%, rgba(44, 165, 224, 1) 5%, rgba(41, 155, 210, 1) 19%, rgba(35, 133, 180, 1) 48%, rgba(22, 83, 112, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2ca5e0', endColorstr='#165370', GradientType=1)
 }
+/*   Business model      */
+
+.Business-model h2{
+    font-family: OpenSans-Regular;
+    font-size: 60px;
+    margin-top: 90px;
+}
+.Business-model .dont {
+    font-family: OpenSans-Light;
+    font-size: 30px;
+    color:#95989A;
+    margin-top: 45px;
+}
+.GET-BM {
+    font-family: OpenSans-Regular;
+    font-size: 35px;
+    font-weight: Bold;
+    margin-top: 30px;
+}
+
+.load {
+    font-family: OpenSans-Regular;
+    font-size: 50px;
+    margin-top: 25px;
+    display: block;
+    color:white;
+    height: 100px;
+}
+/* business model */
+
+
+/* Credit card*/
+.Credit-card{
+    min-height: 1200px;
+    background: black;
+}
+.text-card h2{
+    font-family: OpenSans-Regular;
+    font-size: 60px;
+    color: white;
+    margin-top: 90px;
+}
+
+.text-card p{
+    font-family: OpenSans-Light;
+    font-size: 30px;
+    color: white;
+    margin-top: 45px;
+}
+
+.bg-XuNHbjD1 {
+    width: 530px; height: 659px;
+    background: url('../images/css_sprite.png') -4650px -1110px;
+    position: absolute;
+}
+/* Credit card*/
+
 
 /* Section whitepaper */
 .whitepaper {
@@ -419,3 +491,4 @@ button .btn, button .btn-lg {
     }
 }
 /* Section whitepaper end */
+
