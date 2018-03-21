@@ -24,27 +24,89 @@
     src: url(../fonts/OpenSans-Light.ttf);
 }
 
+.header-wrapper{
+    background: black;
+    border-bottom: 2px solid white;
+    width: 100%;
+    position: fixed;
+    z-index: 4;
+}
 
-.menu-ul li{
- background: black;
-    color: #ffffff;
-    display: inline;
-    padding: 0;
-    margin-right: 30px;
-    line-height: 25px;
+.header-body  .menu-part{
+    width: 83%;
+}
 
+.header-body  .buttons-block{
+    width: 17%;
+}
 
+.launch-video{
+    display: flex;
+    align-items: center;
+    margin-right: 35px;
+    justify-content: flex-end;
+    position: absolute;
+    bottom: 30px;
+    right: 0;
+}
+
+.header-body{
+    display: flex;
+    font-family: OpenSans-Regular;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.buttons-block{
+    text-align: right;
+}
+
+.menu-list .menu-item .link{
+    font-size: 25px;
+    color: white;
+    margin-left: 80px;
+    padding: 2px 8px;
+    text-decoration: none;
+}
+
+.menu-list .menu-item .link:hover{
+    box-shadow: 0px 0px 0px 2px white;
+    border-radius: 10px;
+
+}
+
+.menu-list .menu-item:first-child .link{
+    margin-left: 0;
+}
+
+.mobile-btn{
+    display: none;
+}
+
+.menu-part{
+    text-align: center;
+}
+
+.mobile-btn{
+    cursor: pointer;
+}
+
+.menu-list{
+    display: flex;
+    align-items: center;
+    height: 100%;
 }
 
 .btn-join{
     color: #007DB9;
     background: white;
     border-radius: 10px;
-    width: 140px;
     text-align: center;
     display: inline-block;
-    height: 50px;
-   border: 2px solid #007DB9;
+    border: 2px solid #007DB9;
+    padding: 12px 20px 15px 20px;
 }
 
 .btn-join, .btn-login{
@@ -57,13 +119,14 @@
 
 .btn-login{
     border: 2px solid black;
-    height: 50px;
     background: #A6FF4D;
     color: #95989A;
     border-radius: 10px;
-    width: 140px;
     text-align: center;
     display: inline-block;
+    padding: 12px 20px 15px 20px;
+    margin-left: 30px;
+    border: 2px solid #4F7B23;
 }
 .top-menu {
     background: black;
@@ -82,25 +145,30 @@
     background-image: url("../images/repo bg.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    height: 800px;
+    height: 100vh;
 }
 
 .text-h1-p{
     color:white;
+    margin-left: 180px;
+    text-align: left;
 }
 .text-h1 {
-    font-size: 80px;
-    font-family: OpenSans-Bold;
-    margin-top: 265px;
-}
+     font-size: 80px;
+     font-family: OpenSans-Bold;
+     margin-top: 300px;
+     text-align: left;
+ }
 .text-p{
     font-size: 28px;
     font-family: OpenSans-Regular;
     line-height: 80px;
+    text-align: left;
 }
 .Launch-p{
     font-size: 40px;
     color:white;
+    margin-right: 20px;
 }
 
 .h2-text, .description-p{
@@ -259,4 +327,242 @@ button .btn, button .btn-lg{
     height: 30px;
     color: white;
     border-radius: 32px;
+}
+
+@media (max-width: 1700px){
+
+    .menu-list .menu-item .link{
+        font-size: 22px;
+        color: white;
+        margin-left: 50px;
+    }
+
+    .btn-join, .btn-login {
+        font-size: 20px;
+        text-decoration: none;
+    }
+
+    .btn-join:hover, .btn-login:hover{
+        text-decoration: none;
+    }
+
+    .btn-login:hover{
+        color: #535455;
+    }
+
+    .btn-login {
+        margin-left: 15px;
+    }
+
+    .header-body  .menu-part{
+        width: 80%;
+    }
+
+    .header-body  .buttons-block{
+        width: 20%;
+    }
+
+    .text-h1 {
+        font-size: 65px;
+    }
+
+    .text-p{
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 1500px){
+
+    .menu-list .menu-item .link{
+        font-size: 20px;
+        color: white;
+        margin-left: 50px;
+    }
+
+    .btn-login {
+        margin-left: 15px;
+    }
+}
+
+@media (max-width: 1400px){
+
+    .menu-list .menu-item .link{
+        font-size: 19px;
+        color: white;
+        margin-left: 40px;
+    }
+
+    .btn-login {
+        margin-left: 15px;
+    }
+}
+
+@media (max-width: 1300px){
+
+    .menu-list .menu-item .link{
+        font-size: 18px;
+        color: white;
+        margin-left: 30px;
+    }
+
+    .text-h1 {
+        margin-top: 250px;
+    }
+
+    .btn-join, .btn-login {
+        font-size: 16px;
+        padding: 8px 15px 10px 15px;
+    }
+
+    .btn-login {
+        margin-left: 15px;
+    }
+
+    .text-h1-p{
+        margin-left: 100px;
+    }
+
+    .Launch-p {
+        font-size: 30px;
+    }
+
+    .launch-video img{
+        width: 80%;
+    }
+}
+
+@media (max-width: 1050px){
+    .header-body {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .text-h1-p{
+        margin-left: 80px;
+    }
+
+    .menu-list .menu-item .link {
+        margin-left: 16px;
+        font-size: 16px;
+    }
+
+    .header-body  .menu-part{
+        width: 78%;
+    }
+
+    .header-body  .buttons-block{
+        width: 22%;
+    }
+
+    .fa-bars{
+        color: white;
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 992px) {
+    .menu-list{
+        flex-direction: column;
+        position: relative;
+        margin-top: 60px;
+    }
+
+    .text-h1-p{
+        margin-left: 50px;
+    }
+
+    .text-h1 {
+        font-size: 45px;
+    }
+
+    .text-p{
+        font-size: 20px;
+    }
+
+    .mobile-btn{
+        display: block;
+    }
+
+    .menu-list .menu-item .link{
+        margin: 0;
+        font-size: 24px;
+    }
+
+    .header-body .menu-part {
+        width: auto;
+    }
+
+    .header-body{
+        justify-content: center;
+    }
+
+    .menu-item{
+        padding: 10px;
+        padding-left: 0;
+    }
+
+    .hider{
+        display: none;
+    }
+
+    .header-body .menu-part {
+        width: 0;
+    }
+
+    .fa-bars {
+        color: white;
+        font-size: 30px;
+        margin-top: 5px;
+    }
+
+    .mobile-btn{
+        margin-right: 20px;
+    }
+
+    .header-body .buttons-block {
+        width: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .text-p {
+        display: none;
+    }
+
+    .text-h1 {
+        font-size: 40px;
+        line-height: 100px;
+    }
+
+
+    .Launch-p {
+        font-size: 26px;
+        margin-right: 0px;
+    }
+
+    .launch-video img{
+        width: 70%;
+    }
+}
+
+@media (max-width: 480px) {
+    .text-h1 {
+        font-size: 24px;
+        line-height: 50px;
+    }
+
+    .text-h1-p{
+        margin-left: 20px;
+    }
+
+    .Launch-p {
+        font-size: 22px;
+        margin-right: 0px;
+        position: relative;
+        left: 20px;
+    }
+
+    .launch-video img{
+        width: 50%;
+    }
 }
