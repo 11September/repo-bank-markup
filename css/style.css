@@ -1000,6 +1000,96 @@ button .btn, button .btn-lg {
     height:52px;
     background-color: red;
 }
+
+.modal-dialog{
+    max-width:70% !important;
+}
+
+.modal-header, .modal-footer{
+    border: none;
+}
+
+.modal-wrapper-team-item-info{
+    height:100%;
+}
+
+.modal-team-item-info{
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.close-button{
+    position: absolute;
+    top: 0;
+    right: 10px;
+}
+
+.close-modal-button{
+    font-size: 60px;
+    color: black;
+}
+
+.modal-line{
+    margin: 45px auto;
+    width:255px;
+    border: 1px solid #95989A;
+}
+
+.modal-content{
+    padding: 30px 40px 30px 40px;
+}
+
+.modal-content .team-item-image{
+    padding: 0;
+}
+
+.modal-description p{
+    font-size: 25px;
+    color: #000000;
+}
+
+.modal-content .team-item-social{
+    height: 90px;
+    padding-top: 0;
+    justify-content: center;
+}
+
+.modal-content .team-item-social .team-item-social-block{
+    margin-right: 40px;
+}
+
+.modal-content .team-item-social .team-item-social-block:last-child{
+    margin-right: 0;
+}
+
+@media (max-width: 768px) {
+    .team-item{
+        margin-bottom: 80px;
+    }
+
+    .modal-content{
+        padding: 40px 50px;
+    }
+
+    .modal-content .team-item-image{
+        padding: 0 10%;
+    }
+
+    .team-item-image img{
+        width:auto;
+    }
+
+    .modal-team-item-info{
+        margin-top: 20px;
+    }
+
+    .modal-description p{
+        text-align: center;
+    }
+}
 /* Section team end */
 
 
