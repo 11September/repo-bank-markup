@@ -1830,3 +1830,155 @@ button .btn, button .btn-lg {
 /* Section team end */
 
 
+/* footer */
+.footer{
+    /*height: 775px;*/
+    background-color: #0C0C0C;
+}
+
+.footer-flex{
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    position: relative;
+}
+
+.copyright, .design{
+    position: absolute;
+    bottom: 0;
+    color: #9C9C9C;
+    font-size: 20px;
+    padding-bottom: 40px;
+}
+
+
+.copyright{
+    width:100%;
+}
+
+.design-link{
+    color: #9C9C9C;
+}
+
+.design-link:hover {
+    color: #9C9C9C;
+    text-decoration: none;
+}
+
+.footer-phone img{
+    height: 100%;
+    margin-bottom: -1px;
+}
+
+.footer-about-company{
+    font-size: 30px;
+    color: #FFFFFF;
+}
+
+.footer-container-social{
+    /*position: relative;*/
+}
+
+.footer-connect-text{
+    /*position: absolute;*/
+    padding-left: 90px;
+    font-size: 30px;
+    color: white;
+    transform: rotate(90deg);
+}
+
+.footer-wrapper{
+    position: relative;
+}
+
+.footer-logo{
+    position: absolute;
+    width:540px;
+    height:180px;
+    margin-left: auto;
+    margin-right: auto;
+    top: -80px;
+    left: 0;
+    right: 0;
+    display: table;
+}
+
+.footer-logo-block{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+}
+
+.footer-logo-text{
+    color: #00C7AF;
+    font-size: 70px;
+    padding-left: 25px;
+}
+
+.footer-wrapper-social{
+    height:90px;
+    width:100%;
+    margin-bottom: 40px;
+}
+
+.footer-social-item{
+    display: block;
+    width:100%;
+    height: 100%;
+}
+
+.footer-social-item-image{
+    height: 100%;
+    width:90px;
+    float: left;
+    margin-right: 30px;
+}
+
+.footer-social-item-link{
+    color: #FFFFFF;
+    font-size: 40px;
+    float: left;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+
+.footer-phone img{
+    position: relative;
+}
+
+.footer-phone-button{
+    position: absolute;
+    bottom: 100px;
+    margin: 0 43px;
+}
+
+.phone-button{
+    font-size: 26px;
+    color: #FFFFFF;
+    padding: 23px 40px;
+    display: block;
+    width:340px;
+    height:85px;
+    background-color: rgb(44, 160, 200);
+    border-radius: 43px;
+    /*line-height: 20px;*/
+}
+
+.phone-button:hover{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.phone-button svg{
+    font-size: 38px;
+    margin-left: 20px;
+    line-height: 20px;
+}
+/* footer end */
+
