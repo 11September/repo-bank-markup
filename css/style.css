@@ -1375,113 +1375,6 @@ button .btn, button .btn-lg {
     }
 }
 
-@media (max-width: 992px) {
-    .menu-list{
-        flex-direction: column;
-        position: relative;
-        margin-top: 60px;
-    }
-
-    .text-h1-p{
-        margin-left: 50px;
-    }
-
-    .text-h1 {
-        font-size: 45px;
-    }
-
-    .text-p{
-        font-size: 20px;
-    }
-
-    .mobile-btn{
-        display: block;
-    }
-
-    .menu-list .menu-item .link{
-        margin: 0;
-        font-size: 24px;
-    }
-
-    .header-body .menu-part {
-        width: auto;
-    }
-
-    .header-body{
-        justify-content: center;
-    }
-
-    .menu-item{
-        padding: 10px;
-        padding-left: 0;
-    }
-
-    .hider{
-        display: none;
-    }
-
-    .header-body .menu-part {
-        width: 0;
-    }
-
-    .fa-bars {
-        color: white;
-        font-size: 30px;
-        margin-top: 5px;
-    }
-
-    .mobile-btn{
-        margin-right: 20px;
-    }
-
-    .header-body .buttons-block {
-        width: auto;
-    }
-}
-
-@media (max-width: 768px) {
-    .text-p {
-        display: none;
-    }
-
-    .text-h1 {
-        font-size: 40px;
-        line-height: 100px;
-    }
-
-
-    .Launch-p {
-        font-size: 26px;
-        margin-right: 0;
-    }
-
-    .launch-video img{
-        width: 70%;
-    }
-}
-
-@media (max-width: 480px) {
-    .text-h1 {
-        font-size: 24px;
-        line-height: 50px;
-    }
-
-    .text-h1-p{
-        margin-left: 20px;
-    }
-
-    .Launch-p {
-        font-size: 22px;
-        margin-right: 0;
-        position: relative;
-        left: 20px;
-    }
-
-    .launch-video img{
-        width: 50%;
-    }
-}
-
 .wrapper-download-button:hover {
     color: white;
     text-decoration: none;
@@ -1948,7 +1841,12 @@ button .btn, button .btn-lg {
     align-items: center;
 }
 
+.footer-phone{
+    width:100%;
+}
+
 .footer-phone img{
+    width: 100%;
     position: relative;
 }
 
@@ -1980,5 +1878,217 @@ button .btn, button .btn-lg {
     margin-left: 20px;
     line-height: 20px;
 }
+
+.copyright-hiden{
+    display: none;
+}
 /* footer end */
+
+@media (max-width: 1200px){
+    .footer-logo{
+        top: -120px;
+    }
+
+    .footer-social-item-link{
+        font-size: 30px;
+    }
+
+    .footer-phone-button{
+        margin: 0;
+        bottom: 60px;
+    }
+
+    .phone-button{
+        width:100%;
+        border-radius: 0;
+        font-size: 26px;
+        padding: 20px 20px;
+    }
+}
+
+@media (max-width: 992px) {
+    .menu-list{
+        flex-direction: column;
+        position: relative;
+        margin-top: 60px;
+    }
+
+    .text-h1-p{
+        margin-left: 50px;
+    }
+
+    .text-h1 {
+        font-size: 45px;
+    }
+
+    .text-p{
+        font-size: 20px;
+    }
+
+    .mobile-btn{
+        display: block;
+    }
+
+    .menu-list .menu-item .link{
+        margin: 0;
+        font-size: 24px;
+    }
+
+    .header-body .menu-part {
+        width: auto;
+    }
+
+    .header-body{
+        justify-content: center;
+    }
+
+    .menu-item{
+        padding: 10px;
+        padding-left: 0;
+    }
+
+    .hider{
+        display: none;
+    }
+
+    .header-body .menu-part {
+        width: 0;
+    }
+
+    .fa-bars {
+        color: white;
+        font-size: 30px;
+        margin-top: 5px;
+    }
+
+    .mobile-btn{
+        margin-right: 20px;
+    }
+
+    .header-body .buttons-block {
+        width: auto;
+    }
+
+    .footer-about-company{
+        margin: 100px 0;
+        text-align: center;
+    }
+
+    .copyright{
+        display: none;
+    }
+
+    .copyright-hiden, .design{
+        display: block;
+        position: unset;
+        text-align: center;
+        margin: 0;
+        padding: 20px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .text-p {
+        display: none;
+    }
+
+    .text-h1 {
+        font-size: 40px;
+        line-height: 100px;
+    }
+
+
+    .Launch-p {
+        font-size: 26px;
+        margin-right: 0;
+    }
+
+    .launch-video img{
+        width: 70%;
+    }
+
+    .footer-logo{
+        width:400px;
+
+    }
+
+    .footer-logo-text{
+        font-size: 50px;
+    }
+
+    .footer-about-company{
+        padding: 0 20%;
+    }
+
+    .footer-phone{
+        margin-top: 70px;
+        padding: 0 20%;
+    }
+}
+
+@media (max-width: 540px) {
+    .footer-phone-button{
+        bottom: 40px;
+    }
+
+    .phone-button{
+        height: 60px;
+        font-size: 22px;
+        padding: 15px ;
+    }
+
+    .phone-button svg{
+        font-size: 24px;
+        margin: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .text-h1 {
+        font-size: 24px;
+        line-height: 50px;
+    }
+
+    .text-h1-p{
+        margin-left: 20px;
+    }
+
+    .Launch-p {
+        font-size: 22px;
+        margin-right: 0;
+        position: relative;
+        left: 20px;
+    }
+
+    .launch-video img{
+        width: 50%;
+    }
+
+    .footer-logo{
+        width:300px;
+        top: -80px;
+    }
+
+    .footer-logo-text{
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-phone-button{
+        bottom: 20px;
+        margin: 0 60px;
+    }
+
+    .phone-button span{
+        display: none;
+    }
+
+    .team-item-image img{
+        width:100%;
+        height:280px;
+    }
+}
+
+
 
