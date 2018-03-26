@@ -740,6 +740,10 @@
 .Instant_Crypto_Overdrafts .modal_3 .modal-footer .btn-secondary{
     background: linear-gradient(to right, #fa4f44, #7e2822);
 }
+
+.Instant_Crypto_Overdrafts .modal_3 .modal-footer .btn-secondary:hover{
+    box-shadow: 0 0 10px 1px rgba(184, 58, 50, 0.75);
+}
 /* Instant_Crypto_Overdrafts end */
 
 /* foma subs */
