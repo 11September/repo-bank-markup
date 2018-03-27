@@ -226,6 +226,10 @@
     padding-bottom: 50px;
 }
 
+.subscribe_items .row{
+    width: 100%;
+}
+
 .subscribe {
     width: 100%;
     height: 100%;
@@ -374,8 +378,14 @@
 
 .Instant_Crypto_Overdrafts .input_comparison input{
     padding: 12px 30px 12px 30px;
-    width: 40%;
+    width: 90%;
     text-align: center;
+}
+
+.Instant_Crypto_Overdrafts .span_i{
+    display: flex;
+    justify-content: center;
+    align-self: center;
 }
 
 .Instant_Crypto_Overdrafts .input_comparison input:focus,
@@ -405,6 +415,10 @@
 .Instant_Crypto_Overdrafts .img_comparison .img_comparison_width{
     display: flex;
     justify-content: center;
+}
+
+.img_comparison_width .row{
+    width: 100%;
 }
 
 .Instant_Crypto_Overdrafts .img_comparison_width{
@@ -1102,6 +1116,10 @@ button .btn, button .btn-lg {
 
 .button_position h3{
     font-size: 36px;
+}
+
+.button_position .row{
+    width: 100%;
 }
 
 .our_vision_slider .button_position{
@@ -1885,6 +1903,22 @@ button .btn, button .btn-lg {
 /* footer end */
 
 @media (max-width: 1200px){
+    .Instant_Crypto_Overdrafts .modal .modal-footer button{
+        width: 25%;
+    }
+
+    .Instant_Crypto_Overdrafts .modal_3 .modal-footer button {
+        width: 75%;
+    }
+
+    .our_vision_slider_panel .slick-slide{
+        height: 525px;
+    }
+
+    .our_vision_slider_panel .slick-center{
+        height: 625px;
+    }
+
     .footer-logo{
         top: -120px;
     }
@@ -1907,6 +1941,30 @@ button .btn, button .btn-lg {
 }
 
 @media (max-width: 992px) {
+    .Instant_Crypto_Overdrafts .icon_items img{
+        width: 100%;
+    }
+
+    .Instant_Crypto_Overdrafts .icon_items p{
+        font-size: 18px;
+    }
+
+    .overdraft_panel .new_crypto_overdraft{
+        top: 120px;
+    }
+
+    .button_position h3{
+        font-size: 30px;
+    }
+
+    .our_vision_slider .button_position button{
+        padding: 18px 50px;
+    }
+
+    .button_position h3{
+        padding-bottom: 25px;
+    }
+
     .menu-list{
         flex-direction: column;
         position: relative;
@@ -1988,6 +2046,19 @@ button .btn, button .btn-lg {
 }
 
 @media (max-width: 768px) {
+     .overdraft_panel .new_crypto_overdraft{
+        top: 77px;
+    }
+
+    .roadmap_view_p{
+        font-size: 20px;
+    }
+
+    .Instant_Crypto_Overdrafts .icon_items img{
+        height: 150px;
+        width: auto;
+     }   
+
     .text-p {
         display: none;
     }
@@ -2023,6 +2094,70 @@ button .btn, button .btn-lg {
     .footer-phone{
         margin-top: 70px;
         padding: 0 20%;
+    }
+}
+
+@media (max-width: 576px) {
+    .roadmap_view_p{
+        font-size: 18px;
+    }
+
+    .roadmap h2{
+        font-size: 48px;
+    }
+
+    .our_vision_slider .button_position button{
+        padding: 13px 30px;
+        font-size: 16px;
+    }
+
+    .button_position h3{
+        font-size: 24px;
+    }
+
+    .our_vision_slider .text_signature{
+        font-size: 18px;
+    }
+
+    .our_vision_slider .text_head{
+        font-size: 20px;
+    }
+
+    .our_vision_slider h2{
+        font-size: 48px;
+    }
+
+    .our_vision_slider .container > p{
+        font-size: 18px;
+    }
+
+    .overdraft_panel input{
+        width: 100%;
+        font-size: 30px;
+    }
+
+    .overdraft_panel .new_crypto_overdraft{
+        top: 71%;
+        left: auto;
+        font-size: 20px;
+        padding: 18px 35px;
+        right: 4%;
+    }
+
+    .overdraft_panel h2{
+        font-size: 30px;
+    }
+
+    .Instant_Crypto_Overdrafts h2{
+        font-size: 48px;
+    }
+
+    .Instant_Crypto_Overdrafts .description-p p{
+        font-size: 18px;
+    }
+
+   .Instant_Crypto_Overdrafts .modal.fade .modal-dialog{
+        max-width: 95% !important;
     }
 }
 
@@ -2090,5 +2225,8 @@ button .btn, button .btn-lg {
     }
 }
 
-
-
+@media (max-width: 400px) {
+    .overdraft_panel .new_crypto_overdraft{
+        top: 77%;
+    }
+}
