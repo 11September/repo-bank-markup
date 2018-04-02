@@ -502,6 +502,10 @@
     padding-top: 40px;
 }
 
+.div_overdrafts_slider{
+    padding-right: 0;
+}
+
 .overdrafts_slider h2{
     color: #43afe3;
     padding: 18px 0;
@@ -575,6 +579,10 @@
 .Instant_Crypto_Overdrafts .overdrafts_slider div:active{
     outline: 0;
     outline-offset: 0;
+}
+
+.Instant_Crypto_Overdrafts .div_overdrafts_total{
+    padding-left: 45px;
 }
 
 .Instant_Crypto_Overdrafts .overdrafts_total{
@@ -751,6 +759,8 @@
     padding-top: 10px;
     height: 65px;
 }
+
+
 
 .Instant_Crypto_Overdrafts .modal_3 .modal-footer .btn-secondary{
     background: linear-gradient(to right, #fa4f44, #7e2822);
