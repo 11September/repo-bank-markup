@@ -50,6 +50,7 @@
 .bg-XuNHbjD1 {
     width: 530px; height: 659px;
     background: url('../images/css_sprites.png') -2970px -1530px;
+    position: absolute;
 }
 .header-body  .buttons-block{
     width: 17%;
@@ -228,6 +229,10 @@
     padding-bottom: 50px;
 }
 
+.subscribe_items .row{
+    width: 100%;
+}
+
 .subscribe {
     width: 100%;
     height: 100%;
@@ -376,8 +381,14 @@
 
 .Instant_Crypto_Overdrafts .input_comparison input{
     padding: 12px 30px 12px 30px;
-    width: 40%;
+    width: 90%;
     text-align: center;
+}
+
+.Instant_Crypto_Overdrafts .span_i{
+    display: flex;
+    justify-content: center;
+    align-self: center;
 }
 
 .Instant_Crypto_Overdrafts .input_comparison input:focus,
@@ -407,6 +418,10 @@
 .Instant_Crypto_Overdrafts .img_comparison .img_comparison_width{
     display: flex;
     justify-content: center;
+}
+
+.img_comparison_width .row{
+    width: 100%;
 }
 
 .Instant_Crypto_Overdrafts .img_comparison_width{
@@ -588,6 +603,10 @@
     padding-bottom: 12px;
 }
 
+.Instant_Crypto_Overdrafts .modal_3 .modal-footer{
+    padding-top: 5px;
+}
+
 .Instant_Crypto_Overdrafts .modal_3 .modal-footer  button{
     width: 50%;
 }
@@ -610,7 +629,7 @@
 .Instant_Crypto_Overdrafts .left_block, 
 .Instant_Crypto_Overdrafts .right_block{
     background: #fff;
-    width: 95%;
+    width: 93%;
 }
 
 .Instant_Crypto_Overdrafts .left_block h3, 
@@ -621,7 +640,7 @@
 
 .Instant_Crypto_Overdrafts .left_block p, 
 .Instant_Crypto_Overdrafts .right_block p{
-    padding-bottom: 10px;
+    padding-bottom: 15px;
 }
 
 .Instant_Crypto_Overdrafts .left_block{
@@ -658,20 +677,89 @@
     color: #000000;
 }
 
-.Instant_Crypto_Overdrafts .block_bg .left_block_title,
-.Instant_Crypto_Overdrafts .block_bg .left_block_title_2{
-    padding-top: 20px;
-    font-weight: 500;
+.block_bg_img_text_padding{
+    padding: 21px 0;
 }
 
 .block_bg_img img{
-    height: 100%;
+    /*height: 100%;*/
     width: 100%;
+
+    height: 115%;
+    margin-top: -15px;
 }
 
-.block_bg_right_img img{
-    /*height: 100%;*/
-    /*width: 100%;*/
+.Instant_Crypto_Overdrafts .block_bg .left_block_title,
+.Instant_Crypto_Overdrafts .block_bg .left_block_title_2{
+    padding-top: 15px;
+    font-weight: 500;
+    padding-bottom: 15px;
+}
+
+.Instant_Crypto_Overdrafts .block_bg .left_block_title_2{
+    border-top: 3px solid #f0f1f1;
+}
+
+.block_bg_img .left_block > div:nth-child(1){
+    padding-right: 0;
+}
+
+.block_bg_right_img .right_block{
+    padding: 10px 5%;
+}
+
+.block_bg_right_img .bank_items_1,
+.block_bg_right_img .bank_items_3{
+    border-right: 3px solid #f0f1f1;
+}
+
+.block_bg_right_img .bank_items_1 img{
+    height: 57px;
+}
+
+.block_bg_right_img .bank_items_1 p:last-child{
+    border-bottom: 3px solid #f0f1f1;
+    padding-bottom: 10px;
+}
+
+.block_bg_right_img .bank_items_2{
+    padding-top: 15px;
+}
+
+.block_bg_right_img .bank_items_2 p{
+    border-bottom: 3px solid #f0f1f1;
+    padding-bottom: 0;
+    padding-top: 21px;
+}
+
+.block_bg_right_img .bank_items_2 img{
+    height: 50px;
+}
+
+.block_bg_right_img .bank_items_3 p:nth-child(1){
+    padding-top: 23px;
+    color: #4ab2e4;
+    font-size: 30px;
+    letter-spacing: -2px;
+    padding-bottom: 0;
+    font-weight: 500;
+}
+.block_bg_right_img .bank_items_3 p:nth-child(2){
+    padding-top: 0;
+    line-height: 0.5;
+}
+
+.block_bg_right_img .bank_items_4 img{
+    padding-top: 10px;
+    height: 65px;
+}
+
+.Instant_Crypto_Overdrafts .modal_3 .modal-footer .btn-secondary{
+    background: linear-gradient(to right, #fa4f44, #7e2822);
+}
+
+.Instant_Crypto_Overdrafts .modal_3 .modal-footer .btn-secondary:hover{
+    box-shadow: 0 0 10px 1px rgba(184, 58, 50, 0.75);
 }
 /* Instant_Crypto_Overdrafts end */
 
@@ -1031,6 +1119,10 @@ button .btn, button .btn-lg {
 
 .button_position h3{
     font-size: 36px;
+}
+
+.button_position .row{
+    width: 100%;
 }
 
 .our_vision_slider .button_position{
@@ -2127,3 +2219,492 @@ button .btn, button .btn-lg {
 /* Section team end */
 
 
+/* footer */
+.footer{
+    /*height: 775px;*/
+    background-color: #0C0C0C;
+}
+
+.footer-flex{
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    position: relative;
+}
+
+.copyright, .design{
+    position: absolute;
+    bottom: 0;
+    color: #9C9C9C;
+    font-size: 20px;
+    padding-bottom: 40px;
+}
+
+
+.copyright{
+    width:100%;
+}
+
+.design-link{
+    color: #9C9C9C;
+}
+
+.design-link:hover {
+    color: #9C9C9C;
+    text-decoration: none;
+}
+
+.footer-phone img{
+    height: 100%;
+    margin-bottom: -1px;
+}
+
+.footer-about-company{
+    font-size: 30px;
+    color: #FFFFFF;
+}
+
+.footer-container-social{
+    /*position: relative;*/
+}
+
+.footer-connect-text{
+    /*position: absolute;*/
+    padding-left: 90px;
+    font-size: 30px;
+    color: white;
+    transform: rotate(90deg);
+}
+
+.footer-wrapper{
+    position: relative;
+}
+
+.footer-logo{
+    position: absolute;
+    width:540px;
+    height:180px;
+    margin-left: auto;
+    margin-right: auto;
+    top: -80px;
+    left: 0;
+    right: 0;
+    display: table;
+}
+
+.footer-logo-block{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+}
+
+.footer-logo-text{
+    color: #00C7AF;
+    font-size: 70px;
+    padding-left: 25px;
+}
+
+.footer-wrapper-social{
+    height:90px;
+    width:100%;
+    margin-bottom: 40px;
+}
+
+.footer-social-item{
+    display: block;
+    width:100%;
+    height: 100%;
+}
+
+.footer-social-item-image{
+    height: 100%;
+    width:90px;
+    float: left;
+    margin-right: 30px;
+}
+
+.footer-social-item-link{
+    color: #FFFFFF;
+    font-size: 40px;
+    float: left;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+
+.footer-phone{
+    width:100%;
+}
+
+.footer-phone img{
+    width: 100%;
+    position: relative;
+}
+
+.footer-phone-button{
+    position: absolute;
+    bottom: 100px;
+    margin: 0 43px;
+}
+
+.phone-button{
+    font-size: 26px;
+    color: #FFFFFF;
+    padding: 23px 40px;
+    display: block;
+    width:340px;
+    height:85px;
+    background-color: rgb(44, 160, 200);
+    border-radius: 43px;
+    /*line-height: 20px;*/
+}
+
+.phone-button:hover{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.phone-button svg{
+    font-size: 38px;
+    margin-left: 20px;
+    line-height: 20px;
+}
+
+.copyright-hiden{
+    display: none;
+}
+/* footer end */
+
+@media (max-width: 1200px){
+    .Instant_Crypto_Overdrafts .modal .modal-footer button{
+        width: 25%;
+    }
+
+    .Instant_Crypto_Overdrafts .modal_3 .modal-footer button {
+        width: 75%;
+    }
+
+    .our_vision_slider_panel .slick-slide{
+        height: 525px;
+    }
+
+    .our_vision_slider_panel .slick-center{
+        height: 625px;
+    }
+
+    .footer-logo{
+        top: -120px;
+    }
+
+    .footer-social-item-link{
+        font-size: 30px;
+    }
+
+    .footer-phone-button{
+        margin: 0;
+        bottom: 60px;
+    }
+
+    .phone-button{
+        width:100%;
+        border-radius: 0;
+        font-size: 26px;
+        padding: 20px 20px;
+    }
+}
+
+@media (max-width: 992px) {
+    .Instant_Crypto_Overdrafts .icon_items img{
+        width: 100%;
+    }
+
+    .Instant_Crypto_Overdrafts .icon_items p{
+        font-size: 18px;
+    }
+
+    .overdraft_panel .new_crypto_overdraft{
+        top: 120px;
+    }
+
+    .button_position h3{
+        font-size: 30px;
+    }
+
+    .our_vision_slider .button_position button{
+        padding: 18px 50px;
+    }
+
+    .button_position h3{
+        padding-bottom: 25px;
+    }
+
+    .menu-list{
+        flex-direction: column;
+        position: relative;
+        margin-top: 60px;
+    }
+
+    .text-h1-p{
+        margin-left: 50px;
+    }
+
+    .text-h1 {
+        font-size: 45px;
+    }
+
+    .text-p{
+        font-size: 20px;
+    }
+
+    .mobile-btn{
+        display: block;
+    }
+
+    .menu-list .menu-item .link{
+        margin: 0;
+        font-size: 24px;
+    }
+
+    .header-body .menu-part {
+        width: auto;
+    }
+
+    .header-body{
+        justify-content: center;
+    }
+
+    .menu-item{
+        padding: 10px;
+        padding-left: 0;
+    }
+
+    .hider{
+        display: none;
+    }
+
+    .header-body .menu-part {
+        width: 0;
+    }
+
+    .fa-bars {
+        color: white;
+        font-size: 30px;
+        margin-top: 5px;
+    }
+
+    .mobile-btn{
+        margin-right: 20px;
+    }
+
+    .header-body .buttons-block {
+        width: auto;
+    }
+
+    .footer-about-company{
+        margin: 100px 0;
+        text-align: center;
+    }
+
+    .copyright{
+        display: none;
+    }
+
+    .copyright-hiden, .design{
+        display: block;
+        position: unset;
+        text-align: center;
+        margin: 0;
+        padding: 20px 0;
+    }
+}
+
+@media (max-width: 768px) {
+     .overdraft_panel .new_crypto_overdraft{
+        top: 77px;
+    }
+
+    .roadmap_view_p{
+        font-size: 20px;
+    }
+
+    .Instant_Crypto_Overdrafts .icon_items img{
+        height: 150px;
+        width: auto;
+     }   
+
+    .text-p {
+        display: none;
+    }
+
+    .text-h1 {
+        font-size: 40px;
+        line-height: 100px;
+    }
+
+
+    .Launch-p {
+        font-size: 26px;
+        margin-right: 0;
+    }
+
+    .launch-video img{
+        width: 70%;
+    }
+
+    .footer-logo{
+        width:400px;
+
+    }
+
+    .footer-logo-text{
+        font-size: 50px;
+    }
+
+    .footer-about-company{
+        padding: 0 20%;
+    }
+
+    .footer-phone{
+        margin-top: 70px;
+        padding: 0 20%;
+    }
+}
+
+@media (max-width: 576px) {
+    .roadmap_view_p{
+        font-size: 18px;
+    }
+
+    .roadmap h2{
+        font-size: 48px;
+    }
+
+    .our_vision_slider .button_position button{
+        padding: 13px 30px;
+        font-size: 16px;
+    }
+
+    .button_position h3{
+        font-size: 24px;
+    }
+
+    .our_vision_slider .text_signature{
+        font-size: 18px;
+    }
+
+    .our_vision_slider .text_head{
+        font-size: 20px;
+    }
+
+    .our_vision_slider h2{
+        font-size: 48px;
+    }
+
+    .our_vision_slider .container > p{
+        font-size: 18px;
+    }
+
+    .overdraft_panel input{
+        width: 100%;
+        font-size: 30px;
+    }
+
+    .overdraft_panel .new_crypto_overdraft{
+        top: 71%;
+        left: auto;
+        font-size: 20px;
+        padding: 18px 35px;
+        right: 4%;
+    }
+
+    .overdraft_panel h2{
+        font-size: 30px;
+    }
+
+    .Instant_Crypto_Overdrafts h2{
+        font-size: 48px;
+    }
+
+    .Instant_Crypto_Overdrafts .description-p p{
+        font-size: 18px;
+    }
+
+   .Instant_Crypto_Overdrafts .modal.fade .modal-dialog{
+        max-width: 95% !important;
+    }
+}
+
+@media (max-width: 540px) {
+    .footer-phone-button{
+        bottom: 40px;
+    }
+
+    .phone-button{
+        height: 60px;
+        font-size: 22px;
+        padding: 15px ;
+    }
+
+    .phone-button svg{
+        font-size: 24px;
+        margin: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .text-h1 {
+        font-size: 24px;
+        line-height: 50px;
+    }
+
+    .text-h1-p{
+        margin-left: 20px;
+    }
+
+    .Launch-p {
+        font-size: 22px;
+        margin-right: 0;
+        position: relative;
+        left: 20px;
+    }
+
+    .launch-video img{
+        width: 50%;
+    }
+
+    .footer-logo{
+        width:300px;
+        top: -80px;
+    }
+
+    .footer-logo-text{
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-phone-button{
+        bottom: 20px;
+        margin: 0 60px;
+    }
+
+    .phone-button span{
+        display: none;
+    }
+
+    .team-item-image img{
+        width:100%;
+        height:280px;
+    }
+}
+
+@media (max-width: 400px) {
+    .overdraft_panel .new_crypto_overdraft{
+        top: 77%;
+    }
+}
