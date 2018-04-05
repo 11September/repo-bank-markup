@@ -1091,7 +1091,7 @@ button .btn, button .btn-lg {
     border-radius: 15px;
     padding: 52px 22px 52px;
     margin-top: 50px;
-    height: 477px;
+    height: 525px;
     opacity: 0.9;
 }
 
@@ -1105,7 +1105,7 @@ button .btn, button .btn-lg {
     background: #fff;
     border-radius: 15px;
     padding: 102px 22px 52px;
-    height: 577px;
+    height: 635px;
 }
 
 .our_vision_slider_panel .slick-slide:hover{
@@ -1879,7 +1879,18 @@ button .btn, button .btn-lg {
         line-height: 50px;
     }
 
+    .roadmap_title {
+        font-size: 18px;
+    }
 
+    .roadmap .slick-center h2 {
+        font-size: 36px;
+    }
+
+    .roadmap_text{
+        font-size: 15px;
+        line-height: 1.4;
+    }
 
     .Launch-p {
         font-size: 22px;
