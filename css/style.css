@@ -633,6 +633,8 @@
     padding-bottom: 10px;
 }
 
+
+
 .block_bg_right{
     display: flex;
     justify-content: flex-end;
@@ -726,9 +728,27 @@
     padding: 10px 5%;
 }
 
-.block_bg_right_img .bank_items_1,
-.block_bg_right_img .bank_items_3{
-    border-right: 3px solid #f0f1f1;
+.modal_3 .row{
+    width: 100%;
+}
+
+.flex_center{
+    display: flex;
+    justify-content: space-around;
+}
+
+.top_line{
+    width: 3px;
+    height: 60px;
+    margin-top: 35px;
+    background: rgb(240, 241, 241);
+}
+
+.bot_line{
+    width: 3px;
+    height: 60px;
+    margin-bottom: 35px;
+    background: rgb(240, 241, 241);
 }
 
 .block_bg_right_img .bank_items_1 img{
@@ -1081,7 +1101,7 @@ button .btn, button .btn-lg {
     border-radius: 15px;
     padding: 52px 22px 52px;
     margin-top: 50px;
-    height: 477px;
+    height: 525px;
     opacity: 0.9;
 }
 
@@ -1095,7 +1115,7 @@ button .btn, button .btn-lg {
     background: #fff;
     border-radius: 15px;
     padding: 102px 22px 52px;
-    height: 577px;
+    height: 635px;
 }
 
 .our_vision_slider_panel .slick-slide:hover{
@@ -1869,7 +1889,18 @@ button .btn, button .btn-lg {
         line-height: 50px;
     }
 
+    .roadmap_title {
+        font-size: 18px;
+    }
 
+    .roadmap .slick-center h2 {
+        font-size: 36px;
+    }
+
+    .roadmap_text{
+        font-size: 15px;
+        line-height: 1.4;
+    }
 
     .Launch-p {
         font-size: 22px;
@@ -1889,6 +1920,18 @@ button .btn, button .btn-lg {
     background: linear-gradient(to right, #165370, #2CA0C8);
 }
 
+@media (max-width: 1600px){
+    .Instant_Crypto_Overdrafts .bank_items{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 1400px){
+    .Instant_Crypto_Overdrafts .bank_items{
+        font-size: 12px;
+    }
+}
+
 @media (max-width: 1200px) {
     .whitepaper-info-text{
         padding-right: 60px;
@@ -1900,6 +1943,34 @@ button .btn, button .btn-lg {
 
     .solutions .image-block img{
         width: 100%;
+    }
+
+    .Instant_Crypto_Overdrafts .left_block, 
+    .Instant_Crypto_Overdrafts .right_block{
+        width: 100%;
+    }
+
+    .Instant_Crypto_Overdrafts .card_text{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .Instant_Crypto_Overdrafts .block_bg > div{
+        border-radius: 30px;
+    }
+
+    .Instant_Crypto_Overdrafts .block_bg{
+        margin-bottom: 25px;
+    }
+
+
+    .Instant_Crypto_Overdrafts .bank_transfer{
+        padding-top: 40px;
+    }
+
+    .Instant_Crypto_Overdrafts .bank_items{
+        font-size: 16px;
     }
 }
 
@@ -2439,6 +2510,23 @@ button .btn, button .btn-lg {
 }
 
 @media (max-width: 992px) {
+    .Instant_Crypto_Overdrafts .modal_3 .modal-footer button {
+        width: 80%;
+    }
+
+    .block_bg_right_img .bank_items_1 p:last-child {
+        border: none;
+    }
+
+    .block_bg_right_img .bank_items_2 p {
+         border: none;
+    }
+
+    .Instant_Crypto_Overdrafts .bot_line, 
+    .Instant_Crypto_Overdrafts .top_line{
+        display: none;
+    }
+
     .Instant_Crypto_Overdrafts .icon_items img{
         width: 100%;
     }
@@ -2544,6 +2632,32 @@ button .btn, button .btn-lg {
 }
 
 @media (max-width: 768px) {
+    .modal_3 .btn-secondary{
+        margin-bottom: 20px;
+    }
+
+    .modal_3 .flex_center{
+        margin-left: 0;
+    }
+
+    .Instant_Crypto_Overdrafts .modal .modal-body, 
+    .Instant_Crypto_Overdrafts .modal .modal-footer {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .modal_3 .modal-body > .row{
+        padding-left: 15px;
+    }
+
+    .Instant_Crypto_Overdrafts .block_bg .left_block_title_2{
+        border: none;
+    }
+
+    .Instant_Crypto_Overdrafts .div_img{
+        display: none;
+    }
+
      .overdraft_panel .new_crypto_overdraft{
         top: 77px;
     }
@@ -2677,6 +2791,22 @@ button .btn, button .btn-lg {
 }
 
 @media (max-width: 480px) {
+    .Instant_Crypto_Overdrafts .div_overdrafts_total {
+        padding-left: 15px;
+    }
+
+    .Instant_Crypto_Overdrafts .img_item > p {
+        padding-bottom: 15px;
+    }
+
+    .Instant_Crypto_Overdrafts .span_i {
+        padding: 10px 0;
+    }
+
+    .Instant_Crypto_Overdrafts .modal h3 {
+        padding-top: 15px;
+    }
+    
     .text-h1 {
         font-size: 24px;
         line-height: 50px;
