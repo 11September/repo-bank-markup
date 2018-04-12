@@ -66,9 +66,19 @@
     right: 0;
 }
 
+.credit-items{
+    display:flex;
+}
+
+.left-park{
+    width: 50%;
+}
+.right-park{
+    width: 50%;
+}
 .header-body{
     display: flex;
-    font-family: OpenSans-Regular;
+    font-family: 'OpenSans-Regular';
     padding-left: 50px;
     padding-right: 50px;
     padding-top: 20px;
