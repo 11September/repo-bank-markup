@@ -206,7 +206,9 @@
 /* Instant_Crypto_Overdrafts */
 .Instant_Crypto_Overdrafts{
     padding: 80px 0 70px;
+    color: #182140;
     background: linear-gradient(to bottom, #f9f9f9, #c8c8c8);
+    font-family: OpenSans-Regular;
 }
 
 .Instant_Crypto_Overdrafts .modal-content{
@@ -216,7 +218,8 @@
 .Instant_Crypto_Overdrafts h2{
     padding-bottom: 30px;
     font-size: 60px;
-    font-weight: 400;
+    font-family: OpenSans-Bold; 
+    
 }
 
 .h2-text, .description-p {
@@ -255,19 +258,20 @@
 .icon_items p{
     padding-top: 25px;
     color: #979797;
-    line-height: 1.4;
-    font-weight: 500;
+    line-height: 1.2;
+    font-weight: 400;
     font-size: 24px;
 }
 
 .icon_items:hover p{
-    color: #525870;
+    color: #182140;
 }
 
 .icon_items:hover {
     background: white;
-    border-bottom: 2px solid #4f556d;
+    border-bottom: 2px solid #182140;
     padding: 30px 15px 28px;
+    cursor: pointer;
 }
 
 .h2-choose {
@@ -300,7 +304,7 @@
 
 .overdraft_panel .new_crypto_overdraft {
     position: absolute;
-    left: 394px;
+    left: 423px;
     top: 77px;
     font-size: 24px;
     font-weight: 500;
@@ -309,11 +313,18 @@
     border: none;
     border-radius: 50px;
     color: #fff;
+    transition-duration: .2s;
 }
 
 .overdraft_panel .new_crypto_overdraft:hover{
+    background: linear-gradient(to left, #525252, #131313);
+    transition-duration: .2s;
+}
+
+.overdraft_panel .new_crypto_overdraft:active{
     background: #111111;
     box-shadow: 0 0 7px 3px rgba(17, 17, 17, 0.8);
+    transition-duration: .2s;
 }
 
 .overdraft_panel .new_crypto_overdraft:hover,
@@ -1956,6 +1967,21 @@ button .btn, button .btn-lg {
     .launch-video img{
         width: 50%;
     }
+
+    /* Instant_Crypto_Overdrafts */
+    .Instant_Crypto_Overdrafts h2 {
+        font-size: 40px !important;
+    }
+
+    .overdraft_panel .new_crypto_overdraft {
+        top: 69%;
+        padding: 15px 30px !important;
+    }
+
+    .overdraft_panel input {
+        font-size: 24px !important;
+    }
+    /* Instant_Crypto_Overdrafts end */
 }
 
 .wrapper-download-button:hover {
@@ -2309,7 +2335,7 @@ button .btn, button .btn-lg {
 
 .modal-description p{
     font-size: 25px;
-    color: #000000;
+    color: #182140;
 }
 
 .modal-content .team-item-social{
@@ -2522,6 +2548,10 @@ button .btn, button .btn-lg {
 
     .Instant_Crypto_Overdrafts .modal_3 .modal-footer button {
         width: 75%;
+    }
+
+    .overdraft_panel .new_crypto_overdraft {
+        top: 120px;
     }
 
     .our_vision_slider_panel .slick-slide{
@@ -2899,6 +2929,12 @@ button .btn, button .btn-lg {
 
 @media (max-width: 400px) {
     .overdraft_panel .new_crypto_overdraft{
+        top: 71%;
+    }
+}
+
+@media (max-width: 382px){
+    .overdraft_panel .new_crypto_overdraft {
         top: 77%;
     }
 }
