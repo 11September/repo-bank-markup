@@ -1003,6 +1003,7 @@ button .btn, button .btn-lg {
     font-size: 30px;
     color: white;
     margin-top: 45px;
+    letter-spacing: 1px;
 }
 
 .fa-coffee{
@@ -1015,11 +1016,14 @@ button .btn, button .btn-lg {
 .features-p{
     font-size: 30px;
     font-family: 'OpenSans-Regular';
+    margin-top: 15px;
+    margin-left: 20px;
     color:#A4D7FB;
 
 }
 .features-2{
     text-align: left;
+    margin-left: 80px;
 }
 .hr-features{
 
@@ -1027,6 +1031,7 @@ button .btn, button .btn-lg {
 }
 .description-fither{
     font-size: 23px;
+    padding-bottom: 10px;
     color:white;
     font-family: 'OpenSans-Light';
 }
