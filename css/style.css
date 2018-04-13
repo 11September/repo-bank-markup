@@ -50,7 +50,7 @@
 .bg-XuNHbjD1 {
     width: 530px; height: 659px;
     background: url('../images/css_sprites.png') -2970px -1530px;
-    position: absolute;
+    position: sticky;
 }
 .header-body  .buttons-block{
     width: 17%;
@@ -1004,6 +1004,7 @@ button .btn, button .btn-lg {
     color: white;
     margin-top: 45px;
     letter-spacing: 1px;
+    margin-bottom: 60px;
 }
 
 .fa-coffee{
