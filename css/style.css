@@ -1057,10 +1057,15 @@ button .btn, button .btn-lg {
     background-size: 100% 100%;
     background-repeat: no-repeat;
     color: #fff;
+    font-family: OpenSans-Regular;
 }
 
 .our_vision_slider h2{
     font-size: 60px;
+    font-family: OpenSans-Bold;
+}
+.our_vision_slider a{
+    text-decoration: none;
 }
 
 .our_vision_slider .container > p{
@@ -1141,6 +1146,7 @@ button .btn, button .btn-lg {
 
 .our_vision_slider .slick-active:hover .text_signature{
     color: #fd877f;
+    transition-duration: .2s;
 }
 
 .our_vision_slider_panel .slick-slide{
@@ -1150,6 +1156,7 @@ button .btn, button .btn-lg {
     margin-top: 50px;
     height: 525px;
     opacity: 0.9;
+    transition-duration: .2s;
 }
 
 .our_vision_slider_panel button{
@@ -1163,16 +1170,22 @@ button .btn, button .btn-lg {
     border-radius: 15px;
     padding: 102px 22px 52px;
     height: 635px;
+    box-shadow: 0 0 15px 1px rgba(17, 17, 17, 0.4);
+    transition-duration: .2s;
+    position: relative;
+    z-index: 5;
 }
 
 .our_vision_slider_panel .slick-slide:hover{
     border:  2px solid #f1918b;
     padding: 50px 20px 50px;
+    transition-duration: .2s;
 }
 
 .our_vision_slider_panel .slick-center:hover{
     border:  2px solid #f1918b;
     padding: 100px 20px 50px;
+    transition-duration: .2s;
 }
 
 .our_vision_slider_panel .slick-center .text_signature{
@@ -1182,6 +1195,7 @@ button .btn, button .btn-lg {
 .our_vision_slider .slick-slide:hover .circle_signature{
     color: #fff;
     line-height: 0.9;
+    transition-duration: .2s;
 }
 
 .our_vision_slider  .circle_signature{
@@ -1937,6 +1951,16 @@ button .btn, button .btn-lg {
     .text-solution {
         font-size: 20px;
     }
+
+    /* our_vision_slider */
+    .our_vision_slider .button_position {
+        display: block;
+    }
+
+    .our_vision_slider .button_position .row {
+        width: auto;
+    }
+    /* our_vision_slider end */
 }
 
 @media (max-width: 480px) {
@@ -2872,6 +2896,27 @@ button .btn, button .btn-lg {
 }
 
 @media (max-width: 480px) {
+     /* our_vision_slider */
+    .our_vision_slider h2 {
+        font-size: 40px;
+    }
+
+    .our_vision_slider_panel .slick-center .text_signature {
+        font-size: 16px;
+        height: auto;
+    }
+
+    .our_vision_slider_panel .slick-center, 
+    .our_vision_slider_panel .slick-slide{
+        height: auto;
+        padding: 50px 18px 45px;
+    }
+
+    .slick-dotted.slick-slider {
+        margin-bottom: 0;
+    }
+    /* our_vision_slider end */
+
     .Instant_Crypto_Overdrafts .div_overdrafts_total {
         padding-left: 15px;
     }
