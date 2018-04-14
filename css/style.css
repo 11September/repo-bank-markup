@@ -1190,11 +1190,7 @@ button .btn, button .btn-lg {
     margin-top: 50px;
     height: 525px;
     opacity: 0.9;
-    transition-duration: .2s;
-}
-
-.our_vision_slider_panel button{
-    display: none !important;
+    /*transition-duration: .5s;*/
 }
 
 .our_vision_slider_panel .slick-center{
@@ -1205,7 +1201,7 @@ button .btn, button .btn-lg {
     padding: 102px 22px 52px;
     height: 635px;
     box-shadow: 0 0 15px 1px rgba(17, 17, 17, 0.4);
-    transition-duration: .2s;
+    /*transition-duration: .5s;*/
     position: relative;
     z-index: 5;
 }
@@ -1290,6 +1286,49 @@ button .btn, button .btn-lg {
 
 .our_vision_slider .button_position i{
     font-size: 30px;
+}
+
+.our_vision_slider .slick-dots li{
+    margin: 0 5px;
+}
+
+.our_vision_slider .slick-dots li button:before {
+    line-height: 15px;
+    width: 15px;
+    height: 15px;
+}
+
+.our_vision_slider .slick-dots li button:before{
+    font-size: 12px;
+    color: transparent;
+    background: transparent !important;
+    border-radius: 15px;
+    border: 3px solid #fc4f44;
+}
+
+.our_vision_slider .slick-dots li.slick-active button:before {
+    background: #fc4f44 !important;
+    color: #fc4f44;
+}
+
+.our_vision_slider img.slick-prev,
+.our_vision_slider img.slick-next{
+    width: 40px;
+    height: auto;
+    opacity: 0.8;
+}
+
+.our_vision_slider img.slick-prev:hover,
+.our_vision_slider img.slick-next:hover{
+    opacity: 1;
+}
+
+.our_vision_slider img.slick-next{
+    right: -75px;
+}
+
+.our_vision_slider img.slick-prev{
+    left: -75px;
 }
 /* our_vision_slider end */
 
