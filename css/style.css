@@ -2267,6 +2267,10 @@ button .btn, button .btn-lg {
     color: #182140;
 }
 
+.roadmap .slick-dots {
+    position: relative;
+}
+
 #particles-js{
     width: 100%;
     height: 1105px;
