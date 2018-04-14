@@ -295,6 +295,31 @@
     background: #fff;
     border: none;
     font-size: 36px;
+    font-family: OpenSans-Regular;
+}
+
+.overdraft_panel select{
+    padding: 12px 90px 12px 50px;
+    border-radius: 50px;
+    background: #fff;
+    border: none;
+    font-size: 36px;
+    font-family: OpenSans-Regular;
+    width: 100%;
+
+    /*-webkit-appearance: none;*/
+    /*-moz-appearance: none;*/
+    /*appearance: none;*/
+
+    /*-webkit-appearance: searchfield;*/
+}
+
+.overdraft_panel select::-ms-expand {
+  display: none;
+}
+
+.overdraft_panel .new_crypto_overdraft {
+    /*display: none;*/
 }
 
 .overdraft_panel input:hover,
@@ -306,7 +331,7 @@
 
 .overdraft_panel .new_crypto_overdraft {
     position: absolute;
-    left: 423px;
+    left: 392px;
     top: 77px;
     font-size: 24px;
     font-weight: 500;
