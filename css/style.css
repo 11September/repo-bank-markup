@@ -1066,6 +1066,10 @@ button .btn, button .btn-lg {
     font-family: OpenSans-Regular;
 }
 
+.our_vision_slider .slick-slide{
+    cursor: pointer;
+}
+
 .our_vision_slider h2{
     font-size: 60px;
 }
