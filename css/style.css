@@ -3291,6 +3291,19 @@ button .btn, button .btn-lg {
         width:100%;
         height:280px;
     }
+
+    .roadmap .slick-center h2{
+        font-size: 40px;
+        padding: 15px 0;
+    }
+
+    .roadmap_title {
+        padding-top: 15px;
+    }
+
+    .roadmap_scroll {
+        margin-bottom: 35px;
+    }
 }
 
 @media (max-width: 400px) {
