@@ -891,6 +891,32 @@ button .btn, button .btn-lg {
 
 /* section our vision */
 
+.items-icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.bg-model img{
+    width: 100%;
+    height: 100%;
+}
+
+.spic-cof {
+    width: 100px!important;
+    height: 100px!important;
+    border-radius:100%;
+    font-size: 50px;
+    color: #fff;
+    opacity: 0.9;
+    text-align: center;
+    background: #2CA5E0;
+
+}
+.first-1001 img{
+    width: 100%;
+    height: 100%;
+}
+
 .h2-vision {
     color: white;
 
