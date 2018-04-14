@@ -1344,12 +1344,14 @@ button .btn, button .btn-lg {
 }
 
 .whitepaper h2 {
+    font-family: OpenSans-Regular;
     font-size: 60px;
     color: #FFFFFF;
     line-height: 82px;
 }
 
 .whitepaper h5 {
+    font-family: OpenSans-Light;
     font-size: 30px;
     color: #FFFFFF;
     line-height: 41px;
@@ -1363,7 +1365,7 @@ button .btn, button .btn-lg {
     padding: 0 70px 56px 70px;
     background-color: #FFFFFF;
     border: 3px solid #FFFFFF;
-    height: 600px;
+    height: auto;
     border-radius: 10px;
 }
 
@@ -1373,7 +1375,7 @@ button .btn, button .btn-lg {
 
 .wrapper-image img {
     width: 100%;
-    height: 370px;
+    /*height: 370px;*/
 }
 
 .whitepaper-info {
@@ -1424,17 +1426,21 @@ button .btn, button .btn-lg {
 .wrapper-download-block{
     border-top: 2px solid #182140;
     padding-top: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .wrapper-download-text{
+    font-family: OpenSans-Regular;
     float: left;
     font-size: 30px;
 }
 
 .wrapper-download-button{
+    font-family: OpenSans-Regular;
     float: right;
     padding: 10px 40px;
-    border-radius: 20px;
     background: linear-gradient(to right, #2CA0C8, #165370);
     color: white;
     border-radius: 32px;
@@ -1834,6 +1840,27 @@ button .btn, button .btn-lg {
 }
 
 @media (max-width: 992px) {
+    .wrapper-download-block{
+        flex-direction: column;
+    }
+
+    .wrapper-download-block{
+        border-top: none;
+        padding-top: 30px;
+    }
+
+    .wrapper-download-all-button{
+        margin-top: 30px;
+    }
+
+    .wrapper-download-button{
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+        padding: 20px 40px;
+    }
 
     .bg-second_1001{
 
@@ -2393,7 +2420,7 @@ button .btn, button .btn-lg {
 }
 
 .team-item-image img{
-    width:100%;
+    max-width: 100%;
     height:330px;
 }
 
@@ -2420,10 +2447,47 @@ button .btn, button .btn-lg {
     height:170px;
 }
 
+.team-item-social > a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width:50px;
+    height:50px;
+}
+
+.modal-content .team-item-social > a{
+    margin: 0 40px;
+}
+
 .team-item-social-block{
     width:52px;
     height:52px;
     background-color: red;
+}
+
+.team-item-social-facebook{
+    width: 50px;
+    height: 50px;
+    background: url('../images/css_sprites.png') -3999px -782px;
+}
+
+.team-item-social-linked{
+    width: 50px;
+    height: 50px;
+    background: url('../images/css_sprites.png') -3999px -852px;
+}
+
+.team-item-social-twitter{
+    width: 50px;
+    height: 50px;
+    background: url('../images/css_sprites.png') -3999px -992px;
+}
+
+.team-item-social-skype{
+    width: 50px;
+    height: 50px;
+    background: url('../images/css_sprites.png') -3999px -922px;
 }
 
 .modal-dialog{
@@ -2469,6 +2533,11 @@ button .btn, button .btn-lg {
 
 .modal-content .team-item-image{
     padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 .modal-description p{
@@ -2478,8 +2547,8 @@ button .btn, button .btn-lg {
 
 .modal-content .team-item-social{
     height: 90px;
-    padding-top: 0;
     justify-content: center;
+    margin: 0 40px;
 }
 
 .modal-content .team-item-social .team-item-social-block{
@@ -2538,7 +2607,8 @@ button .btn, button .btn-lg {
     bottom: 0;
     color: #9C9C9C;
     font-size: 20px;
-    padding-bottom: 40px;
+    padding: 0 15%;
+    margin-bottom: 40px;
 }
 
 
@@ -2555,14 +2625,16 @@ button .btn, button .btn-lg {
     text-decoration: none;
 }
 
-.footer-phone img{
-    height: 100%;
-    margin-bottom: -1px;
+.footer-phone{
+    width:100%;
+    position: relative;
 }
 
 .footer-about-company{
+    font-family: OpenSans-Light;
     font-size: 30px;
     color: #FFFFFF;
+    padding: 0 15%;
 }
 
 .footer-container-social{
@@ -2570,11 +2642,21 @@ button .btn, button .btn-lg {
 }
 
 .footer-connect-text{
-    /*position: absolute;*/
     padding-left: 90px;
     font-size: 30px;
     color: white;
-    transform: rotate(90deg);
+    transform: rotate(270deg);
+    width: 100%;
+
+    position: relative;
+    left: 0;
+    bottom: -500px;
+    top: auto;
+}
+
+.footer-connect-text p{
+    white-space: nowrap;
+    font-size: 45px;
 }
 
 .footer-wrapper{
@@ -2591,6 +2673,8 @@ button .btn, button .btn-lg {
     left: 0;
     right: 0;
     display: table;
+    background-color: #0C0C0C;
+    border-radius: 45px;
 }
 
 .footer-logo-block{
@@ -2607,33 +2691,56 @@ button .btn, button .btn-lg {
 }
 
 .footer-wrapper-social{
-    height:90px;
+    /*height:90px;*/
     width:100%;
     margin-bottom: 40px;
 }
 
 .footer-social-item{
-    display: block;
+    display: flex;
     width:100%;
     height: 100%;
 }
 
+.social-item-facebook{
+    width: 90px; height: 90px;
+    background: url('../images/css_sprites.png') -3999px -782px;
+}
+
+.social-item-instagram{
+    width: 90px; height: 90px;
+    background: url('../images/css_sprites.png') -3630px -2540px;
+}
+
+.social-item-twitter{
+    width: 90px; height: 90px;
+    background: url('../images/css_sprites.png') -3999px -1062px;
+}
+
+.social-item-google{
+    width: 90px; height: 90px;
+    background: url('../images/css_sprites.png') -3870px -2420px;
+}
+
+
 .footer-social-item-image{
-    height: 100%;
-    width:90px;
     float: left;
     margin-right: 30px;
+    /*width:50px;*/
+    /*height:50px;*/
 }
 
 .footer-social-item-link{
     color: #FFFFFF;
     font-size: 40px;
     float: left;
-    height: 100%;
+    height: 90px;
     display: flex;
     flex-direction: column;
     justify-content:center;
     align-items: center;
+    /*width: 50px;*/
+    /*height: 50px;*/
 }
 
 .footer-phone{
@@ -2643,12 +2750,16 @@ button .btn, button .btn-lg {
 .footer-phone img{
     width: 100%;
     position: relative;
+    height:100%;
 }
 
 .footer-phone-button{
     position: absolute;
     bottom: 100px;
-    margin: 0 43px;
+    display: flex;
+    width:100%;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .phone-button{
@@ -2932,6 +3043,15 @@ button .btn, button .btn-lg {
         font-size: 18px;
     }
 
+    .footer-connect-text{
+        display: none;
+    }
+
+    .footer-social-item{
+        align-items: center;
+        justify-content: center;
+    }
+
     .roadmap h2{
         font-size: 48px;
     }
@@ -3079,7 +3199,7 @@ button .btn, button .btn-lg {
 @media (max-width: 480px) {
     .footer-phone-button{
         bottom: 20px;
-        margin: 0 60px;
+        color: #ffffff;
     }
 
     .phone-button span{
