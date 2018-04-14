@@ -1183,6 +1183,11 @@ button .btn, button .btn-lg {
 
 }
 
+.roadmap .draggable{
+    padding-left: 390px !important;
+    height: 700px !important;
+}
+
 .our_vision_slider .slick-active:hover, .our_vision_slider .slick-active:focus, .our_vision_slider .slick-active:active{
     outline: 0;
     outline-offset: 0;
@@ -1221,7 +1226,7 @@ button .btn, button .btn-lg {
     font-size: 20px;
     padding: 0;
     padding-top: 10px;
-    overflow: hidden;
+    overflow: scroll;
     border-radius: 10px;
     height: 190px;
 }
@@ -1392,12 +1397,14 @@ button .btn, button .btn-lg {
 }
 
 .whitepaper h2 {
+    font-family: OpenSans-Regular;
     font-size: 60px;
     color: #FFFFFF;
     line-height: 82px;
 }
 
 .whitepaper h5 {
+    font-family: OpenSans-Light;
     font-size: 30px;
     color: #FFFFFF;
     line-height: 41px;
@@ -1411,7 +1418,7 @@ button .btn, button .btn-lg {
     padding: 0 70px 56px 70px;
     background-color: #FFFFFF;
     border: 3px solid #FFFFFF;
-    height: 600px;
+    height: auto;
     border-radius: 10px;
 }
 
@@ -1421,7 +1428,7 @@ button .btn, button .btn-lg {
 
 .wrapper-image img {
     width: 100%;
-    height: 370px;
+    /*height: 370px;*/
 }
 
 .whitepaper-info {
@@ -1472,17 +1479,21 @@ button .btn, button .btn-lg {
 .wrapper-download-block{
     border-top: 2px solid #182140;
     padding-top: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .wrapper-download-text{
+    font-family: OpenSans-Regular;
     float: left;
     font-size: 30px;
 }
 
 .wrapper-download-button{
+    font-family: OpenSans-Regular;
     float: right;
     padding: 10px 40px;
-    border-radius: 20px;
     background: linear-gradient(to right, #2CA0C8, #165370);
     color: white;
     border-radius: 32px;
@@ -1540,6 +1551,10 @@ button .btn, button .btn-lg {
 
 .roadmap{
     display: flex;
+}
+
+.roadmap_slider{
+    padding: 0 40px;
 }
 
 .accordion-road{
@@ -1790,6 +1805,14 @@ button .btn, button .btn-lg {
     .Repobank-wrapper .image img {
         width: 700px;
     }
+
+    .roadmap .draggable {
+        padding-left: 150px !important;
+    }
+
+    .roadmap_slider {
+        padding: 0px 15px;
+    }
 }
 
 @media (max-width: 1400px){
@@ -1852,6 +1875,12 @@ button .btn, button .btn-lg {
     }
 }
 
+@media (max-width: 1200px){
+    .roadmap .draggable {
+        padding-left: 360px !important;
+    }
+}
+
 @media (max-width: 1050px){
     .header-body {
         padding-left: 30px;
@@ -1882,6 +1911,27 @@ button .btn, button .btn-lg {
 }
 
 @media (max-width: 992px) {
+    .wrapper-download-block{
+        flex-direction: column;
+    }
+
+    .wrapper-download-block{
+        border-top: none;
+        padding-top: 30px;
+    }
+
+    .wrapper-download-all-button{
+        margin-top: 30px;
+    }
+
+    .wrapper-download-button{
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+        padding: 20px 40px;
+    }
 
         .btn-download{
     max-width: 45%!important;
@@ -1971,6 +2021,10 @@ button .btn, button .btn-lg {
 
     .Repobank-wrapper .image img {
         width: 450px;
+    }
+
+    .roadmap .draggable {
+        padding-left: 260px !important;
     }
 }
 
@@ -2063,6 +2117,10 @@ button .btn, button .btn-lg {
     .launch-video img{
         width: 70%;
     }
+
+    .roadmap .draggable {
+        padding-left: 60px !important;
+    }
 }
 
 @media (max-width: 576px){
@@ -2132,6 +2190,14 @@ button .btn, button .btn-lg {
 
     .launch-video img{
         width: 50%;
+    }
+
+    .roadmap .draggable {
+        padding-left: 45px !important;
+    }
+
+    .roadmap_slider {
+        padding: 0 !important;
     }
 
     /* Instant_Crypto_Overdrafts */
@@ -2251,6 +2317,10 @@ button .btn, button .btn-lg {
     color: #182140;
 }
 
+.roadmap .slick-dots {
+    position: relative;
+}
+
 #particles-js{
     width: 100%;
     height: 1105px;
@@ -2290,7 +2360,12 @@ button .btn, button .btn-lg {
 .roadmap .slick-slide{
     z-index: 3;
     position: relative;
-    margin-top: 110px;
+    margin-top: 120px;
+}
+
+
+.roadmap .slick-slide:nth-child(4){
+    z-index: 4;
 }
 
 .roadmap .slick-active{
@@ -2316,6 +2391,7 @@ button .btn, button .btn-lg {
     background: #fff;
     box-shadow: 0 10px 15px 0 rgba(0,0,0,0.4);
     margin-bottom: 30px;
+    margin-left: -40px;
 }
 
 .roadmap .slick-slide h2{
@@ -2327,6 +2403,14 @@ button .btn, button .btn-lg {
     font-family: OpenSans-Bold;
 }
 
+.roadmap .slick-slide{
+    position: relative;
+    margin-right: -40px;
+}
+
+
+
+
 .roadmap .slick-center h2{
     background: linear-gradient(to bottom right, #fc4f44, #d34239);
     border-bottom-right-radius: 0;
@@ -2336,6 +2420,7 @@ button .btn, button .btn-lg {
     font-size: 50px;
     height: auto;
     font-family: OpenSans-Bold;
+    white-space: nowrap;
 }
 
 .roadmap_title{
@@ -2466,7 +2551,7 @@ button .btn, button .btn-lg {
 }
 
 .team-item-image img{
-    width:100%;
+    max-width: 100%;
     height:330px;
 }
 
@@ -2493,10 +2578,47 @@ button .btn, button .btn-lg {
     height:170px;
 }
 
+.team-item-social > a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width:50px;
+    height:50px;
+}
+
+.modal-content .team-item-social > a{
+    margin: 0 40px;
+}
+
 .team-item-social-block{
     width:52px;
     height:52px;
     background-color: red;
+}
+
+.team-item-social-facebook{
+    width: 50px;
+    height: 50px;
+    background: url('../images/css_sprites.png') -3999px -782px;
+}
+
+.team-item-social-linked{
+    width: 50px;
+    height: 50px;
+    background: url('../images/css_sprites.png') -3999px -852px;
+}
+
+.team-item-social-twitter{
+    width: 50px;
+    height: 50px;
+    background: url('../images/css_sprites.png') -3999px -992px;
+}
+
+.team-item-social-skype{
+    width: 50px;
+    height: 50px;
+    background: url('../images/css_sprites.png') -3999px -922px;
 }
 
 .modal-dialog{
@@ -2542,6 +2664,11 @@ button .btn, button .btn-lg {
 
 .modal-content .team-item-image{
     padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 .modal-description p{
@@ -2551,8 +2678,8 @@ button .btn, button .btn-lg {
 
 .modal-content .team-item-social{
     height: 90px;
-    padding-top: 0;
     justify-content: center;
+    margin: 0 40px;
 }
 
 .modal-content .team-item-social .team-item-social-block{
@@ -2611,7 +2738,8 @@ button .btn, button .btn-lg {
     bottom: 0;
     color: #9C9C9C;
     font-size: 20px;
-    padding-bottom: 40px;
+    padding: 0 15%;
+    margin-bottom: 40px;
 }
 
 
@@ -2628,14 +2756,16 @@ button .btn, button .btn-lg {
     text-decoration: none;
 }
 
-.footer-phone img{
-    height: 100%;
-    margin-bottom: -1px;
+.footer-phone{
+    width:100%;
+    position: relative;
 }
 
 .footer-about-company{
+    font-family: OpenSans-Light;
     font-size: 30px;
     color: #FFFFFF;
+    padding: 0 15%;
 }
 
 .footer-container-social{
@@ -2643,11 +2773,21 @@ button .btn, button .btn-lg {
 }
 
 .footer-connect-text{
-    /*position: absolute;*/
     padding-left: 90px;
     font-size: 30px;
     color: white;
-    transform: rotate(90deg);
+    transform: rotate(270deg);
+    width: 100%;
+
+    position: relative;
+    left: 0;
+    bottom: -500px;
+    top: auto;
+}
+
+.footer-connect-text p{
+    white-space: nowrap;
+    font-size: 45px;
 }
 
 .footer-wrapper{
@@ -2664,6 +2804,8 @@ button .btn, button .btn-lg {
     left: 0;
     right: 0;
     display: table;
+    background-color: #0C0C0C;
+    border-radius: 45px;
 }
 
 .footer-logo-block{
@@ -2680,33 +2822,56 @@ button .btn, button .btn-lg {
 }
 
 .footer-wrapper-social{
-    height:90px;
+    /*height:90px;*/
     width:100%;
     margin-bottom: 40px;
 }
 
 .footer-social-item{
-    display: block;
+    display: flex;
     width:100%;
     height: 100%;
 }
 
+.social-item-facebook{
+    width: 90px; height: 90px;
+    background: url('../images/css_sprites.png') -3999px -782px;
+}
+
+.social-item-instagram{
+    width: 90px; height: 90px;
+    background: url('../images/css_sprites.png') -3630px -2540px;
+}
+
+.social-item-twitter{
+    width: 90px; height: 90px;
+    background: url('../images/css_sprites.png') -3999px -1062px;
+}
+
+.social-item-google{
+    width: 90px; height: 90px;
+    background: url('../images/css_sprites.png') -3870px -2420px;
+}
+
+
 .footer-social-item-image{
-    height: 100%;
-    width:90px;
     float: left;
     margin-right: 30px;
+    /*width:50px;*/
+    /*height:50px;*/
 }
 
 .footer-social-item-link{
     color: #FFFFFF;
     font-size: 40px;
     float: left;
-    height: 100%;
+    height: 90px;
     display: flex;
     flex-direction: column;
     justify-content:center;
     align-items: center;
+    /*width: 50px;*/
+    /*height: 50px;*/
 }
 
 .footer-phone{
@@ -2716,12 +2881,16 @@ button .btn, button .btn-lg {
 .footer-phone img{
     width: 100%;
     position: relative;
+    height:100%;
 }
 
 .footer-phone-button{
     position: absolute;
     bottom: 100px;
-    margin: 0 43px;
+    display: flex;
+    width:100%;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .phone-button{
@@ -3011,6 +3180,15 @@ button .btn, button .btn-lg {
         font-size: 18px;
     }
 
+    .footer-connect-text{
+        display: none;
+    }
+
+    .footer-social-item{
+        align-items: center;
+        justify-content: center;
+    }
+
     .roadmap h2{
         font-size: 48px;
     }
@@ -3186,7 +3364,7 @@ button .btn, button .btn-lg {
 
     .footer-phone-button{
         bottom: 20px;
-        margin: 0 60px;
+        color: #ffffff;
     }
 
     .phone-button span{
