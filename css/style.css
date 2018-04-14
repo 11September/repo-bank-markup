@@ -1654,7 +1654,15 @@ button .btn, button .btn-lg {
     }
 }
 
-@media (max-width: 1500px){
+@media (max-width: 1600px){
+
+    .bg-first_1001{
+        background-position-x: 1%;
+        background-size: 874px 979px;
+        background-position-y: -40px;
+        height: 400px;
+        margin-top: 110px;
+    }
 
     .menu-list .menu-item .link{
         font-size: 20px;
@@ -1853,6 +1861,8 @@ button .btn, button .btn-lg {
     .description-out-img p{
         text-align: left;
         font-size: 18px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
     .text-p {
         display: none;
