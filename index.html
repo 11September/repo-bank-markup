@@ -1577,10 +1577,16 @@
       focusOnSelect: true,
       slidesToShow: 3,
       responsive: [
+      {
+          breakpoint: 1200,
+          settings: {
+            arrows: false,
+          }
+        },
         {
           breakpoint: 992,
           settings: {
-            arrows: true,
+            arrows: false,
             centerMode: true,
             centerPadding: '160px',
             slidesToShow: 1
