@@ -3304,6 +3304,10 @@ button .btn, button .btn-lg {
     .roadmap_scroll {
         margin-bottom: 35px;
     }
+
+    .overdraft_panel select {
+        font-size: 24px;
+    }
 }
 
 @media (max-width: 400px) {
