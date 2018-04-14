@@ -217,14 +217,16 @@
 
 .Instant_Crypto_Overdrafts h2{
     padding-bottom: 30px;
-    font-size: 60px;
-    font-family: OpenSans-Bold; 
-    
+    font-size: 60px;    
 }
 
 .h2-text, .description-p {
     text-align: center;
     font-size: 24px;
+}
+
+.Instant_Crypto_Overdrafts .description-p{
+    line-height: 1.5;
 }
 
 .Instant_Crypto_Overdrafts_full_img{
@@ -257,7 +259,7 @@
 
 .icon_items p{
     padding-top: 25px;
-    color: #979797;
+    color: #808080;
     line-height: 1.2;
     font-weight: 400;
     font-size: 24px;
@@ -293,6 +295,31 @@
     background: #fff;
     border: none;
     font-size: 36px;
+    font-family: OpenSans-Regular;
+}
+
+.overdraft_panel select{
+    padding: 12px 90px 12px 50px;
+    border-radius: 50px;
+    background: #fff;
+    border: none;
+    font-size: 36px;
+    font-family: OpenSans-Regular;
+    width: 100%;
+
+    /*-webkit-appearance: none;*/
+    /*-moz-appearance: none;*/
+    /*appearance: none;*/
+
+    /*-webkit-appearance: searchfield;*/
+}
+
+.overdraft_panel select::-ms-expand {
+  display: none;
+}
+
+.overdraft_panel .new_crypto_overdraft {
+    /*display: none;*/
 }
 
 .overdraft_panel input:hover,
@@ -304,12 +331,12 @@
 
 .overdraft_panel .new_crypto_overdraft {
     position: absolute;
-    left: 423px;
+    left: 392px;
     top: 77px;
     font-size: 24px;
     font-weight: 500;
     padding: 20px 50px;
-    background: linear-gradient(to right, #525252, #131313);
+    background: linear-gradient(to right, #626262, #131313);
     border: none;
     border-radius: 50px;
     color: #fff;
@@ -317,7 +344,7 @@
 }
 
 .overdraft_panel .new_crypto_overdraft:hover{
-    background: linear-gradient(to left, #525252, #131313);
+    background: linear-gradient(to left, #626262, #131313);
     transition-duration: .2s;
 }
 
@@ -332,6 +359,10 @@
 .overdraft_panel .new_crypto_overdraft:active{
     outline: 0;
     outline-offset: 0;
+}
+
+.row.overdraft_panel{
+    font-family: OpenSans-Bold;
 }
 
 .Instant_Crypto_Overdrafts .modal-dialog{
@@ -1083,10 +1114,18 @@ button .btn, button .btn-lg {
     background-size: 100% 100%;
     background-repeat: no-repeat;
     color: #fff;
+    font-family: OpenSans-Regular;
+}
+
+.our_vision_slider .slick-slide{
+    cursor: pointer;
 }
 
 .our_vision_slider h2{
     font-size: 60px;
+}
+.our_vision_slider a{
+    text-decoration: none;
 }
 
 .our_vision_slider .container > p{
@@ -1130,7 +1169,7 @@ button .btn, button .btn-lg {
 .our_vision_slider .our_vision_slider_panel h2{
     font-size: 65px;
     color: #2ca5e0;
-    font-weight: bold;
+    font-family: OpenSans-Bold;
 }
 
 .our_vision_slider .our_vision_slider_panel .slick-active:hover h2{
@@ -1167,6 +1206,7 @@ button .btn, button .btn-lg {
 
 .our_vision_slider .slick-active:hover .text_signature{
     color: #fd877f;
+    transition-duration: .2s;
 }
 
 .our_vision_slider_panel .slick-slide{
@@ -1176,10 +1216,7 @@ button .btn, button .btn-lg {
     margin-top: 50px;
     height: 525px;
     opacity: 0.9;
-}
-
-.our_vision_slider_panel button{
-    display: none !important;
+    /*transition-duration: .5s;*/
 }
 
 .our_vision_slider_panel .slick-center{
@@ -1189,16 +1226,22 @@ button .btn, button .btn-lg {
     border-radius: 15px;
     padding: 102px 22px 52px;
     height: 635px;
+    box-shadow: 0 0 15px 1px rgba(17, 17, 17, 0.4);
+    /*transition-duration: .5s;*/
+    position: relative;
+    z-index: 5;
 }
 
 .our_vision_slider_panel .slick-slide:hover{
     border:  2px solid #f1918b;
     padding: 50px 20px 50px;
+    transition-duration: .2s;
 }
 
 .our_vision_slider_panel .slick-center:hover{
     border:  2px solid #f1918b;
     padding: 100px 20px 50px;
+    transition-duration: .2s;
 }
 
 .our_vision_slider_panel .slick-center .text_signature{
@@ -1208,6 +1251,7 @@ button .btn, button .btn-lg {
 .our_vision_slider .slick-slide:hover .circle_signature{
     color: #fff;
     line-height: 0.9;
+    transition-duration: .2s;
 }
 
 .our_vision_slider  .circle_signature{
@@ -1268,6 +1312,49 @@ button .btn, button .btn-lg {
 
 .our_vision_slider .button_position i{
     font-size: 30px;
+}
+
+.our_vision_slider .slick-dots li{
+    margin: 0 5px;
+}
+
+.our_vision_slider .slick-dots li button:before {
+    line-height: 15px;
+    width: 15px;
+    height: 15px;
+}
+
+.our_vision_slider .slick-dots li button:before{
+    font-size: 12px;
+    color: transparent;
+    background: transparent !important;
+    border-radius: 15px;
+    border: 3px solid #fc4f44;
+}
+
+.our_vision_slider .slick-dots li.slick-active button:before {
+    background: #fc4f44 !important;
+    color: #fc4f44;
+}
+
+.our_vision_slider img.slick-prev,
+.our_vision_slider img.slick-next{
+    width: 40px;
+    height: auto;
+    opacity: 0.8;
+}
+
+.our_vision_slider img.slick-prev:hover,
+.our_vision_slider img.slick-next:hover{
+    opacity: 1;
+}
+
+.our_vision_slider img.slick-next{
+    right: -75px;
+}
+
+.our_vision_slider img.slick-prev{
+    left: -75px;
 }
 /* our_vision_slider end */
 
@@ -1963,6 +2050,16 @@ button .btn, button .btn-lg {
     .text-solution {
         font-size: 20px;
     }
+
+    /* our_vision_slider */
+    .our_vision_slider .button_position {
+        display: block;
+    }
+
+    .our_vision_slider .button_position .row {
+        width: auto;
+    }
+    /* our_vision_slider end */
 }
 
 @media (max-width: 480px) {
@@ -2100,11 +2197,13 @@ button .btn, button .btn-lg {
 /* roadmap */
 .roadmap{
     padding: 80px 0 80px;
+    font-family: OpenSans-Regular;
+    color: #182140;
 }
 
 #particles-js{
     width: 100%;
-    height: 980px;
+    height: 1105px;
     background-color: transparent;
     background-image: url('');
     background-size: cover;
@@ -2116,9 +2215,8 @@ button .btn, button .btn-lg {
 .roadmap h2{
     text-transform: uppercase;
     color: #111111;
-    padding-bottom: 45px;
-    font-weight: 600;
-    color: #000;
+    padding-bottom: 40px;
+    color: #182140;
     border-radius: 20px;
     font-size: 60px;
 }
@@ -2146,7 +2244,7 @@ button .btn, button .btn-lg {
 }
 
 .roadmap .slick-active{
-    margin-top: 78px;
+    margin-top: 115px;
 }
 
 .roadmap .slick-active:hover, .roadmap .slick-active:focus, .roadmap .slick-active:active{
@@ -2166,36 +2264,41 @@ button .btn, button .btn-lg {
     margin: 0;
     z-index: 5;
     background: #fff;
-    box-shadow: 0 0 10px 1px rgba(0,0,0,0.5);
+    box-shadow: 0 10px 15px 0 rgba(0,0,0,0.4);
     margin-bottom: 30px;
 }
 
 .roadmap .slick-slide h2{
-    padding: 88px 0 270px;
     box-shadow: 0 0 5px rgba(0,0,0,0.5);
     overflow: hidden;
-    height: 110px;
+    padding: 100px 0px 0;
+    height: 495px;
+    text-transform: initial;
+    font-family: OpenSans-Bold;
 }
 
 .roadmap .slick-center h2{
-    background: linear-gradient(to bottom right, #fc4f44, #7e2822);
+    background: linear-gradient(to bottom right, #fc4f44, #d34239);
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
-    padding: 20px 0;
+    padding: 30px 0px;
     box-shadow: none;
+    font-size: 50px;
+    height: auto;
+    font-family: OpenSans-Bold;
 }
 
 .roadmap_title{
     font-weight: bold;
-    padding-top: 30px;
-    padding-bottom: 22px;
+    padding-top: 35px;
+    padding-bottom: 20px;
     font-size: 30px;
 }
 
 .roadmap_scroll{
     overflow: scroll;
     overflow-x: hidden;
-    margin-bottom: 45px;
+    margin-bottom: 60px;
     border-radius: 10px;
     margin-right: 15px;
 }
@@ -2220,7 +2323,7 @@ button .btn, button .btn-lg {
 .roadmap_text{
     padding: 0 10px 35px 30px;
     display: flex;
-    height: 280px;
+    height: 380px;
     text-align: left;
     font-size: 20px;
 }
@@ -2233,14 +2336,45 @@ button .btn, button .btn-lg {
     margin: 0 5px;
 }
 
+.roadmap .slick-dots li button:before {
+    line-height: 15px;
+    width: 15px;
+    height: 15px;
+}
+
 .roadmap .slick-dots li button:before{
     font-size: 12px;
-    color: #fc4f44;
+    color: transparent;
+    background: transparent !important;
+    border-radius: 15px;
+    border: 3px solid #fc4f44;
 }
 
 .roadmap .slick-dots li.slick-active button:before {
-    opacity: 1;
+    background: #fc4f44 !important;
     color: #fc4f44;
+}
+
+.slick-slide .roadmap_number{
+    display: block;
+    position: absolute;
+    margin-top: -200px;
+    left: 15px;
+    font-size: 190px;
+    color: #E1E1E1;
+    font-family: OpenSans-Bold;
+    opacity: 0.5;
+}
+
+.slick-center .roadmap_number{
+    opacity: 0.2;
+    margin-top: -250px;
+    left: 25px;
+}
+
+.right .roadmap_number{
+    left: inherit;
+    right: 15px;
 }
 /* roadmap end */
 
@@ -2573,12 +2707,16 @@ button .btn, button .btn-lg {
         width: 25%;
     }
 
+    .overdraft_panel input {
+        padding: 12px 50px 12px 50px;
+    }
+
     .Instant_Crypto_Overdrafts .modal_3 .modal-footer button {
         width: 75%;
     }
 
     .overdraft_panel .new_crypto_overdraft {
-        top: 120px;
+        top: 77px;
     }
 
     .our_vision_slider_panel .slick-slide{
@@ -2637,7 +2775,8 @@ button .btn, button .btn-lg {
     }
 
     .overdraft_panel .new_crypto_overdraft{
-        top: 120px;
+        top: 77px;
+        left: 465px;
     }
 
     .button_position h3{
@@ -2761,6 +2900,7 @@ button .btn, button .btn-lg {
 
      .overdraft_panel .new_crypto_overdraft{
         top: 77px;
+        left: 382px;
     }
 
     .roadmap_view_p{
@@ -2892,6 +3032,27 @@ button .btn, button .btn-lg {
 }
 
 @media (max-width: 480px) {
+     /* our_vision_slider */
+    .our_vision_slider h2 {
+        font-size: 40px;
+    }
+
+    .our_vision_slider_panel .slick-center .text_signature {
+        font-size: 16px;
+        height: auto;
+    }
+
+    .our_vision_slider_panel .slick-center, 
+    .our_vision_slider_panel .slick-slide{
+        height: auto;
+        padding: 50px 18px 45px;
+    }
+
+    .slick-dotted.slick-slider {
+        margin-bottom: 0;
+    }
+    /* our_vision_slider end */
+
     .Instant_Crypto_Overdrafts .div_overdrafts_total {
         padding-left: 15px;
     }
@@ -2957,6 +3118,7 @@ button .btn, button .btn-lg {
 @media (max-width: 400px) {
     .overdraft_panel .new_crypto_overdraft{
         top: 71%;
+        margin-right: 2px;
     }
 }
 
