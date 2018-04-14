@@ -1009,7 +1009,7 @@ button .btn, button .btn-lg {
     padding-bottom: 75px;
 }
 .btn-download {
-    max-width: 27.333333%!important;
+    max-width: 30%!important;
 
     border-radius: 50px;
     background: rgba(44, 165, 224, 1);
