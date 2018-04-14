@@ -1161,6 +1161,11 @@ button .btn, button .btn-lg {
 
 }
 
+.roadmap .draggable{
+    padding-left: 390px !important;
+    height: 700px !important;
+}
+
 .our_vision_slider .slick-active:hover, .our_vision_slider .slick-active:focus, .our_vision_slider .slick-active:active{
     outline: 0;
     outline-offset: 0;
@@ -1520,6 +1525,10 @@ button .btn, button .btn-lg {
     display: flex;
 }
 
+.roadmap_slider{
+    padding: 0 40px;
+}
+
 .accordion-road{
     width: 40%;
 }
@@ -1768,6 +1777,14 @@ button .btn, button .btn-lg {
     .Repobank-wrapper .image img {
         width: 700px;
     }
+
+    .roadmap .draggable {
+        padding-left: 150px !important;
+    }
+
+    .roadmap_slider {
+        padding: 0px 15px;
+    }
 }
 
 @media (max-width: 1400px){
@@ -1827,6 +1844,12 @@ button .btn, button .btn-lg {
 
     .title-row{
         flex-wrap: nowrap;
+    }
+}
+
+@media (max-width: 1200px){
+    .roadmap .draggable {
+        padding-left: 360px !important;
     }
 }
 
@@ -1945,6 +1968,10 @@ button .btn, button .btn-lg {
     .Repobank-wrapper .image img {
         width: 450px;
     }
+
+    .roadmap .draggable {
+        padding-left: 260px !important;
+    }
 }
 
 @media (max-width: 768px) {
@@ -2025,6 +2052,10 @@ button .btn, button .btn-lg {
     .launch-video img{
         width: 70%;
     }
+
+    .roadmap .draggable {
+        padding-left: 60px !important;
+    }
 }
 
 @media (max-width: 576px){
@@ -2090,6 +2121,14 @@ button .btn, button .btn-lg {
 
     .launch-video img{
         width: 50%;
+    }
+
+    .roadmap .draggable {
+        padding-left: 45px !important;
+    }
+
+    .roadmap_slider {
+        padding: 0 !important;
     }
 
     /* Instant_Crypto_Overdrafts */
@@ -2240,7 +2279,12 @@ button .btn, button .btn-lg {
 .roadmap .slick-slide{
     z-index: 3;
     position: relative;
-    margin-top: 110px;
+    margin-top: 120px;
+}
+
+
+.roadmap .slick-slide:nth-child(4){
+    z-index: 4;
 }
 
 .roadmap .slick-active{
@@ -2266,6 +2310,7 @@ button .btn, button .btn-lg {
     background: #fff;
     box-shadow: 0 10px 15px 0 rgba(0,0,0,0.4);
     margin-bottom: 30px;
+    margin-left: -40px;
 }
 
 .roadmap .slick-slide h2{
@@ -2277,6 +2322,14 @@ button .btn, button .btn-lg {
     font-family: OpenSans-Bold;
 }
 
+.roadmap .slick-slide{
+    position: relative;
+    margin-right: -40px;
+}
+
+
+
+
 .roadmap .slick-center h2{
     background: linear-gradient(to bottom right, #fc4f44, #d34239);
     border-bottom-right-radius: 0;
@@ -2286,6 +2339,7 @@ button .btn, button .btn-lg {
     font-size: 50px;
     height: auto;
     font-family: OpenSans-Bold;
+    white-space: nowrap;
 }
 
 .roadmap_title{
