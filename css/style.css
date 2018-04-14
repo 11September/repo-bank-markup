@@ -922,6 +922,32 @@ button .btn, button .btn-lg {
 
 /* section our vision */
 
+.items-icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.bg-model img{
+    width: 100%;
+    height: 100%;
+}
+
+.spic-cof {
+    width: 100px!important;
+    height: 100px!important;
+    border-radius:100%;
+    font-size: 50px;
+    color: #fff;
+    opacity: 0.9;
+    text-align: center;
+    background: #2CA5E0;
+
+}
+.first-1001 img{
+    width: 100%;
+    height: 100%;
+}
+
 .h2-vision {
     color: white;
 
@@ -1133,6 +1159,11 @@ button .btn, button .btn-lg {
     height: 162px;
     background: linear-gradient(to bottom right, #ed5a51, #0c3c3d);
 
+}
+
+.roadmap .draggable{
+    padding-left: 390px !important;
+    height: 700px !important;
 }
 
 .our_vision_slider .slick-active:hover, .our_vision_slider .slick-active:focus, .our_vision_slider .slick-active:active{
@@ -1500,6 +1531,10 @@ button .btn, button .btn-lg {
     display: flex;
 }
 
+.roadmap_slider{
+    padding: 0 40px;
+}
+
 .accordion-road{
     width: 40%;
 }
@@ -1748,6 +1783,14 @@ button .btn, button .btn-lg {
     .Repobank-wrapper .image img {
         width: 700px;
     }
+
+    .roadmap .draggable {
+        padding-left: 150px !important;
+    }
+
+    .roadmap_slider {
+        padding: 0px 15px;
+    }
 }
 
 @media (max-width: 1400px){
@@ -1807,6 +1850,12 @@ button .btn, button .btn-lg {
 
     .title-row{
         flex-wrap: nowrap;
+    }
+}
+
+@media (max-width: 1200px){
+    .roadmap .draggable {
+        padding-left: 360px !important;
     }
 }
 
@@ -1946,6 +1995,10 @@ button .btn, button .btn-lg {
     .Repobank-wrapper .image img {
         width: 450px;
     }
+
+    .roadmap .draggable {
+        padding-left: 260px !important;
+    }
 }
 
 @media (max-width: 768px) {
@@ -2026,6 +2079,10 @@ button .btn, button .btn-lg {
     .launch-video img{
         width: 70%;
     }
+
+    .roadmap .draggable {
+        padding-left: 60px !important;
+    }
 }
 
 @media (max-width: 576px){
@@ -2091,6 +2148,14 @@ button .btn, button .btn-lg {
 
     .launch-video img{
         width: 50%;
+    }
+
+    .roadmap .draggable {
+        padding-left: 45px !important;
+    }
+
+    .roadmap_slider {
+        padding: 0 !important;
     }
 
     /* Instant_Crypto_Overdrafts */
@@ -2204,7 +2269,7 @@ button .btn, button .btn-lg {
 
 #particles-js{
     width: 100%;
-    height: 980px;
+    height: 1105px;
     background-color: transparent;
     background-image: url('');
     background-size: cover;
@@ -2241,7 +2306,12 @@ button .btn, button .btn-lg {
 .roadmap .slick-slide{
     z-index: 3;
     position: relative;
-    margin-top: 110px;
+    margin-top: 120px;
+}
+
+
+.roadmap .slick-slide:nth-child(4){
+    z-index: 4;
 }
 
 .roadmap .slick-active{
@@ -2267,6 +2337,7 @@ button .btn, button .btn-lg {
     background: #fff;
     box-shadow: 0 10px 15px 0 rgba(0,0,0,0.4);
     margin-bottom: 30px;
+    margin-left: -40px;
 }
 
 .roadmap .slick-slide h2{
@@ -2278,8 +2349,16 @@ button .btn, button .btn-lg {
     font-family: OpenSans-Bold;
 }
 
+.roadmap .slick-slide{
+    position: relative;
+    margin-right: -40px;
+}
+
+
+
+
 .roadmap .slick-center h2{
-    background: linear-gradient(to bottom right, #fc4f44, #7e2822);
+    background: linear-gradient(to bottom right, #fc4f44, #d34239);
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
     padding: 30px 0px;
@@ -2287,6 +2366,7 @@ button .btn, button .btn-lg {
     font-size: 50px;
     height: auto;
     font-family: OpenSans-Bold;
+    white-space: nowrap;
 }
 
 .roadmap_title{
@@ -2368,18 +2448,15 @@ button .btn, button .btn-lg {
 }
 
 .slick-center .roadmap_number{
-    display: none;
+    opacity: 0.2;
+    margin-top: -250px;
+    left: 25px;
 }
 
-/*.roadmap_slider_item.slick-active[aria-hidden="true"] .roadmap_number{
-     left: 15px;
-     color: blue;
-}*/
-
-/*.roadmap_slider_item.slick-active:last-child .roadmap_number{
-     left: inherit;
-     right: 15px;
-}*/
+.right .roadmap_number{
+    left: inherit;
+    right: 15px;
+}
 /* roadmap end */
 
 /* Section team */
