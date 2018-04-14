@@ -964,7 +964,7 @@ button .btn, button .btn-lg {
     font-family: 'OpenSans-Light';
     font-size: 30px;
 
-    margin-top: 45px;
+    margin-top: 40px;
 }
 
 
@@ -1002,11 +1002,15 @@ button .btn, button .btn-lg {
 
 .Business-model {
     width: 100%;
-    min-height: 1000px;
+    min-height: 100%;
 }
 
+.padding-rows{
+    padding-bottom: 75px;
+}
 .btn-download {
-    margin-bottom: 40px;
+    max-width: 27.333333%!important;
+
     border-radius: 50px;
     background: rgba(44, 165, 224, 1);
     background: -moz-linear-gradient(left, rgba(44, 165, 224, 1) 0%, rgba(44, 165, 224, 1) 5%, rgba(41, 155, 210, 1) 19%, rgba(35, 133, 180, 1) 48%, rgba(22, 83, 112, 1) 100%);
@@ -1029,14 +1033,15 @@ button .btn, button .btn-lg {
     font-family: 'OpenSans-Light';
     font-size: 30px;
     color:#182140;
-    margin-top: 45px;
+    margin-top: 25px;
 }
 .GET-BM {
     font-family: 'OpenSans-Regular';
-    font-size:35px;
+    font-size:50px;
     font-weight: Bold;
     margin-top: 30px;
     margin-bottom: 40px;
+    text-align: center;
 }
 
 .load {
@@ -1059,6 +1064,9 @@ button .btn, button .btn-lg {
     min-height: 1200px;
     background: black;
 }
+
+
+
 .Credit-card h2{
     font-family: 'OpenSans-Regular';
     font-size: 60px;
@@ -1082,6 +1090,20 @@ button .btn, button .btn-lg {
     color: white;
 }
 
+.jeniur::before{
+    content: "";
+    border-bottom: 2px solid #2CA5E0;
+    width: 35%;
+    height: 0.5em;
+    position: absolute;
+    top:45px;
+    margin-right: 25px;
+
+}
+
+.margin-row-about-us{
+    padding-bottom: 100px;
+}
 .features-p{
     font-size: 30px;
     font-family: 'OpenSans-Regular';
@@ -1861,9 +1883,14 @@ button .btn, button .btn-lg {
 
 @media (max-width: 992px) {
 
-    .bg-second_1001{
+        .btn-download{
+    max-width: 45%!important;
+    height: 120px;  }
 
+    .GET-BM{
+        FONT-SIZE: 32px!important;
     }
+
     .menu-list{
         flex-direction: column;
         position: relative;
@@ -1949,6 +1976,17 @@ button .btn, button .btn-lg {
 
 @media (max-width: 768px) {
 
+    .btn-download{
+        max-width: 49%!important;
+        height: 100px;
+    }
+
+    .GET-BM{
+        font-size: 25px!important;
+    }
+    .load{
+        font-size: 40px!important;
+    }
     .description-out-img p{
         text-align: left;
         font-size: 18px;
@@ -2028,6 +2066,10 @@ button .btn, button .btn-lg {
 }
 
 @media (max-width: 576px){
+
+   .btn-download{
+       max-width: 70%!important;
+   }
     .solutions {
         display: flex;
         flex-direction: column;
@@ -2127,6 +2169,14 @@ button .btn, button .btn-lg {
 }
 
 @media (max-width: 1200px) {
+
+
+    .btn-download{
+        max-width: 40%!important;
+    }
+    .GET-BM{
+        font-size: 40px;
+    }
     .whitepaper-info-text{
         padding-right: 60px;
     }
@@ -2951,6 +3001,12 @@ button .btn, button .btn-lg {
 }
 
 @media (max-width: 576px) {
+
+    .btn-download{
+        max-width: 75%!important;
+        /* display: flex; */
+        margin: 0 auto;
+    }
     .roadmap_view_p{
         font-size: 18px;
     }
@@ -3033,6 +3089,16 @@ button .btn, button .btn-lg {
 
 @media (max-width: 480px) {
      /* our_vision_slider */
+
+
+    .h2-vision h2{
+        font-size: 35px;
+
+    }
+
+    .h2-vision p {
+        font-size: 20px;
+    }
     .our_vision_slider h2 {
         font-size: 40px;
     }
@@ -3100,6 +3166,24 @@ button .btn, button .btn-lg {
 }
 
 @media (max-width: 480px) {
+
+
+    .Business-model h2{
+        font-size: 35px;
+    }
+    .Business-model p{
+        font-size: 20px!important;
+    }
+    .btn-download{
+        max-width: 80%!important;
+        font-size: 20px!important;
+        height: 80px;
+    }
+
+    .load{
+        font-size: 30px!important;
+    }
+
     .footer-phone-button{
         bottom: 20px;
         margin: 0 60px;
