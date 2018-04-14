@@ -217,14 +217,16 @@
 
 .Instant_Crypto_Overdrafts h2{
     padding-bottom: 30px;
-    font-size: 60px;
-    font-family: OpenSans-Bold; 
-    
+    font-size: 60px;    
 }
 
 .h2-text, .description-p {
     text-align: center;
     font-size: 24px;
+}
+
+.Instant_Crypto_Overdrafts .description-p{
+    line-height: 1.5;
 }
 
 .Instant_Crypto_Overdrafts_full_img{
@@ -332,6 +334,10 @@
 .overdraft_panel .new_crypto_overdraft:active{
     outline: 0;
     outline-offset: 0;
+}
+
+.row.overdraft_panel{
+    font-family: OpenSans-Bold;
 }
 
 .Instant_Crypto_Overdrafts .modal-dialog{
@@ -1062,7 +1068,6 @@ button .btn, button .btn-lg {
 
 .our_vision_slider h2{
     font-size: 60px;
-    font-family: OpenSans-Bold;
 }
 .our_vision_slider a{
     text-decoration: none;
@@ -1109,7 +1114,7 @@ button .btn, button .btn-lg {
 .our_vision_slider .our_vision_slider_panel h2{
     font-size: 65px;
     color: #2ca5e0;
-    font-weight: bold;
+    font-family: OpenSans-Bold;
 }
 
 .our_vision_slider .our_vision_slider_panel .slick-active:hover h2{
@@ -2116,11 +2121,10 @@ button .btn, button .btn-lg {
 .roadmap h2{
     text-transform: uppercase;
     color: #111111;
-    padding-bottom: 45px;
+    padding-bottom: 40px;
     color: #182140;
     border-radius: 20px;
     font-size: 60px;
-    font-family: OpenSans-Bold;
 }
 
 .roadmap .roadmap_slider h2{
@@ -2176,6 +2180,7 @@ button .btn, button .btn-lg {
     padding: 100px 0px 0;
     height: 495px;
     text-transform: initial;
+    font-family: OpenSans-Bold;
 }
 
 .roadmap .slick-center h2{
@@ -2186,6 +2191,7 @@ button .btn, button .btn-lg {
     box-shadow: none;
     font-size: 50px;
     height: auto;
+    font-family: OpenSans-Bold;
 }
 
 .roadmap_title{
@@ -2236,15 +2242,49 @@ button .btn, button .btn-lg {
     margin: 0 5px;
 }
 
+.roadmap .slick-dots li button:before {
+    line-height: 15px;
+    width: 15px;
+    height: 15px;
+}
+
 .roadmap .slick-dots li button:before{
     font-size: 12px;
-    color: #fc4f44;
+    color: transparent;
+    background: transparent !important;
+    border-radius: 15px;
+    border: 3px solid #fc4f44;
 }
 
 .roadmap .slick-dots li.slick-active button:before {
-    opacity: 1;
+    background: #fc4f44 !important;
     color: #fc4f44;
 }
+
+.slick-slide .roadmap_number{
+    display: block;
+    position: absolute;
+    margin-top: -200px;
+    left: 15px;
+    font-size: 190px;
+    color: #E1E1E1;
+    font-family: OpenSans-Bold;
+    opacity: 0.5;
+}
+
+.slick-center .roadmap_number{
+    display: none;
+}
+
+/*.roadmap_slider_item.slick-active[aria-hidden="true"] .roadmap_number{
+     left: 15px;
+     color: blue;
+}*/
+
+/*.roadmap_slider_item.slick-active:last-child .roadmap_number{
+     left: inherit;
+     right: 15px;
+}*/
 /* roadmap end */
 
 /* Section team */
