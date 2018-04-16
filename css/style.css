@@ -1279,8 +1279,9 @@ button .btn, button .btn-lg {
     transition-duration: .2s;
 }
 
-.our_vision_slider_panel .slick-center .text_signature{
+.our_vision_slider_panel .slick-slide .text_signature{
     height: 235px;
+    text-align: left;
 }
 
 .our_vision_slider .slick-slide:hover .circle_signature{
