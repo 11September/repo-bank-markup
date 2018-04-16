@@ -211,6 +211,10 @@
     font-family: OpenSans-Regular;
 }
 
+.Instant_Crypto_Overdrafts .modal{
+    font-family: OpenSans-Regular;
+}
+
 .Instant_Crypto_Overdrafts .modal-content{
     padding: 0 !important;
 }
@@ -296,6 +300,22 @@
     border: none;
     font-size: 36px;
     font-family: OpenSans-Regular;
+}
+
+.modal .overdraft_panel select{
+    padding: 12px 90px 12px 50px;
+    border-radius: 50px;
+    background: #fff;
+    border: none;
+    font-size: 36px;
+    font-family: OpenSans-Regular;
+    width: 100%;
+
+    /*-webkit-appearance: none;*/
+    /*-moz-appearance: none;*/
+    /*appearance: none;*/
+
+    /*-webkit-appearance: searchfield;*/
 }
 
 .overdraft_panel select{
@@ -399,10 +419,12 @@
 
 .Instant_Crypto_Overdrafts .modal h3{
     padding-bottom: 10px;
+    font-size: 50px;
 }
 
 .Instant_Crypto_Overdrafts .modal p{
-    line-height: 1.2;
+    line-height: 1.3;
+    font-size: 24px;
 }
 
 .Instant_Crypto_Overdrafts .modal .modal-header button{
@@ -439,7 +461,7 @@
 }
 
 .Instant_Crypto_Overdrafts .modal_stage_title{
-    font-size: 20px;
+    font-size: 40px !important;
     line-height: 1.5;
     font-weight: 500;
 }
@@ -538,7 +560,7 @@
 
 .Instant_Crypto_Overdrafts .img_item > p{
     padding-top: 15px;
-    font-size: 18px;
+    font-size: 30px !important;
 }
 
 .Instant_Crypto_Overdrafts .img_item:hover > p{
@@ -1256,6 +1278,7 @@ button .btn, button .btn-lg {
     font-size: 20px;
     padding: 0;
     padding-top: 10px;
+    padding-right: 10px;
     overflow-y: scroll;
     border-radius: 10px;
     height: 190px;
@@ -1271,7 +1294,7 @@ button .btn, button .btn-lg {
 .our_vision_slider_panel .slick-slide{
     background: #fff;
     border-radius: 15px;
-    padding: 52px 22px 52px;
+    padding: 102px 20px 50px;
     margin-top: 50px;
     height: 525px;
     opacity: 0.9;
