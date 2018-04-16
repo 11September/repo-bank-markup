@@ -140,6 +140,16 @@
     font-size: 25px;
 }
 
+.btn-join:hover{
+    color: white;
+    background: #007DB9;
+}
+
+.btn-login:hover{
+    background: #95989A;
+    color: #A6FF4D!important;
+}
+
 .join-p {
     margin-top: 10px;
 }
@@ -291,6 +301,7 @@
 
 .overdraft_panel h2{
     font-size: 36px;
+    color: black;
 }
 
 .overdraft_panel input{
@@ -345,6 +356,7 @@
     border-radius: 50px;
     color: #fff;
     transition-duration: .2s;
+    cursor: pointer;
 }
 
 .overdraft_panel .new_crypto_overdraft:hover{
@@ -378,17 +390,25 @@
     z-index: -1;
 }
 
-.arrow_panel svg:hover{
-    color: #000;
-    cursor: pointer;
-}
-
 .arrow_panel .top_arrow{
     margin-bottom: -5px;
 }
 
 .row.overdraft_panel{
     font-family: OpenSans-Bold;
+}
+
+.subscribe_input select{
+    outline: none;
+}
+
+.subscribe_input select:hover{
+    cursor: pointer;
+    outline: none;
+}
+
+.bottom_arrow svg{
+    color: black;
 }
 
 .Instant_Crypto_Overdrafts .modal-dialog{
@@ -509,7 +529,11 @@
 }
 
 .Instant_Crypto_Overdrafts .img_item{
+    cursor: pointer;
+}
 
+.modal-footer {
+    padding: 2rem;
 }
 
 .Instant_Crypto_Overdrafts .img_item .it_is_text{
@@ -562,7 +586,7 @@
     background: linear-gradient(to right, #2ca5e0, #2c5e76);
     width: 20%;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: bold;
     border: none;
 }
 
@@ -1188,7 +1212,7 @@ button .btn, button .btn-lg {
 
 .our_vision_slider .container > p{
     padding-top: 30px;
-    padding-bottom: 60px;
+    padding-bottom: 100px;
     font-size: 24px;
 }
 
@@ -1242,15 +1266,15 @@ button .btn, button .btn-lg {
 
 .our_vision_slider .text_head, 
 .our_vision_slider .text_signature{
-    color: #6abfe9;
+    color: #2CA5E0;
 }
 
 .our_vision_slider .text_head{
     font-size: 24px;
     font-weight: 500;
-    padding-bottom: 0;
     line-height: 1.5;
-    border-bottom: 3px solid #ecf7fe;
+    border-bottom: 1.5px solid #A4D7FB;
+    padding-bottom: 10px;
 }
 
 .our_vision_slider .slick-active:hover .text_head{
@@ -1261,11 +1285,11 @@ button .btn, button .btn-lg {
 .our_vision_slider .text_signature{
     font-size: 20px;
     padding: 0;
-    padding-top: 10px;
     padding-right: 10px;
     overflow-y: scroll;
     border-radius: 10px;
     height: 190px;
+    margin-top: 20px;
 }
 
 
@@ -1386,6 +1410,8 @@ button .btn, button .btn-lg {
     font-weight: 500;
     transition-duration: .2s;
     font-size: 20px;
+    cursor: pointer;
+    outline: none;
 }
 
 .our_vision_slider .button_position button:hover{
@@ -1414,7 +1440,7 @@ button .btn, button .btn-lg {
     color: transparent;
     background: transparent !important;
     border-radius: 15px;
-    border: 3px solid #fc4f44;
+    border: 2px solid #fc4f44;
 }
 
 .our_vision_slider .slick-dots li.slick-active button:before {
@@ -1979,6 +2005,10 @@ button .btn, button .btn-lg {
 @media (max-width: 1200px){
     .roadmap .draggable {
         padding-left: 360px !important;
+    }
+
+    .Instant_Crypto_Overdrafts .img_item {
+        margin-bottom: 30px;
     }
 }
 
@@ -2586,7 +2616,7 @@ button .btn, button .btn-lg {
     color: transparent;
     background: transparent !important;
     border-radius: 15px;
-    border: 3px solid #fc4f44;
+    border: 2px solid #fc4f44;
 }
 
 .roadmap .slick-dots li.slick-active button:before {
@@ -3059,11 +3089,11 @@ button .btn, button .btn-lg {
     }
 
     .our_vision_slider_panel .slick-slide{
-        height: 525px;
+        height: 610px;
     }
 
     .our_vision_slider_panel .slick-center{
-        height: 625px;
+        height: 710px;
     }
 
     .footer-logo{
@@ -3090,6 +3120,10 @@ button .btn, button .btn-lg {
 @media (max-width: 992px) {
     .Instant_Crypto_Overdrafts .modal_3 .modal-footer button {
         width: 80%;
+    }
+
+    .wrapper-download-text {
+        margin-bottom: 20px;
     }
 
     .block_bg_right_img .bank_items_1 p:last-child {
@@ -3394,6 +3428,19 @@ button .btn, button .btn-lg {
 
     }
 
+    .whitepaper h2 {
+        font-size: 50px;
+    }
+
+    .whitepaper h5 {
+        font-size: 26px;
+    }
+
+    .whitepaper h2 {
+        line-height: 70px;
+        margin-bottom: 20px;
+    }
+
     .h2-vision p {
         font-size: 20px;
     }
@@ -3414,6 +3461,8 @@ button .btn, button .btn-lg {
 
     .slick-dotted.slick-slider {
         margin-bottom: 0;
+        padding-left: 40px;
+        padding-right: 40px;
     }
     /* our_vision_slider end */
 
@@ -3464,7 +3513,18 @@ button .btn, button .btn-lg {
 }
 
 @media (max-width: 480px) {
+    .our_vision_slider {
+        padding: 70px 0;
+    }
 
+    .our_vision_slider .container > p {
+        padding-top: 30px;
+        padding-bottom: 40px;
+    }
+
+    .slick-dots {
+        left: 0!important;
+    }
 
     .Business-model h2{
         font-size: 35px;
