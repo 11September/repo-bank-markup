@@ -1068,6 +1068,10 @@ button .btn, button .btn-lg {
     min-height: 100%;
 }
 
+.blue-bg:hover{
+    background: #2791c4;
+}
+
 .padding-rows{
     padding-bottom: 75px;
 }
@@ -1248,7 +1252,7 @@ button .btn, button .btn-lg {
 .block-3-few{
     margin-bottom: -25px;
 }
-.features-2{
+.features-2 p{
     text-align: left;
     margin-left: 135px;
 }
@@ -2029,6 +2033,54 @@ button .btn, button .btn-lg {
 
 @media (max-width: 1400px){
 
+        .features-p{
+            margin-top: 30px;
+        }
+    .features-2 p{
+        margin-left: 115px;
+
+    }
+
+    .block-1-few{
+        margin-bottom: -15px;
+    }
+    .blue-bg{
+        background: none;
+        border: 3px solid #2791c4;
+        padding: 15px;
+    }
+
+    .jeniur::before{
+        top:50px;
+    }
+
+    .jeniur-2::before{
+        top: 256px;
+    }
+
+    .jeniur-3::before{
+        top: 430px;
+    }
+    .jeniur-4::before{
+        top: 247px;
+    }
+
+    .jeniur-5::before{
+        top: 398px;
+    }
+    .features-p{
+        font-size: 18px;
+    }
+
+    .special-margin-fet{
+        margin-left: 0!important;
+    }
+
+
+
+    .description-fither{
+        font-size: 14px;
+    }
     .menu-list .menu-item .link{
         font-size: 19px;
         color: white;
@@ -3690,3 +3742,11 @@ button .btn, button .btn-lg {
         top: 82%;
     }
 }
+
+
+
+
+
+
+
+
