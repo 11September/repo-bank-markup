@@ -361,6 +361,28 @@
     outline-offset: 0;
 }
 
+.arrow_panel{
+    position: relative;
+    margin-top: -50px;
+    /*text-align: left;*/
+    /*padding-left: 30px;*/
+    width: 75px;
+}
+
+.arrow_panel svg{
+    color: #c8c8c8;
+    z-index: -1;
+}
+
+.arrow_panel svg:hover{
+    color: #000;
+    cursor: pointer;
+}
+
+.arrow_panel .top_arrow{
+    margin-bottom: -5px;
+}
+
 .row.overdraft_panel{
     font-family: OpenSans-Bold;
 }
@@ -2167,6 +2189,8 @@ button .btn, button .btn-lg {
     .our_vision_slider .button_position .row {
         width: auto;
     }
+
+
     /* our_vision_slider end */
 }
 
@@ -3247,7 +3271,7 @@ button .btn, button .btn-lg {
     }
 
     .overdraft_panel .new_crypto_overdraft{
-        top: 71%;
+        top: 78%;
         left: auto;
         font-size: 20px;
         padding: 18px 35px;
@@ -3415,17 +3439,21 @@ button .btn, button .btn-lg {
     .overdraft_panel select {
         font-size: 24px;
     }
+
+    .arrow_panel {
+        margin-top: -43px;
+    }
 }
 
 @media (max-width: 400px) {
     .overdraft_panel .new_crypto_overdraft{
-        top: 71%;
+        top: 78%;
         margin-right: 2px;
     }
 }
 
 @media (max-width: 382px){
     .overdraft_panel .new_crypto_overdraft {
-        top: 77%;
+        top: 82%;
     }
 }
