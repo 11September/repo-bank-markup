@@ -1256,7 +1256,7 @@ button .btn, button .btn-lg {
     font-size: 20px;
     padding: 0;
     padding-top: 10px;
-    overflow: scroll;
+    overflow-y: scroll;
     border-radius: 10px;
     height: 190px;
 }
