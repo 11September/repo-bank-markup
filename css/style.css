@@ -2086,6 +2086,9 @@ button .btn, button .btn-lg {
         width: 600px;
     }
 
+    .input_comparison .arrow_panel {
+        width: 220px;
+    }
 }
 
 @media (max-width: 1300px){
@@ -2142,6 +2145,10 @@ button .btn, button .btn-lg {
     .Instant_Crypto_Overdrafts .modal-header img{
         height: auto;
         width: 75%;
+    }
+
+    .input_comparison .arrow_panel {
+        width: 150px;
     }
 }
 
@@ -3278,6 +3285,10 @@ button .btn, button .btn-lg {
         width: 80%;
     }
 
+    .input_comparison .arrow_panel {
+        width: 100px;
+    }
+
     .wrapper-download-text {
         margin-bottom: 20px;
     }
@@ -3427,7 +3438,43 @@ button .btn, button .btn-lg {
         display: none;
     }
 
-     .overdraft_panel .new_crypto_overdraft{
+    .input_comparison .row{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Instant_Crypto_Overdrafts .input_comparison .span_i {
+        margin-top: 25px;
+        margin-bottom: 10px;
+    }
+
+    .input_comparison_select {
+        width: 75%;
+    }
+
+    .input_comparison_span {
+        width: 75%;
+    }
+
+    .Instant_Crypto_Overdrafts .img_item {
+        margin-bottom: 35px;
+    }
+
+   .Instant_Crypto_Overdrafts .input_comparison_span span {
+        font-size: 18px !important;
+    }
+
+    .Instant_Crypto_Overdrafts .modal .modal-footer button {
+        width: 74%;
+    }
+
+    .Instant_Crypto_Overdrafts .input_comparison .span_i {
+        margin-top: 8px;
+        margin-bottom: 0;
+    }
+
+    .overdraft_panel .new_crypto_overdraft{
         top: 77px;
         left: 365px;
     }
@@ -3578,6 +3625,14 @@ button .btn, button .btn-lg {
 
 @media (max-width: 480px) {
      /* our_vision_slider */
+     .Instant_Crypto_Overdrafts .img_item .it_is_text {
+        font-size: 24px !important;
+    }
+
+    .Instant_Crypto_Overdrafts .img_item > p {
+        font-size: 18px !important;
+    }
+
      .Instant_Crypto_Overdrafts .modal_stage_title {
         font-size: 32px !important;
     }
@@ -3758,6 +3813,11 @@ button .btn, button .btn-lg {
     .overdraft_panel .new_crypto_overdraft{
         top: 75%;
         margin-right: 2px;
+    }
+
+    .input_comparison .arrow_panel {
+        width: 50px;
+        font-size: 18px;
     }
 }
 
