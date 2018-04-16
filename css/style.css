@@ -2524,12 +2524,15 @@ button .btn, button .btn-lg {
     font-size: 60px;
     color: white;
     padding-bottom: 20px;
+    font-family: OpenSans-Regular;
 }
 
 .team .team-subheading{
     font-size: 30px;
     color: white;
     margin-bottom: 60px;
+    font-family: OpenSans-Light;
+
 }
 
 .wrapper-team-slider{
@@ -2693,6 +2696,16 @@ button .btn, button .btn-lg {
 @media (max-width: 768px) {
     .team-item{
         margin-bottom: 80px;
+    }
+
+    .phone-button{
+        width: 60%!important;
+    }
+
+    .footer-phone-button{
+        text-align: left;
+        display: flex!important;
+        justify-content: flex-start!important;
     }
 
     .modal-content{
