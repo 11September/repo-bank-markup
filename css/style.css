@@ -1261,6 +1261,8 @@ button .btn, button .btn-lg {
     height: 190px;
 }
 
+
+
 .our_vision_slider .slick-active:hover .text_signature{
     color: #fd877f;
     transition-duration: .2s;
@@ -1304,6 +1306,24 @@ button .btn, button .btn-lg {
 .our_vision_slider_panel .slick-slide .text_signature{
     height: 235px;
     text-align: left;
+
+}
+
+.our_vision_slider_panel .slick-slide .text_signature::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 5px #6abfe9;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.our_vision_slider_panel .slick-slide .text_signature::-webkit-scrollbar {
+    width: 10px;
+    background-color: #F5F5F5;
+
+}
+
+.our_vision_slider_panel .slick-slide .text_signature::-webkit-scrollbar-thumb {
+    background-color: #6abfe9;
+    border-radius: 10px;
 }
 
 .our_vision_slider .slick-slide:hover .circle_signature{
