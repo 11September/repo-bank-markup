@@ -3358,6 +3358,7 @@ button .btn, button .btn-lg {
 
     .our_vision_slider .text_signature{
         font-size: 18px;
+        height: 235px;
     }
 
     .our_vision_slider .text_head{
@@ -3450,7 +3451,11 @@ button .btn, button .btn-lg {
 
     .our_vision_slider_panel .slick-center .text_signature {
         font-size: 16px;
-        height: auto;
+        height: 235px;
+    }
+
+    .our_vision_slider .our_vision_slider_panel {
+         padding-bottom: 0; 
     }
 
     .our_vision_slider_panel .slick-center, 
