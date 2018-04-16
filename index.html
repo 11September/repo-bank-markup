@@ -55,6 +55,7 @@
 
             <div class="image">
                 <img src="images/color_logo.png" alt="">
+
             </div>
 
         </div>
@@ -137,18 +138,19 @@
                         <form action="#">
                             <div class="subscribe_input">
                                 <!-- <input class="" name="cost" id="cost" type="text" placeholder="$1000" required> -->
-                                <!-- <div class="form-group">
-                                    <select class="form-control" id="exampleSelect1">
-                                      <option>$1000</option>
-                                      <option>$900</option>
-                                      <option>$800</option>
-                                    </select>
-                                </div> -->
                                 <select>
                                     <option>$1000</option>
                                     <option>$900</option>
                                     <option>$800</option>
                                 </select>
+                                <div class="arrow_panel">
+                                    <div class="top_arrow">
+                                        <i class="fas fa-caret-up"></i>
+                                    </div>
+                                    <div class="bottom_arrow">
+                                        <i class="fas fa-caret-down"></i>
+                                    </div>
+                                </div>
                                 <button class="new_crypto_overdraft" data-toggle="modal"
                                         data-target="#new_crypto_overdraft_1" type="button">Next
                                 </button>
@@ -177,11 +179,19 @@
                                             <div class="input_comparison">
                                                 <div class="row">
                                                     <div class="col-xl-5 col-lg-5">
-                                                        <a href="#" data-toggle="tooltip"
-                                                           title="Текст всплывающей подсказки">
-                                                            <input class="" name="cost" id="cost" type="text"
-                                                                   placeholder="$1000" required>
-                                                        </a>
+                                                        <select>
+                                                            <option>$1000</option>
+                                                            <option>$900</option>
+                                                            <option>$800</option>
+                                                        </select>
+                                                        <div class="arrow_panel">
+                                                            <div class="top_arrow">
+                                                                <i class="fas fa-caret-up"></i>
+                                                            </div>
+                                                            <div class="bottom_arrow">
+                                                                <i class="fas fa-caret-down"></i>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                     <div class="col-xl-2 col-lg-2 span_i">
                                                         <span><i class="fas fa-chevron-right"></i></span>
@@ -737,9 +747,10 @@
                     </div>
                 </div>
             </div>
+<!--             <img src="images/rollet.png" alt=""> -->
 
-            <div class="image-block">
-                <img src="images/iphonex.png" alt="">
+            <div id="compas">
+                <img src="images/logo-110.png" class="arrow_c" alt="">
             </div>
 
             <div class="accordion-road" id="road-accordion-two">
@@ -828,9 +839,9 @@
 
 <section class="our_vision_slider">
     <div class="container">
-        <h2>Our Vision</h2>
+        <h2>Interaction With Clients</h2>
 
-        <p>Don`t sell your crypto. Don`t lose the upside potential. Get an Instant Crypto Overdraft from Nexo.</p>
+        <p>The interaction of an increasing number of customers due to the market expanding.</p>
 
         <div class="our_vision_slider_panel">
 
@@ -1177,8 +1188,7 @@
         <h2>roadmap</h2>
 
         <p class="roadmap_view_p">
-            Don`t sell your crypto. Don`t lose the upside potential. <br>
-            Get an instant Crypto Overdraft from Newo.
+            Prior events that the company embodies to <br>improve the operation of the system and the lead in the crypto currency market.
         </p>
 
         <div class="roadmap_slider">
@@ -1321,7 +1331,7 @@
                                     <div class="col-md-12">
                                         <div class="team-item-image">
                                             <a href="#" data-toggle="modal" data-target="#exampleModal">
-                                                <img src="images/NoPath — копия.png" alt="">
+                                                <img src="images/rollet.png" alt="">
                                             </a>
                                         </div>
 
@@ -1346,7 +1356,7 @@
                                     <div class="col-md-12">
                                         <div class="team-item-image">
                                             <a href="#" data-toggle="modal" data-target="#exampleModal">
-                                                <img src="images/NoPath — копия.png" alt="">
+                                                <img src="images/rollet.png" alt="">
                                             </a>
                                         </div>
 
@@ -1371,7 +1381,7 @@
                                     <div class="col-md-12">
                                         <div class="team-item-image">
                                             <a href="#" data-toggle="modal" data-target="#exampleModal">
-                                                <img src="images/NoPath — копия.png" alt="">
+                                                <img src="images/rollet.png" alt="">
                                             </a>
                                         </div>
 
@@ -1525,7 +1535,7 @@
                 <div class="col-md-6">
                     <div class="team-item-image">
                         <a href="#" data-toggle="modal" data-target="#exampleModal">
-                            <img src="images/NoPath — копия.png" alt="">
+                            <img src="images/rollet.png" alt="">
                         </a>
                     </div>
                 </div>
@@ -1643,7 +1653,7 @@
             slidesToShow: 3,
             responsive: [
                 {
-                    breakpoint: 1200,
+                    breakpoint: 1300,
                     settings: {
                         arrows: false,
                     }
@@ -1680,7 +1690,7 @@
 
         $('.roadmap_slider').slick({
             centerMode: true,
-            centerPadding: '340px',
+            centerPadding: '100px',
             dots: true,
             focusOnSelect: true,
             infinite: false,
@@ -1754,3 +1764,37 @@
 </script>
 </body>
 </html>
+
+<script>
+    $(document).ready(function(){
+        $.fn.rotateImg = function(options) {
+            var defaults = {deg : 0};
+            var settings = $.extend( {}, defaults, options );
+            return this.each(function() {
+                var img = $(this);
+                var imgpos = img.position();
+                var x0, y0;
+                $(window).load(function() {
+                    x0 = imgpos.left + img.width() / 2;
+                    y0 = imgpos.top + img.height() / 2
+                });
+                var x, y, x1, y1, r;
+                $("html").mousemove(function(e) {
+                    x1 = e.pageX;
+                    y1 = e.pageY;
+                    x = x1-x0;
+                    y = y1-y0;
+                    r = 220 + settings.deg - 180 / Math.PI * Math.atan2(y, x);
+                    img.css("transform", "rotate(-" + r + "deg)");
+                    img.css("-moz-transform", "rotate(-" + r + "deg)");
+                    img.css("-webkit-transform", "rotate(-" + r + "deg)");
+                    img.css("-o-transform", "rotate(-" + r + "deg)")})})}
+        function rand(a) {
+            return 50 + Math.floor(Math.random() * (a-200))}
+        var w = $(window).width(), h = $(window).height();
+        $.each(Array(1),function(indx, element){
+            $('.arrow_c').appendTo('#compas')
+        });
+        $('.arrow_c').rotateImg({deg : 0});
+    });
+</script>
