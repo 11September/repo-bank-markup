@@ -314,7 +314,7 @@
 }
 
 .overdraft_panel select{
-    padding: 18px 0px 18px 50px;
+    padding: 18px 0 18px 100px;
     border-radius: 50px;
     background: #fff;
     border: none;
@@ -327,6 +327,18 @@
     appearance: none;
 
     -webkit-appearance: searchfield;
+}
+
+.overdraft_panel .modal select{
+    padding: 18px 0;
+    text-align-last: center;
+    text-align: center;
+}
+
+.overdraft_panel .modal select{
+    padding: 18px 0;
+    text-align-last: center;
+    text-align: center;
 }
 
 .overdraft_panel select::-ms-expand {
@@ -379,10 +391,9 @@
 
 .arrow_panel{
     position: relative;
-    margin-top: -50px;
-    /*text-align: left;*/
-    /*padding-left: 30px;*/
-    width: 75px;
+    margin-top: -53px;
+    width: 110px;
+    font-size: 20px;
 }
 
 .arrow_panel svg{
@@ -412,13 +423,13 @@
 }
 
 .Instant_Crypto_Overdrafts .modal-dialog{
-    max-width: 75%;
+    max-width: 90% !important;
 }
 
 .Instant_Crypto_Overdrafts .modal .modal-header{
     display: block;
     border-bottom: none;
-    padding: 20px 0;
+    padding: 50px 15px 40px;
 }
 
 .Instant_Crypto_Overdrafts .modal h3{
@@ -433,8 +444,8 @@
 
 .Instant_Crypto_Overdrafts .modal .modal-header button{
     position: absolute;
-    right: 15px;
-    top: 5px;
+    right: 25px;
+    top: 20px;
 }
 
 .modal .modal-header button:focus,
@@ -451,12 +462,12 @@
 .Instant_Crypto_Overdrafts .modal .modal-body,
 .Instant_Crypto_Overdrafts .modal .modal-footer{
     background: #f5f5f5;
-    padding-right: 30px;
-    padding-left: 30px;
+    padding-right: 75px;
+    padding-left: 75px;
 }
 
 .Instant_Crypto_Overdrafts .modal .modal-body{
-    padding-top: 5px;
+    padding-top: 15px;
 }
 
 .Instant_Crypto_Overdrafts .modal_stage{
@@ -476,7 +487,7 @@
 }
 
 .Instant_Crypto_Overdrafts .input_comparison{
-    padding: 30px 0;
+    padding: 30px 0 55px;
 }
 
 .Instant_Crypto_Overdrafts .input_comparison input{
@@ -506,8 +517,8 @@
 }
 
 .Instant_Crypto_Overdrafts .input_comparison span{
-    padding: 0 20px;
-    font-size: 32px;
+    padding: 18px 20px;
+    font-size: 36px;
 }
 
 .Instant_Crypto_Overdrafts .img_comparison{
@@ -543,7 +554,7 @@
 
 .Instant_Crypto_Overdrafts .img_item .it_is_text p{
     align-self: center;
-    font-size: 18px;
+    font-size: 24px;
     font-weight: 400;
     color: #fff;
     line-height: 1.1;
@@ -582,12 +593,13 @@
 
 .Instant_Crypto_Overdrafts .modal .modal-footer button{
     border-radius: 50px;
-    height: 50px;
+    height: 56px;
     background: linear-gradient(to right, #2ca5e0, #2c5e76);
-    width: 20%;
+    width: 160px;
     font-size: 16px;
     font-weight: bold;
     border: none;
+    cursor: pointer;
 }
 
 .Instant_Crypto_Overdrafts .modal .modal-footer button:hover{
@@ -808,6 +820,35 @@
     padding-top: 15px;
     font-weight: 500;
     padding-bottom: 15px;
+}
+
+.input_comparison .arrow_panel {
+    width: 300px;
+}
+
+.input_comparison_select{
+    width: 48%;
+    padding: 0 20px;
+}
+
+.input_comparison_span span{
+    padding: 12px 90px 12px 50px;
+    border-radius: 50px;
+    background: #fff;
+    border: none;
+    font-size: 36px;
+    font-family: OpenSans-Regular;
+    width: 100%;
+    display: block;
+}
+
+.span_i{
+    width: 4%;
+}
+
+.input_comparison_span{
+    width: 48%;
+    padding: 0 20px;
 }
 
 .Instant_Crypto_Overdrafts .block_bg .left_block_title_2{
@@ -2095,6 +2136,11 @@ button .btn, button .btn-lg {
     .Instant_Crypto_Overdrafts .img_item {
         margin-bottom: 30px;
     }
+
+    .Instant_Crypto_Overdrafts .modal-header img{
+        height: auto;
+        width: 75%;
+    }
 }
 
 @media (max-width: 1050px){
@@ -2242,6 +2288,15 @@ button .btn, button .btn-lg {
     .roadmap .draggable {
         padding-left: 260px !important;
     }
+
+    .Instant_Crypto_Overdrafts .modal-header img{
+        height: auto;
+        width: 50%;
+    }
+
+    .Instant_Crypto_Overdrafts .modal .modal-header button {
+        right: 15px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -2370,6 +2425,10 @@ button .btn, button .btn-lg {
     }
 
     /* our_vision_slider */
+    .Instant_Crypto_Overdrafts .modal .modal-header button {
+        right: 0px;
+    }
+
     .our_vision_slider .button_position {
         display: block;
     }
@@ -3350,8 +3409,8 @@ button .btn, button .btn-lg {
 
     .Instant_Crypto_Overdrafts .modal .modal-body, 
     .Instant_Crypto_Overdrafts .modal .modal-footer {
-        padding-right: 15px;
-        padding-left: 15px;
+        padding-right: 30px;
+        padding-left: 30px;
     }
 
     .modal_3 .modal-body > .row{
@@ -3474,7 +3533,7 @@ button .btn, button .btn-lg {
     }
 
     .overdraft_panel .new_crypto_overdraft{
-        top: 78%;
+        top: 77%;
         left: auto;
         font-size: 20px;
         padding: 18px 35px;
@@ -3494,7 +3553,7 @@ button .btn, button .btn-lg {
     }
 
    .Instant_Crypto_Overdrafts .modal.fade .modal-dialog{
-        max-width: 95% !important;
+        max-width: 100% !important
     }
 }
 
@@ -3517,7 +3576,13 @@ button .btn, button .btn-lg {
 
 @media (max-width: 480px) {
      /* our_vision_slider */
+     .Instant_Crypto_Overdrafts .modal_stage_title {
+        font-size: 32px !important;
+    }
 
+     .Instant_Crypto_Overdrafts .modal .modal_stage_description{
+        font-size: 18px;
+    }
 
     .h2-vision h2{
         font-size: 35px;
@@ -3580,6 +3645,11 @@ button .btn, button .btn-lg {
 
     .Instant_Crypto_Overdrafts .modal h3 {
         padding-top: 15px;
+        font-size: 36px;
+    }
+
+    .Instant_Crypto_Overdrafts .modal .modal-header p {
+        font-size: 18px;
     }
     
     .text-h1 {
@@ -3613,6 +3683,10 @@ button .btn, button .btn-lg {
 }
 
 @media (max-width: 480px) {
+    .overdraft_panel .new_crypto_overdraft {
+        top: 75%;
+    }
+
     .our_vision_slider {
         padding: 70px 0;
     }
@@ -3674,19 +3748,19 @@ button .btn, button .btn-lg {
     }
 
     .arrow_panel {
-        margin-top: -43px;
+        margin-top: -46px;
     }
 }
 
 @media (max-width: 400px) {
     .overdraft_panel .new_crypto_overdraft{
-        top: 78%;
+        top: 75%;
         margin-right: 2px;
     }
 }
 
 @media (max-width: 382px){
     .overdraft_panel .new_crypto_overdraft {
-        top: 82%;
+        top: 80%;
     }
 }
