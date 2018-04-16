@@ -55,6 +55,7 @@
 
             <div class="image">
                 <img src="images/color_logo.png" alt="">
+
             </div>
 
         </div>
@@ -666,9 +667,10 @@
                     </div>
                 </div>
             </div>
+<!--             <img src="images/rollet.png" alt=""> -->
 
-            <div class="image-block">
-                <img src="images/iphonex.png" alt="">
+            <div id="compas">
+                <img src="images/logo-110.png" class="arrow_c" alt="">
             </div>
 
             <div class="accordion-road" id="road-accordion-two">
@@ -1254,7 +1256,7 @@
                                     <div class="col-md-12">
                                         <div class="team-item-image">
                                             <a href="#" data-toggle="modal" data-target="#exampleModal">
-                                                <img src="images/NoPath — копия.png" alt="">
+                                                <img src="images/rollet.png" alt="">
                                             </a>
                                         </div>
 
@@ -1279,7 +1281,7 @@
                                     <div class="col-md-12">
                                         <div class="team-item-image">
                                             <a href="#" data-toggle="modal" data-target="#exampleModal">
-                                                <img src="images/NoPath — копия.png" alt="">
+                                                <img src="images/rollet.png" alt="">
                                             </a>
                                         </div>
 
@@ -1304,7 +1306,7 @@
                                     <div class="col-md-12">
                                         <div class="team-item-image">
                                             <a href="#" data-toggle="modal" data-target="#exampleModal">
-                                                <img src="images/NoPath — копия.png" alt="">
+                                                <img src="images/rollet.png" alt="">
                                             </a>
                                         </div>
 
@@ -1451,7 +1453,7 @@
                 <div class="col-md-6">
                     <div class="team-item-image">
                         <a href="#" data-toggle="modal" data-target="#exampleModal">
-                            <img src="images/NoPath — копия.png" alt="">
+                            <img src="images/rollet.png" alt="">
                         </a>
                     </div>
                 </div>
@@ -1634,3 +1636,37 @@ $(function () {
 </script>
 </body>
 </html>
+
+<script>
+    $(document).ready(function(){
+        $.fn.rotateImg = function(options) {
+            var defaults = {deg : 0};
+            var settings = $.extend( {}, defaults, options );
+            return this.each(function() {
+                var img = $(this);
+                var imgpos = img.position();
+                var x0, y0;
+                $(window).load(function() {
+                    x0 = imgpos.left + img.width() / 2;
+                    y0 = imgpos.top + img.height() / 2
+                });
+                var x, y, x1, y1, r;
+                $("html").mousemove(function(e) {
+                    x1 = e.pageX;
+                    y1 = e.pageY;
+                    x = x1-x0;
+                    y = y1-y0;
+                    r = 220 + settings.deg - 180 / Math.PI * Math.atan2(y, x);
+                    img.css("transform", "rotate(-" + r + "deg)");
+                    img.css("-moz-transform", "rotate(-" + r + "deg)");
+                    img.css("-webkit-transform", "rotate(-" + r + "deg)");
+                    img.css("-o-transform", "rotate(-" + r + "deg)")})})}
+        function rand(a) {
+            return 50 + Math.floor(Math.random() * (a-200))}
+        var w = $(window).width(), h = $(window).height();
+        $.each(Array(1),function(indx, element){
+            $('.arrow_c').appendTo('#compas')
+        });
+        $('.arrow_c').rotateImg({deg : 0});
+    });
+</script>

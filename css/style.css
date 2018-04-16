@@ -1407,7 +1407,7 @@ button .btn, button .btn-lg {
 }
 
 .accordion-road .card{
-    margin-bottom: 50px;
+    margin-bottom: 100px;
 }
 
 .accordion-road .btn-link a{
@@ -1419,10 +1419,36 @@ button .btn, button .btn-lg {
 
 .roadmap{
     display: flex;
+
+    background-image: url(../images/rollet.png);
+    background-repeat: no-repeat;
+    background-position: center;
+
+    background-size: 55%;
 }
+
+#road-map .header-roadmap{
+    margin-bottom: 20px;
+}
+
+#road-map .roadmap-solution{
+    font-family: OpenSans-Light;
+
+    width: 80%;
+    margin: 0 auto;
+
+    margin-bottom: 100px;
+}
+
+
 
 .accordion-road{
     width: 40%;
+}
+
+#compas img{
+    width: 80%;
+    margin-top: 60px;
 }
 
 #accordion-one .solution-head{
@@ -1443,6 +1469,18 @@ button .btn, button .btn-lg {
     margin-bottom: 5px;
     width: 55%;
     margin-left: auto;
+}
+
+#road-accordion-one{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#road-accordion-two{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
 .card{
