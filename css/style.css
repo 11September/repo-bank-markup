@@ -302,22 +302,6 @@
     font-family: OpenSans-Regular;
 }
 
-.modal .overdraft_panel select{
-    padding: 12px 90px 12px 50px;
-    border-radius: 50px;
-    background: #fff;
-    border: none;
-    font-size: 36px;
-    font-family: OpenSans-Regular;
-    width: 100%;
-
-    /*-webkit-appearance: none;*/
-    /*-moz-appearance: none;*/
-    /*appearance: none;*/
-
-    /*-webkit-appearance: searchfield;*/
-}
-
 .overdraft_panel select{
     padding: 12px 90px 12px 50px;
     border-radius: 50px;
@@ -1294,9 +1278,9 @@ button .btn, button .btn-lg {
 .our_vision_slider_panel .slick-slide{
     background: #fff;
     border-radius: 15px;
-    padding: 102px 20px 50px;
+    padding: 52px 22px 52px;
     margin-top: 50px;
-    height: 525px;
+    height: 550px;
     opacity: 0.9;
     /*transition-duration: .5s;*/
 }
@@ -1307,7 +1291,7 @@ button .btn, button .btn-lg {
     background: #fff;
     border-radius: 15px;
     padding: 102px 22px 52px;
-    height: 635px;
+    height: 660px;
     box-shadow: 0 0 15px 1px rgba(17, 17, 17, 0.4);
     /*transition-duration: .5s;*/
     position: relative;
