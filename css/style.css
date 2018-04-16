@@ -927,8 +927,12 @@ button .btn, button .btn-lg {
     align-items: center;
     justify-content: space-evenly;
 }
-.bg-model img{
+.bg-model-second img{
     width: 100%;
+    padding-left: 75px;
+    padding-right: 75px;
+    padding-bottom: 100px;
+    padding-top: 140px;
     height: 100%;
 }
 
@@ -952,6 +956,7 @@ button .btn, button .btn-lg {
 .first-1001 img{
     width: 100%;
     height: 100%;
+    padding-right:15%;
 }
 
 .h2-vision {
@@ -995,7 +1000,7 @@ button .btn, button .btn-lg {
     font-family: 'OpenSans-Regular';
     color: white;
     line-height: 45px;
-    padding-left: 10%;
+    padding-left: 15%;
     text-align: left;
 }
 
@@ -1056,7 +1061,12 @@ button .btn, button .btn-lg {
     margin-top: 25px;
     display: block;
     color: white;
-    height: 80px;
+    min-height: 80px!important;
+}
+
+.shirne-a{
+    text-decoration: none!important;
+    color:white!important;
 }
 /* business model */
 
@@ -1102,9 +1112,64 @@ button .btn, button .btn-lg {
     width: 35%;
     height: 0.5em;
     position: absolute;
-    top:85px;
+    top:65px;
     margin-right: 25px;
 }
+
+
+.jeniur-2::before{
+    content: "";
+    border-bottom: 2px solid #2CA5E0;
+    width: 35%;
+    height: 0.5em;
+    position: absolute;
+    top:335px;
+    margin-right: 25px;
+}
+
+.jeniur-3::before{
+    content: "";
+    border-bottom: 2px solid #2CA5E0;
+    width: 35%;
+    height: 0.5em;
+    position: absolute;
+    top:585px;
+    margin-right: 25px;
+}
+
+.blue-bg svg{
+    width: 45px!important;
+    height: 45px!important;
+}
+.jeniur-4::before{
+    content: "";
+    border-bottom: 2px solid #2CA5E0;
+    width: 30%;
+    height: 0.5em;
+    position: absolute;
+    top:285px;
+    margin-right: 25px;
+
+}
+
+.jeniur-5::before{
+    content: "";
+    border-bottom: 2px solid #2CA5E0;
+    width: 30%;
+    height: 0.5em;
+    position: absolute;
+    top:495px;
+    margin-right: 25px;
+}
+
+.special-marg{
+    margin-top: 10px;
+}
+
+.special-margin-fet{
+    text-align: left!important;
+    margin-left: 135px !important;}
+
 
 .blue-bg{
     border-radius: 50%;
@@ -1116,14 +1181,34 @@ button .btn, button .btn-lg {
 .features-p{
     font-size: 30px;
     font-family: 'OpenSans-Regular';
-    margin-top: 60px;
-    margin-left: 20px;
+    margin-top: 30px;
+    margin-left: 45px;
     color:#A4D7FB;
 
 }
-.features-2{
-    text-align: center;
+
+.block-1-few{
+    margin-bottom: -25px;}
+
+.block-2-few{
+    margin-bottom: -25px;
 }
+.block-3-few{
+    margin-bottom: -25px;
+}
+.features-2{
+    text-align: left;
+    margin-left: 135px;
+}
+
+.align-items-left-features-new{
+    margin-bottom: 200px;
+}
+
+
+
+
+
 .hr-features{
 
     color:#2CA5E0 ;
@@ -1144,7 +1229,7 @@ button .btn, button .btn-lg {
     background-size: 100% 100%;
     background-repeat: no-repeat;
     color: #fff;
-    font-family: OpenSans-Regular;
+    font-family: 'OpenSans-Regular';
 }
 
 .our_vision_slider .slick-slide{
