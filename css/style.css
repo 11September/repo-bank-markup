@@ -641,11 +641,12 @@
 }
 
 .modal_panel_2{
-    padding-top: 40px;
+    padding-top: 25px;
 }
 
 .div_overdrafts_slider{
     padding-right: 0;
+    padding-top: 50px;
 }
 
 .overdrafts_slider h2{
@@ -656,7 +657,7 @@
 
 .overdrafts_slider h2{
     color: #43afe3;
-    padding: 18px 0;
+    padding: 25px 0;
     font-size: 30px;
 }
 
@@ -681,9 +682,15 @@
 }
 
 .overdrafts_slider .slick-dots{
-    background: #d8edfc;
+    background: url("../images/overdrafts_slider_bg.png") no-repeat;
+    background-size: cover;
     border-radius: 20px;
     display: flex;
+    justify-content: space-around;
+}
+
+.overdrafts_slider .slick-dots li {
+    top: 2px;
 }
 
 .overdrafts_slider .slick-dots li button:before{
@@ -741,14 +748,14 @@
 }
 
 .Instant_Crypto_Overdrafts .tolal_bg h2{
-    padding: 20px 0 0;
-    font-weight: 600;
+    padding: 35px 0 5px;
     color: #51b5e5;
+    font-size: 40px;
 }
 
 .Instant_Crypto_Overdrafts .tolal_bg p{
     color: #d8d8d8;
-    padding-bottom: 12px;
+    padding-bottom: 15px;
 }
 
 .Instant_Crypto_Overdrafts .modal_3 .modal-footer{
