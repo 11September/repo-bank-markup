@@ -1267,11 +1267,19 @@ button .btn, button .btn-lg {
 
 .special-margin-fet{
     text-align: left!important;
-    margin-left: 135px !important;}
+    margin-left: 0 !important;}
 
 
 .blue-bg{
     border-radius: 50%;
+}
+
+.blue-bg:hover{
+    transform: rotateY(180deg);
+    perspective: 1000;
+    transition: 0.6s;
+    transform-style: preserve-3d;
+
 }
 
 .margin-row-about-us{
@@ -2234,6 +2242,23 @@ button .btn, button .btn-lg {
 }
 
 @media (max-width: 992px) {
+
+    .jeniur-3::before{
+        top: 450px;
+    }
+    .jeniur-5::before{
+        top:405px;
+    }
+
+    .jeniur-4::before {
+        top: 255px;
+    }
+    .jeniur-2::before {
+        top: 260px;
+    }
+    .jytis{
+     padding-top: 15px;
+    }
     .wrapper-download-block{
         flex-direction: column;
     }
