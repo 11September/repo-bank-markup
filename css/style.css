@@ -444,7 +444,12 @@
 .Instant_Crypto_Overdrafts .modal .modal-header button{
     position: absolute;
     right: 25px;
-    top: 20px;
+    top: 25px;
+}
+
+.Instant_Crypto_Overdrafts .modal .modal-header img{
+    height: 60px;
+    width: auto;
 }
 
 .modal .modal-header button:focus,
@@ -612,12 +617,27 @@
 
 .Instant_Crypto_Overdrafts .modal .modal_stage_prev{
     position: absolute;
-    left: 15px;
-    top: 10px;
+    left: 25px;
+    top: 15px;
 }
 
 .Instant_Crypto_Overdrafts .modal .modal_stage_prev span{
     font-size: 20px;
+}
+
+.modal_stage_prev{
+    background: transparent;
+}
+
+.modal_stage_prev button{
+    background: transparent;
+    color: #3cabe2;
+    border: none;
+    outline: none;
+    position: relative !important;
+    right: 20px !important;
+    top: -14px !important;
+    font-size: 36px;
 }
 
 .modal_panel_2{
@@ -2216,8 +2236,8 @@ button .btn, button .btn-lg {
     }
 
     .Instant_Crypto_Overdrafts .modal-header img{
-        height: auto;
-        width: 75%;
+        height: 50px !important;
+        width: auto;
     }
 
     .input_comparison .arrow_panel {
@@ -2372,8 +2392,9 @@ button .btn, button .btn-lg {
     }
 
     .Instant_Crypto_Overdrafts .modal-header img{
-        height: auto;
-        width: 50%;
+        height: 40px !important;
+        width: auto;
+
     }
 
     .Instant_Crypto_Overdrafts .modal .modal-header button {
@@ -3543,7 +3564,7 @@ button .btn, button .btn-lg {
     }
 
     .Instant_Crypto_Overdrafts .input_comparison .span_i {
-        margin-top: 8px;
+        margin-top: 0;
         margin-bottom: 0;
     }
 
@@ -3698,6 +3719,19 @@ button .btn, button .btn-lg {
 
 @media (max-width: 480px) {
      /* our_vision_slider */
+     .tooltip_select {
+        padding: 4px 8px;
+        margin-top: -10px;
+        top: -19px;
+        margin-right: 15px;
+        font-size: 16px;
+    }
+
+    .Instant_Crypto_Overdrafts .input_comparison .span_i {
+        padding: 0px 20px 8px;
+        font-size: 36px;
+    }
+
      .Instant_Crypto_Overdrafts .img_item .it_is_text {
         font-size: 24px !important;
     }
