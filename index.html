@@ -1770,6 +1770,10 @@
         $(this).find('.roadmap_number').text(element);
     });
 
+    $('.modal_2').on('shown.bs.modal', function (e) {
+      $('.overdrafts_slider').resize();
+    });
+
 </script>
 </body>
 </html>
