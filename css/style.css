@@ -1123,10 +1123,10 @@ button .btn, button .btn-lg {
 }
 .bg-model-second img{
     width: 100%;
-    padding-left: 75px;
-    padding-right: 75px;
+    padding-left: 200px;
+    padding-right: 200px;
     padding-bottom: 100px;
-    padding-top: 140px;
+    padding-top: 100px;
     height: 100%;
 }
 
@@ -1150,6 +1150,7 @@ button .btn, button .btn-lg {
 .first-1001 img{
     width: 100%;
     height: 100%;
+    margin-top: 100px;
     padding-right:15%;
 }
 
@@ -1168,7 +1169,7 @@ button .btn, button .btn-lg {
 .h2-vision p {
     font-family: 'OpenSans-Light';
     font-size: 30px;
-
+    line-height: 30px;
     margin-top: 40px;
 }
 
@@ -1182,6 +1183,7 @@ button .btn, button .btn-lg {
     background: url("../images/bg-vision.png");
     background-size: 100% 100%;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 
@@ -1216,10 +1218,9 @@ button .btn, button .btn-lg {
 
 .padding-rows{
     padding-bottom: 75px;
+    justify-content: space-evenly;
 }
 .btn-download {
-    max-width: 30%!important;
-
     border-radius: 50px;
     background: rgba(44, 165, 224, 1);
     background: -moz-linear-gradient(left, rgba(44, 165, 224, 1) 0%, rgba(44, 165, 224, 1) 5%, rgba(41, 155, 210, 1) 19%, rgba(35, 133, 180, 1) 48%, rgba(22, 83, 112, 1) 100%);
@@ -1246,20 +1247,20 @@ button .btn, button .btn-lg {
 }
 .GET-BM {
     font-family: 'OpenSans-Regular';
-    font-size:50px;
-    font-weight: Bold;
-    margin-top: 30px;
+    font-size:34px;
+    margin-top: 35px;
     margin-bottom: 40px;
-    text-align: center;
+    color: #182140;
+    text-align: right;
 }
 
 .load {
     font-family: 'OpenSans-Regular';
-    font-size: 50px;
-    margin-top: 25px;
-    display: block;
+    font-size: 34px;
+    margin-top: 20px;
     color: white;
-    min-height: 80px!important;
+    padding: 15px 50px;
+    display: inline-block;
 }
 
 .shirne-a{
@@ -1387,6 +1388,7 @@ button .btn, button .btn-lg {
 
 .margin-row-about-us{
     padding-bottom: 100px;
+    align-items: center;
 }
 .features-p{
     font-size: 30px;
@@ -1437,6 +1439,7 @@ button .btn, button .btn-lg {
     padding: 100px 0;
     background: url(../images/bg-vision.png);
     background-size: 100% 100%;
+    background-attachment: fixed;
     background-repeat: no-repeat;
     color: #fff;
     font-family: 'OpenSans-Regular';
@@ -1457,6 +1460,7 @@ button .btn, button .btn-lg {
     padding-top: 30px;
     padding-bottom: 100px;
     font-size: 24px;
+    line-height: 30px;
 }
 
 .our_vision_slider .circle_position{
@@ -2181,14 +2185,15 @@ button .btn, button .btn-lg {
     background: url(../images/bg-vision.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    font-family: OpenSans-Regular; 
+    font-family: "OpenSans-Regular";
+    background-attachment: fixed;
 }
 
 #road-map{
     background: url(../images/bg-vision.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    font-family: OpenSans-Regular;     
+    font-family: OpenSans-Regular;
 }
 
     .menu-list .menu-item .link{
@@ -2585,10 +2590,6 @@ button .btn, button .btn-lg {
         padding: 20px 40px;
     }
 
-        .btn-download{
-    max-width: 45%!important;
-    height: 120px;  }
-
     .GET-BM{
         FONT-SIZE: 32px!important;
     }
@@ -2692,9 +2693,36 @@ button .btn, button .btn-lg {
 
 @media (max-width: 768px) {
 
-    .btn-download{
-        max-width: 49%!important;
-        height: 100px;
+    .padding-rows {
+        padding-bottom: 75px;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .load {
+        font-size: 30px!important;
+    }
+
+    .description-out-img {
+        margin-top: 50px;
+    }
+
+    .h2-vision h2 {
+        font-size: 50px;
+    }
+
+    .Our-vision h2 {
+        padding-top: 60px;
+    }
+
+    .first-1001 img {
+        padding-right: 10%;
+        padding-left: 10%;
+    }
+
+    .first-1001 img {
+        margin-top: 50px;
     }
 
     .card .btn-link {
@@ -2736,9 +2764,7 @@ button .btn, button .btn-lg {
     .GET-BM{
         font-size: 25px!important;
     }
-    .load{
-        font-size: 40px!important;
-    }
+
     .description-out-img p{
         text-align: left;
         font-size: 18px;
@@ -2825,9 +2851,6 @@ button .btn, button .btn-lg {
 
 @media (max-width: 576px){
 
-    .btn-download{
-       max-width: 70%!important;
-    }
 
     .card .btn-link {
         font-size: 18px!important;
@@ -2893,6 +2916,14 @@ button .btn, button .btn-lg {
     .text-h1 {
         font-size: 24px;
         line-height: 50px;
+    }
+
+    .button_position {
+        padding-top: 70px!important;
+    }
+
+    .slick-dots {
+        bottom: -50px!important;
     }
 
     .accordion-road .btn-link:not(.collapsed) a {
@@ -2996,10 +3027,6 @@ button .btn, button .btn-lg {
 
 @media (max-width: 1200px) {
 
-
-    .btn-download{
-        max-width: 40%!important;
-    }
     .GET-BM{
         font-size: 40px;
     }
@@ -3770,6 +3797,20 @@ button .btn, button .btn-lg {
         width: 80%;
     }
 
+    .bg-model-second img {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    .Business-model .dont {
+        font-size: 24px;
+    }
+
+    .Business-model h2 {
+        font-size: 50px;
+        margin-top: 70px;
+    }
+
     #road-map .roadmap-solution {
         margin-bottom: 0;
     }
@@ -3904,6 +3945,12 @@ button .btn, button .btn-lg {
         margin-bottom: 20px;
     }
 
+    .bg-model-second img {
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 50px;
+    }
+
     .modal_3 .flex_center{
         margin-left: 0;
     }
@@ -4016,11 +4063,6 @@ button .btn, button .btn-lg {
 
 @media (max-width: 576px) {
 
-    .btn-download{
-        max-width: 75%!important;
-        /* display: flex; */
-        margin: 0 auto;
-    }
     .roadmap_view_p{
         font-size: 18px;
     }
@@ -4284,9 +4326,7 @@ button .btn, button .btn-lg {
         font-size: 20px!important;
     }
     .btn-download{
-        max-width: 80%!important;
         font-size: 20px!important;
-        height: 80px;
     }
 
     .load{
