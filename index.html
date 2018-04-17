@@ -1672,11 +1672,20 @@
                     }
                 },
                 {
+                    breakpoint: 1200,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '200px',
+                        slidesToShow: 1
+                    }
+                },
+                {
                     breakpoint: 992,
                     settings: {
                         arrows: false,
                         centerMode: true,
-                        centerPadding: '160px',
+                        centerPadding: '100px',
                         slidesToShow: 1
                     }
                 },
@@ -1694,7 +1703,7 @@
                     settings: {
                         arrows: false,
                         centerMode: true,
-                        centerPadding: '0px',
+                        centerPadding: '10px',
                         slidesToShow: 1
                     }
                 }
@@ -1703,7 +1712,7 @@
 
         $('.roadmap_slider').slick({
             centerMode: true,
-            centerPadding: '100px',
+            centerPadding: '400px',
             dots: true,
             focusOnSelect: true,
             infinite: false,
@@ -1712,7 +1721,7 @@
             initialSlide: 2,
             responsive: [
                 {
-                    breakpoint: 1500,
+                    breakpoint: 1920,
                     settings: {
                         centerPadding: '100px',
                     }
@@ -1720,7 +1729,7 @@
                 {
                     breakpoint: 1200,
                     settings: {
-                        centerPadding: '300px',
+                        centerPadding: '250px',
                         slidesToShow: 1,
                     }
                 },
@@ -1729,7 +1738,7 @@
                     settings: {
                         arrows: true,
                         centerMode: true,
-                        centerPadding: '160px',
+                        centerPadding: '150px',
                         slidesToShow: 1
                     }
                 },
@@ -1772,6 +1781,10 @@
     $('.roadmap_slider_item').each(function () {
         element = Number(element) + Number("1");
         $(this).find('.roadmap_number').text(element);
+    });
+
+    $('.modal_2').on('shown.bs.modal', function (e) {
+      $('.overdrafts_slider').resize();
     });
 
 </script>
