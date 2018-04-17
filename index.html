@@ -152,7 +152,7 @@
                                     </div>
                                 </div>
                                 <button class="new_crypto_overdraft" data-toggle="modal"
-                                        data-target="#new_crypto_overdraft_1" type="button">Next
+                                    data-target="#new_crypto_overdraft_1" type="button">Next
                                 </button>
                             </div>
 
@@ -192,6 +192,10 @@
                                                                 <i class="fas fa-caret-down"></i>
                                                             </div>
                                                         </div>
+                                                        <button type="button" class="tooltip_select" data-toggle="tooltip" data-placement="top" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                                        consequat.">?</button>
                                                     </div>
                                                     <div class="span_i">
                                                         <span><i class="fas fa-chevron-right"></i></span>
@@ -244,7 +248,7 @@
                                         </div>
                                         <div class="modal-footer">
                                             <button data-toggle="modal" data-target="#new_crypto_overdraft_2"
-                                                    type="button" class="btn btn-primary" data-dismiss="modal" aria-label="Close">Next
+                                                type="button" class="btn btn-primary" data-dismiss="modal" aria-label="Close">Next
                                             </button>
                                         </div>
                                     </div>
@@ -264,10 +268,12 @@
                                                 Get an instant Crypto Overdraft from Nexo.
                                             </p>
                                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                <span aria-hidden="true">&times;</span>
+                                                <img src="images/modal_close.png">
                                             </button>
                                             <div class="modal_stage_prev">
-                                                <span></span>
+                                                <button data-toggle="modal" data-target="#new_crypto_overdraft_1"
+                                                    type="button" class="btn btn-primary" data-dismiss="modal" aria-label="Close"><i class="fas fa-chevron-left"></i>
+                                                </button>
                                                 <span class="modal_stage_title">1/3</span>
                                             </div>
                                         </div>
@@ -279,7 +285,7 @@
 
                                             <div class="row modal_panel_2">
 
-                                                <div class="col-xl-8 div_overdrafts_slider">
+                                                <div class="col-xl-9 div_overdrafts_slider">
                                                     <div class="overdrafts_slider">
                                                         <div><h2>1</h2></div>
                                                         <div><h2>2</h2></div>
@@ -305,7 +311,7 @@
                                                     </div>
                                                 </div>
 
-                                                <div class="col-xl-4 div_overdrafts_total">
+                                                <div class="col-xl-3 div_overdrafts_total">
                                                     <p class="overdrafts_total">Total Repayments:</p>
                                                     <div class="tolal_bg">
                                                         <h2>$ 45.544</h2>
@@ -318,7 +324,7 @@
                                         </div>
                                         <div class="modal-footer">
                                             <button data-toggle="modal" data-target="#new_crypto_overdraft_3"
-                                                    type="button" class="btn btn-primary" data-dismiss="modal" aria-label="Close">Next
+                                                type="button" class="btn btn-primary" data-dismiss="modal" aria-label="Close">Next
                                             </button>
                                         </div>
                                     </div>
@@ -338,10 +344,12 @@
                                                 Get an instant Crypto Overdraft from Nexo.
                                             </p>
                                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                <span aria-hidden="true">&times;</span>
+                                                <img src="images/modal_close.png">
                                             </button>
                                             <div class="modal_stage_prev">
-                                                <span></span>
+                                                <button data-toggle="modal" data-target="#new_crypto_overdraft_2"
+                                                    type="button" class="btn btn-primary" data-dismiss="modal" aria-label="Close"><i class="fas fa-chevron-left"></i>
+                                                </button>
                                                 <span class="modal_stage_title">2/3</span>
                                             </div>
                                         </div>
@@ -384,7 +392,7 @@
                                                     <div class="block_bg block_bg_right">
                                                         <div class="right_block">
                                                             <h3>Bank Transfer</h3>
-                                                            <p>to any personal or business bank account</p>
+                                                            <p class="text_blue">to any personal or business bank account</p>
                                                         </div>
                                                     </div>
 
@@ -1624,7 +1632,7 @@
             initialSlide: 12,
             dots: true,
             focusOnSelect: true,
-            slidesToShow: 7,
+            slidesToShow: 9,
             responsive: [
                 {
                     breakpoint: 768,
