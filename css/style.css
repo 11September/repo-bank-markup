@@ -590,6 +590,10 @@
     justify-content: center;
 }
 
+.Instant_Crypto_Overdrafts .modal{
+    overflow: scroll;
+}
+
 .Instant_Crypto_Overdrafts .modal .modal-footer button{
     border-radius: 50px;
     height: 58px;
