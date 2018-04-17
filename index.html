@@ -152,7 +152,7 @@
                                     </div>
                                 </div>
                                 <button class="new_crypto_overdraft" data-toggle="modal"
-                                        data-target="#new_crypto_overdraft_1" type="button">Next
+                                    data-target="#new_crypto_overdraft_1" type="button">Next
                                 </button>
                             </div>
 
@@ -168,7 +168,7 @@
                                                 Get an instant Crypto Overdraft from Nexo.
                                             </p>
                                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                <span aria-hidden="true">&times;</span>
+                                                <img src="images/modal_close.png">
                                             </button>
                                         </div>
                                         <div class="modal-body">
@@ -178,7 +178,7 @@
                                             </div>
                                             <div class="input_comparison">
                                                 <div class="row">
-                                                    <div class="col-xl-5 col-lg-5">
+                                                    <div class="input_comparison_select">
                                                         <select>
                                                             <option>$1000</option>
                                                             <option>$900</option>
@@ -192,14 +192,17 @@
                                                                 <i class="fas fa-caret-down"></i>
                                                             </div>
                                                         </div>
+                                                        <button type="button" class="tooltip_select" data-toggle="tooltip" data-placement="top" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                                        consequat.">?</button>
                                                     </div>
-                                                    <div class="col-xl-2 col-lg-2 span_i">
+                                                    <div class="span_i">
                                                         <span><i class="fas fa-chevron-right"></i></span>
                                                     </div>
 
-                                                    <div class="col-xl-5 col-lg-5">
-                                                        <input class="comparison" name="cost" id="cost" type="text"
-                                                               placeholder="REP 1.035" required>
+                                                    <div class="input_comparison_span">
+                                                        <span>REP 1.035</span>
                                                     </div>
                                                 </div>
 
@@ -245,7 +248,7 @@
                                         </div>
                                         <div class="modal-footer">
                                             <button data-toggle="modal" data-target="#new_crypto_overdraft_2"
-                                                    type="button" class="btn btn-primary">Next
+                                                type="button" class="btn btn-primary" data-dismiss="modal" aria-label="Close">Next
                                             </button>
                                         </div>
                                     </div>
@@ -265,10 +268,12 @@
                                                 Get an instant Crypto Overdraft from Nexo.
                                             </p>
                                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                <span aria-hidden="true">&times;</span>
+                                                <img src="images/modal_close.png">
                                             </button>
                                             <div class="modal_stage_prev">
-                                                <span></span>
+                                                <button data-toggle="modal" data-target="#new_crypto_overdraft_1"
+                                                    type="button" class="btn btn-primary" data-dismiss="modal" aria-label="Close"><i class="fas fa-chevron-left"></i>
+                                                </button>
                                                 <span class="modal_stage_title">1/3</span>
                                             </div>
                                         </div>
@@ -280,7 +285,7 @@
 
                                             <div class="row modal_panel_2">
 
-                                                <div class="col-xl-8 div_overdrafts_slider">
+                                                <div class="col-xl-9 div_overdrafts_slider">
                                                     <div class="overdrafts_slider">
                                                         <div><h2>1</h2></div>
                                                         <div><h2>2</h2></div>
@@ -306,7 +311,7 @@
                                                     </div>
                                                 </div>
 
-                                                <div class="col-xl-4 div_overdrafts_total">
+                                                <div class="col-xl-3 div_overdrafts_total">
                                                     <p class="overdrafts_total">Total Repayments:</p>
                                                     <div class="tolal_bg">
                                                         <h2>$ 45.544</h2>
@@ -319,7 +324,7 @@
                                         </div>
                                         <div class="modal-footer">
                                             <button data-toggle="modal" data-target="#new_crypto_overdraft_3"
-                                                    type="button" class="btn btn-primary">Next
+                                                type="button" class="btn btn-primary" data-dismiss="modal" aria-label="Close">Next
                                             </button>
                                         </div>
                                     </div>
@@ -339,10 +344,12 @@
                                                 Get an instant Crypto Overdraft from Nexo.
                                             </p>
                                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                <span aria-hidden="true">&times;</span>
+                                                <img src="images/modal_close.png">
                                             </button>
                                             <div class="modal_stage_prev">
-                                                <span></span>
+                                                <button data-toggle="modal" data-target="#new_crypto_overdraft_2"
+                                                    type="button" class="btn btn-primary" data-dismiss="modal" aria-label="Close"><i class="fas fa-chevron-left"></i>
+                                                </button>
                                                 <span class="modal_stage_title">2/3</span>
                                             </div>
                                         </div>
@@ -385,7 +392,7 @@
                                                     <div class="block_bg block_bg_right">
                                                         <div class="right_block">
                                                             <h3>Bank Transfer</h3>
-                                                            <p>to any personal or business bank account</p>
+                                                            <p class="text_blue">to any personal or business bank account</p>
                                                         </div>
                                                     </div>
 
@@ -501,7 +508,7 @@
                     <div id="collapseOne-first" class="collapse" aria-labelledby="headingOne" data-parent=".accordion">
                         <div class="card-body">
                             <div class="top-part">
-                                <i class="fas fa-times"></i>
+                                <img src="images/no.png" class="glo-image" alt="">
                                 <p class="text">A lot of assets are remain idle</p>
                             </div>
 
@@ -527,7 +534,7 @@
                     <div id="collapseTwo-first" class="collapse" aria-labelledby="headingTwo" data-parent=".accordion">
                         <div class="card-body">
                             <div class="top-part">
-                                <i class="fas fa-times"></i>
+                                <img src="images/no.png" class="glo-image" alt="">
                                 <p class="text">A lot of assets are remain idle</p>
                             </div>
 
@@ -554,7 +561,7 @@
                          data-parent=".accordion">
                         <div class="card-body">
                             <div class="top-part">
-                                <i class="fas fa-times"></i>
+                                <img src="images/no.png" class="glo-image" alt="">
                                 <p class="text">A lot of assets are remain idle</p>
                             </div>
 
@@ -566,10 +573,92 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="card">
+                    <div class="card-header" id="headingThree">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse"
+                                    data-target="#collapseFour-first,#collapseFour-second" aria-expanded="false"
+                                    aria-controls="collapseThree">
+                                Idle Value of Digital Assets
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseFour-first" class="collapse" aria-labelledby="headingThree"
+                         data-parent=".accordion">
+                        <div class="card-body">
+                            <div class="top-part">
+                                <img src="images/no.png" class="glo-image" alt="">
+                                <p class="text">A lot of assets are remain idle</p>
+                            </div>
+
+                            <div class="bottom-part">
+                                <p class="text">Many investors prefer not to use their assets of cryptocurrency.
+                                    Billions of dollars remain idle. Analysts say that in 2025 the value of deposits
+                                    will reach $5 trillion.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header" id="headingThree">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse"
+                                    data-target="#collapseFive-first,#collapseFive-second" aria-expanded="false"
+                                    aria-controls="collapseThree">
+                                Idle Value of Digital Assets
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseFive-first" class="collapse" aria-labelledby="headingThree"
+                         data-parent=".accordion">
+                        <div class="card-body">
+                            <div class="top-part">
+                                <img src="images/no.png" class="glo-image" alt="">
+                                <p class="text">A lot of assets are remain idle</p>
+                            </div>
+
+                            <div class="bottom-part">
+                                <p class="text">Many investors prefer not to use their assets of cryptocurrency.
+                                    Billions of dollars remain idle. Analysts say that in 2025 the value of deposits
+                                    will reach $5 trillion.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header" id="headingThree">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse"
+                                    data-target="#collapseSix-first,#collapseSix-second" aria-expanded="false"
+                                    aria-controls="collapseThree">
+                                Idle Value of Digital Assets
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseSix-first" class="collapse" aria-labelledby="headingThree"
+                         data-parent=".accordion">
+                        <div class="card-body">
+                            <div class="top-part">
+                                <img src="images/no.png" class="glo-image" alt="">
+                                <p class="text">A lot of assets are remain idle</p>
+                            </div>
+
+                            <div class="bottom-part">
+                                <p class="text">Many investors prefer not to use their assets of cryptocurrency.
+                                    Billions of dollars remain idle. Analysts say that in 2025 the value of deposits
+                                    will reach $5 trillion.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
             <div class="image-block">
-                <img src="images/iphonex.png" alt="">
+                <img src="images/iphonex.png" class="iphonex" alt="">
             </div>
 
             <div class="accordion" id="accordion-two">
@@ -589,7 +678,7 @@
                     <div id="collapseOne-second" class="collapse" aria-labelledby="headingOne" data-parent="#accordion-two">
                         <div class="card-body" data-parent=".accordion">
                             <div class="top-part">
-                                <i class="fas fa-check"></i>
+                                <img src="images/yes.png" class="glo-image" alt="">
                                 <p class="text">A lot of assets are remain idle</p>
                             </div>
 
@@ -615,7 +704,7 @@
                     <div id="collapseTwo-second" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion-two">
                         <div class="card-body" >
                             <div class="top-part">
-                                <i class="fas fa-check"></i>
+                                <img src="images/yes.png" class="glo-image" alt="">
                                 <p class="text">A lot of assets are remain idle</p>
                             </div>
 
@@ -641,7 +730,7 @@
                     <div id="collapseThree-second" class="collapse" aria-labelledby="headingThree" data-parent="#accordion-two">
                         <div class="card-body">
                             <div class="top-part">
-                                <i class="fas fa-check"></i>
+                                <img src="images/yes.png" class="glo-image" alt="">
                                 <p class="text">A lot of assets are remain idle</p>
                             </div>
 
@@ -653,6 +742,88 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="card">
+                    <div class="card-header" id="headingFour">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse"
+                                    data-target="#collapseFour-first,#collapseFour-second" aria-expanded="false"
+                                    aria-controls="collapseThree">
+                                Idle Value of Digital Assets
+                            </button>
+                        </h5>
+                    </div>
+
+                    <div id="collapseFour-second" class="collapse" aria-labelledby="headingThree" data-parent="#accordion-two">
+                        <div class="card-body">
+                            <div class="top-part">
+                                <img src="images/yes.png" class="glo-image" alt="">
+                                <p class="text">A lot of assets are remain idle</p>
+                            </div>
+
+                            <div class="bottom-part">
+                                <p class="text">Many investors prefer not to use their assets of cryptocurrency.
+                                    Billions of dollars remain idle. Analysts say that in 2025 the value of deposits
+                                    will reach $5 trillion.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header" id="headingFour">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse"
+                                    data-target="#collapseFive-first,#collapseFive-second" aria-expanded="false"
+                                    aria-controls="collapseThree">
+                                Idle Value of Digital Assets
+                            </button>
+                        </h5>
+                    </div>
+
+                    <div id="collapseFive-second" class="collapse" aria-labelledby="headingThree" data-parent="#accordion-two">
+                        <div class="card-body">
+                            <div class="top-part">
+                                <img src="images/yes.png" class="glo-image" alt="">
+                                <p class="text">A lot of assets are remain idle</p>
+                            </div>
+
+                            <div class="bottom-part">
+                                <p class="text">Many investors prefer not to use their assets of cryptocurrency.
+                                    Billions of dollars remain idle. Analysts say that in 2025 the value of deposits
+                                    will reach $5 trillion.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header" id="headingFour">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse"
+                                    data-target="#collapseSix-first,#collapseSix-second" aria-expanded="false"
+                                    aria-controls="collapseThree">
+                                Idle Value of Digital Assets
+                            </button>
+                        </h5>
+                    </div>
+
+                    <div id="collapseSix-second" class="collapse" aria-labelledby="headingThree" data-parent="#accordion-two">
+                        <div class="card-body">
+                            <div class="top-part">
+                                <img src="images/yes.png" class="glo-image" alt="">
+                                <p class="text">A lot of assets are remain idle</p>
+                            </div>
+
+                            <div class="bottom-part">
+                                <p class="text">Many investors prefer not to use their assets of cryptocurrency.
+                                    Billions of dollars remain idle. Analysts say that in 2025 the value of deposits
+                                    will reach $5 trillion.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
@@ -668,80 +839,85 @@
                 <div class="card">
                     <div class="road-header" id="headingOne">
                         <h5 class="mb-0">
-                            <button class="btn btn-link" data-toggle="collapse"
-                                    data-target="#collapseOne-first,#collapseOne-second" aria-expanded="true"
+                            <button class="btn btn-link collapsed" data-toggle="collapse"
+                                    data-target="#System-link-one" aria-expanded="true"
                                     aria-controls="collapseOne">
-                                <a href="">Wallet Destro</a>
+                                <a href="">Real-time Asset Monitoring</a>
                             </button>
                         </h5>
                     </div>
 
-                    <div id="collapseOne-first" class="collapse" aria-labelledby="headingOne"
+                    <div id="System-link-one" class="collapse" aria-labelledby="headingOne"
                          data-parent=".accordion-road">
                         <div class="card-body">
-                            <div class="top-part">
-                                <i class="fas fa-times"></i>
-                                <p class="text">A lot of assets are remain idle</p>
-                            </div>
-
                             <div class="bottom-part">
-                                <p class="text">Many investors prefer not to use their assets of cryptocurrency.
-                                    Billions of dollars remain idle. Analysts say that in 2025 the value of deposits
-                                    will reach $5 trillion.</p>
+                                <div class="bottom-part">
+                                    <ul>
+                                        <li class="rollet-link">- Placement</li>
+                                        <li class="rollet-link">- Hedging positions</li>
+                                        <li class="rollet-link">- Release</li>
+                                        <li class="rollet-link">- Servicing of overdraft safety levels</li>
+                                        <li class="rollet-link">- Increase of limits</li>
+                                        <li class="rollet-link">- Liquidation</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="card">
-                    <div class="card-header" id="headingTwo">
+                    <div class="road-header" id="headingOne">
                         <h5 class="mb-0">
                             <button class="btn btn-link collapsed" data-toggle="collapse"
-                                    data-target="#collapseTwo-first,#collapseTwo-second" aria-expanded="false"
-                                    aria-controls="collapseTwo">
-                                <a href="">Wallet Destro</a>
+                                    data-target="#System-link-two" aria-expanded="true"
+                                    aria-controls="collapseOne">
+                                <a href="">Data Analytics</a>
                             </button>
                         </h5>
                     </div>
-                    <div id="collapseTwo-first" class="collapse" aria-labelledby="headingTwo"
+
+                    <div id="System-link-two" class="collapse" aria-labelledby="headingOne"
                          data-parent=".accordion-road">
                         <div class="card-body">
-                            <div class="top-part">
-                                <i class="fas fa-times"></i>
-                                <p class="text">A lot of assets are remain idle</p>
-                            </div>
-
                             <div class="bottom-part">
-                                <p class="text">Many investors prefer not to use their assets of cryptocurrency.
-                                    Billions of dollars remain idle. Analysts say that in 2025 the value of deposits
-                                    will reach $5 trillion.</p>
+                                <ul>
+                                    <li class="rollet-link">- Placement</li>
+                                    <li class="rollet-link">- Hedging positions</li>
+                                    <li class="rollet-link">- Release</li>
+                                    <li class="rollet-link">- Servicing of overdraft safety levels</li>
+                                    <li class="rollet-link">- Increase of limits</li>
+                                    <li class="rollet-link">- Liquidation</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="card">
-                    <div class="card-header" id="headingThree">
+                    <div class="road-header" id="headingOne">
                         <h5 class="mb-0">
                             <button class="btn btn-link collapsed" data-toggle="collapse"
-                                    data-target="#collapseThree-first,#collapseThree-second" aria-expanded="false"
-                                    aria-controls="collapseThree">
-                                <a href="">Wallet Destro</a>
+                                    data-target="#System-link-three" aria-expanded="true"
+                                    aria-controls="collapseOne">
+                                <a href="">Funds Distribution</a>
                             </button>
                         </h5>
                     </div>
-                    <div id="collapseThree-first" class="collapse" aria-labelledby="headingThree"
+
+                    <div id="System-link-three" class="collapse" aria-labelledby="headingOne"
                          data-parent=".accordion-road">
                         <div class="card-body">
-                            <div class="top-part">
-                                <i class="fas fa-times"></i>
-                                <p class="text">A lot of assets are remain idle</p>
-                            </div>
 
                             <div class="bottom-part">
-                                <p class="text">Many investors prefer not to use their assets of cryptocurrency.
-                                    Billions of dollars remain idle. Analysts say that in 2025 the value of deposits
-                                    will reach $5 trillion.</p>
+                                <ul>
+                                    <li class="rollet-link">- Placement</li>
+                                    <li class="rollet-link">- Hedging positions</li>
+                                    <li class="rollet-link">- Release</li>
+                                    <li class="rollet-link">- Servicing of overdraft safety levels</li>
+                                    <li class="rollet-link">- Increase of limits</li>
+                                    <li class="rollet-link">- Liquidation</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -756,79 +932,87 @@
 
             <div class="accordion-road" id="road-accordion-two">
                 <div class="card">
-                    <div class="card-header" id="headingOne">
+                    <div class="road-header" id="headingOne">
                         <h5 class="mb-0">
-                            <button class="btn btn-link" data-toggle="collapse"
-                                    data-target="#collapseOne-first,#collapseOne-second" aria-expanded="true"
+                            <button class="btn btn-link collapsed" data-toggle="collapse"
+                                    data-target="#System-link-four" aria-expanded="true"
                                     aria-controls="collapseOne">
-                                <a href="">Wallet Destro</a>
+                                <a href="">Automated Notifications</a>
                             </button>
                         </h5>
                     </div>
 
-                    <div id="collapseOne-second" class="collapse" aria-labelledby="headingOne">
+                    <div id="System-link-four" class="collapse" aria-labelledby="headingOne"
+                         data-parent="#road-accordion-two">
                         <div class="card-body">
-                            <div class="top-part">
-                                <i class="fas fa-check"></i>
-                                <p class="text">A lot of assets are remain idle</p>
-                            </div>
 
                             <div class="bottom-part">
-                                <p class="text">Many investors prefer not to use their assets of cryptocurrency.
-                                    Billions of dollars remain idle. Analysts say that in 2025 the value of deposits
-                                    will reach $5 trillion.</p>
+                                <ul>
+                                    <li class="rollet-link">- Placement</li>
+                                    <li class="rollet-link">- Hedging positions</li>
+                                    <li class="rollet-link">- Release</li>
+                                    <li class="rollet-link">- Servicing of overdraft safety levels</li>
+                                    <li class="rollet-link">- Increase of limits</li>
+                                    <li class="rollet-link">- Liquidation</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="card">
-                    <div class="card-header" id="headingTwo">
+                    <div class="road-header" id="headingOne">
                         <h5 class="mb-0">
                             <button class="btn btn-link collapsed" data-toggle="collapse"
-                                    data-target="#collapseTwo-first,#collapseTwo-second" aria-expanded="false"
-                                    aria-controls="collapseTwo">
-                                <a href="">Wallet Destro</a>
+                                    data-target="#System-link-five" aria-expanded="true"
+                                    aria-controls="collapseOne">
+                                <a href="">Wallet Servicing </a>
                             </button>
                         </h5>
                     </div>
-                    <div id="collapseTwo-second" class="collapse" aria-labelledby="headingTwo">
+
+                    <div id="System-link-five" class="collapse" aria-labelledby="headingOne"
+                         data-parent="#road-accordion-two">
                         <div class="card-body">
-                            <div class="top-part">
-                                <i class="fas fa-check"></i>
-                                <p class="text">A lot of assets are remain idle</p>
-                            </div>
 
                             <div class="bottom-part">
-                                <p class="text">Many investors prefer not to use their assets of cryptocurrency.
-                                    Billions of dollars remain idle. Analysts say that in 2025 the value of deposits
-                                    will reach $5 trillion.</p>
+                                <ul>
+                                    <li class="rollet-link">- Placement</li>
+                                    <li class="rollet-link">- Hedging positions</li>
+                                    <li class="rollet-link">- Release</li>
+                                    <li class="rollet-link">- Servicing of overdraft safety levels</li>
+                                    <li class="rollet-link">- Increase of limits</li>
+                                    <li class="rollet-link">- Liquidation</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="card">
-                    <div class="card-header" id="headingThree">
+                    <div class="road-header" id="headingOne">
                         <h5 class="mb-0">
                             <button class="btn btn-link collapsed" data-toggle="collapse"
-                                    data-target="#collapseThree-first,#collapseThree-second" aria-expanded="false"
-                                    aria-controls="collapseThree">
-                                <a href="">Wallet Destro</a>
+                                    data-target="#System-link-six" aria-expanded="true"
+                                    aria-controls="collapseOne">
+                                <a href="">Repayment Analytics</a>
                             </button>
                         </h5>
                     </div>
-                    <div id="collapseThree-second" class="collapse" aria-labelledby="headingThree">
+
+                    <div id="System-link-six" class="collapse" aria-labelledby="headingOne"
+                         data-parent="#road-accordion-two">
                         <div class="card-body">
-                            <div class="top-part">
-                                <i class="fas fa-check"></i>
-                                <p class="text">A lot of assets are remain idle</p>
-                            </div>
 
                             <div class="bottom-part">
-                                <p class="text">Many investors prefer not to use their assets of cryptocurrency.
-                                    Billions of dollars remain idle. Analysts say that in 2025 the value of deposits
-                                    will reach $5 trillion.</p>
+                                <ul>
+                                    <li class="rollet-link">- Placement</li>
+                                    <li class="rollet-link">- Hedging positions</li>
+                                    <li class="rollet-link">- Release</li>
+                                    <li class="rollet-link">- Servicing of overdraft safety levels</li>
+                                    <li class="rollet-link">- Increase of limits</li>
+                                    <li class="rollet-link">- Liquidation</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -952,7 +1136,7 @@
         <p class="dont">Stop selling your crypto. Leave your money for rising</p>
         <p class="dont"> Get perspective Crypto Overdrafts from RepoBank in 3 steps.</p>
 
-        <div class="bg-model second-1001">
+        <div class="bg-model-second">
             <img src="images/second-1001.png" alt="">
         </div>
         <div class="row padding-rows">
@@ -962,7 +1146,7 @@
 
             </div>
             <div class="btn-download col-lg-6 col-md-6">
-                <span class="load">  <i class="fas fa-download"></i> Download</span>
+                <span class="load"> <a class="shirne-a" href="#"> <i class="fas fa-download"></i> Download </a> </span>
             </div>
 
         </div>
@@ -1036,29 +1220,33 @@
 
         <div class="row">
 
-            <div class="bg-XuNHbjD1  col-lg-4 col-md-4">
-
+            <div class="bg-cards-epic   col-lg-4 col-md-4" >
+                <img src="images/bg-card.png" alt="img-is-not-find">
 
             </div>
 
-            <div class="items-icons  col-lg-8 col-md-8">
+            <div class="flipper items-icons  col-lg-8 col-md-8">
 
 
 
-                <div class="align-items-left-features-new">
-                    <div class="features">
-                        <div class="blue-bg">
+                <div class="  align-items-left-features-new ">
+                    <div class="features block-1-few">
+                        <div class="blue-bg front">
                             <i class="fas fa-coffee spic-cof"></i>
                         </div>
 
                         <div class="jeniur">
 
                         </div>
-                        <p class="features-p"> Peculiarities</p>
+
+                        <div>
+                            <p class="features-p"> Peculiarities</p>
+                        </div>
+
                     </div>
 
 
-                    <div class="features-2">
+                    <div class="features-2 margin-feaure">
                         <p class="description-fither">
                             Credit Card for Free With  </p>
                         <p class="description-fither"> Adaptable Overdraft Limit </p>
@@ -1067,17 +1255,22 @@
                         <p class="description-fither">Pay in Local Currencies </p>
                         <p class="description-fither"> Hidden Fee-Free </p>
 
-
-
                     </div>
 
 
 
-                <div class="features">
+                <div class="features block-2-few">
 
                     <div class="blue-bg">
+
+
                         <i class="fas fa-coffee spic-cof"></i>
                     </div>
+
+                    <div class="jeniur-2 ">
+
+                    </div>
+
                     <p class="features-p">Provided by Digital Assets</p>
                 </div>
 
@@ -1094,14 +1287,18 @@
                 </div>
 
 
-                <div class="features">
+                <div class="features block-2-few">
 
                     <div class="blue-bg">
                         <i class="fas fa-coffee spic-cof"></i>
                     </div>
+
+                    <div class="jeniur-3">
+
+                    </div>
                     <p class="features-p"> 24/7 Security</p>
                 </div>
-                <div class="features-2">
+                <div class="features-2 special-marg">
 
 
 
@@ -1119,33 +1316,40 @@
             <div class="align-items-features-right">
 
 
-                <div class="features">
+                <div class="features block-2-few">
 
                     <div class="blue-bg">
                         <i class="fas fa-coffee spic-cof"></i>
+                    </div>
+
+                    <div class="jeniur-4">
+
                     </div>
                     <p class="features-p">Editions</p>
                 </div>
 
 
-                <div class="features-2">
+                <div class="features-2 special-few-marg">
                     <p class="description-fither">Worldwide Money Transaction </p>
                     <p class="description-fither"> Spending Analytics </p>
                     <p class="description-fither">Budgeting Tools</p>
                     <p class="description-fither"> Enable/Disable Card Online </p>
                 </div>
 
-                <div class="features">
+                <div class="features block-2-few">
 
                     <div class="blue-bg">
                         <i class="fas fa-coffee spic-cof"></i>
                     </div>
+
+                    <div class="jeniur-5">
+
+                    </div>
                     <p class="features-p"> Payment System</p>
                 </div>
 
-                <div class="features-2">
-                    <p class="description-fither">
-                        Visa </p>
+                <div class="features-2 special-margin-fet">
+                    <p class="description-fither"> Visa </p>
                     <p class="description-fither"> MasterCard</p>
                     <p class="description-fither"> Apple Pay</p>
                     <p class="description-fither"> Android Pay </p>
@@ -1602,7 +1806,7 @@
             initialSlide: 12,
             dots: true,
             focusOnSelect: true,
-            slidesToShow: 7,
+            slidesToShow: 9,
             responsive: [
                 {
                     breakpoint: 768,
@@ -1636,7 +1840,7 @@
             slidesToShow: 3,
             responsive: [
                 {
-                    breakpoint: 1200,
+                    breakpoint: 1300,
                     settings: {
                         arrows: false,
                     }
@@ -1742,6 +1946,10 @@
     $('.roadmap_slider_item').each(function () {
         element = Number(element) + Number("1");
         $(this).find('.roadmap_number').text(element);
+    });
+
+    $('.modal_2').on('shown.bs.modal', function (e) {
+      $('.overdrafts_slider').resize();
     });
 
 </script>
