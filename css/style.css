@@ -1123,6 +1123,18 @@ button .btn, button .btn-lg {
     background: black;
 }
 
+.strela{
+    margin-left: -150px;
+}
+
+.credit-logo{
+    left: 135px;
+    z-index: 2;
+    top: 5px!important;
+    width: 150px;
+}
+
+
 
 
 .Credit-card h2{
@@ -1623,7 +1635,7 @@ button .btn, button .btn-lg {
 }
 
 .accordion-road .card{
-    margin-bottom: 100px;
+    margin-bottom: 150px;
 }
 
 .accordion-road .btn-link a{
@@ -1631,12 +1643,14 @@ button .btn, button .btn-lg {
     color: #182140;
     text-decoration: none;
     font-weight: bold;
+    font-size: 25px;
+    font-family: OpenSans-Bold;
 }
 
 .roadmap{
     display: flex;
+    justify-content: space-evenly;
 
-    background-image: url(../images/rollet.png);
     background-repeat: no-repeat;
     background-position: center;
 
@@ -1661,13 +1675,50 @@ button .btn, button .btn-lg {
 }
 
 .accordion-road{
-    width: 40%;
+    width: 20%;
+    margin-top: 50px;
 }
 
 #compas img{
-    width: 80%;
-    margin-top: 60px;
+    position: relative;
+    top: 135px;
 }
+
+
+
+.red-krug{
+    position: absolute;
+    top: 117px;
+    left: 120px;
+    z-index: 2;
+}
+
+
+
+
+#compas{
+    width: 60%;
+    background: url("../images/rollet-two.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 700px;
+    width: 700px;
+}
+
+.rollet{
+    position: absolute;
+    left: 25%;
+    margin-top: -190px;
+}
+
+.repo-logo{
+    position: absolute;
+    left: 680px;
+    z-index: 3;
+    margin-top: 100px;
+}
+
+
 
 #accordion-one .solution-head{
     border-bottom: 1px solid #FC4F44;
@@ -2010,6 +2061,23 @@ button .btn, button .btn-lg {
     .Instant_Crypto_Overdrafts .img_item {
         margin-bottom: 30px;
     }
+
+    #compas {
+        height: 550px;
+        width: 550px;
+    }
+
+    #compas img {
+        top: 70px;
+    }
+
+    .credit-logo {
+        top: -60px !important;
+    }
+
+    .accordion-road .btn-link a {
+        font-size: 22px;
+    }
 }
 
 @media (max-width: 1050px){
@@ -2044,6 +2112,46 @@ button .btn, button .btn-lg {
 @media (max-width: 992px) {
     .wrapper-download-block{
         flex-direction: column;
+    }
+
+    .text-solution, .roadmap-solution {
+        font-size: 26px;
+    }
+
+    .header-solution, .header-roadmap {
+        font-size: 50px;
+    }
+
+    .roadmap {
+        padding: 50px 0 80px;
+    }
+
+    #compas {
+        height: 400px;
+        width: 400px;
+    }
+
+    .credit-logo{
+        width: 100px;
+        top: 0px!important;
+        left: 80px;
+    }
+
+    .accordion-road .card {
+        margin-bottom: 100px;
+    }
+
+    .accordion-road .btn-link a {
+        font-size: 18px;
+    }
+
+    .strela {
+        margin-left: -100px;
+    }
+
+    #compas .strela {
+        width: 250px;
+        top: 70px;
     }
 
     .wrapper-download-block{
@@ -2166,6 +2274,26 @@ button .btn, button .btn-lg {
         height: 100px;
     }
 
+    #compas{
+        display: none;
+    }
+
+    .accordion-road .btn-link a {
+        font-size: 22px;
+    }
+
+    .accordion-road {
+        width: 40%;
+    }
+
+    #road-map .roadmap-solution {
+        margin-bottom: 0px;
+    }
+
+    .roadmap {
+        padding: 20px 0 80px!important;
+    }
+
     .GET-BM{
         font-size: 25px!important;
     }
@@ -2258,9 +2386,18 @@ button .btn, button .btn-lg {
 
 @media (max-width: 576px){
 
-   .btn-download{
+    .btn-download{
        max-width: 70%!important;
-   }
+    }
+
+    .accordion-road {
+        width: 45%;
+    }
+
+    .accordion-road .btn-link a {
+        font-size: 20px;
+    }
+
     .solutions {
         display: flex;
         flex-direction: column;
@@ -2301,6 +2438,31 @@ button .btn, button .btn-lg {
     .text-h1 {
         font-size: 24px;
         line-height: 50px;
+    }
+
+    .header-solution, .header-roadmap {
+        font-size: 40px;
+    }
+
+    .text-solution, .roadmap-solution {
+        font-size: 22px;
+    }
+
+    .roadmap{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .accordion-road {
+        width: 90%;
+    }
+
+    .accordion-road .card {
+        margin-bottom: 50px;
+    }
+
+    .accordion-road .card{
+        width: 100%;
     }
 
     .roadmap_title {
@@ -2450,6 +2612,10 @@ button .btn, button .btn-lg {
     padding: 80px 0 80px;
     font-family: OpenSans-Regular;
     color: #182140;
+}
+
+.repo-logo{
+    position: absolute;
 }
 
 .roadmap .slick-dots {
@@ -3122,6 +3288,10 @@ button .btn, button .btn-lg {
         width: 80%;
     }
 
+    #road-map .roadmap-solution {
+        margin-bottom: 0;
+    }
+
     .wrapper-download-text {
         margin-bottom: 20px;
     }
@@ -3588,5 +3758,21 @@ button .btn, button .btn-lg {
 @media (max-width: 382px){
     .overdraft_panel .new_crypto_overdraft {
         top: 82%;
+    }
+
+    .header-solution, .header-roadmap {
+        padding-top: 50px;
+    }
+
+    .header-solution, .header-roadmap {
+        font-size: 34px;
+    }
+
+    .text-solution, .roadmap-solution {
+        font-size: 20px;
+    }
+
+    .accordion-road .btn-link a {
+        font-size: 18px;
     }
 }

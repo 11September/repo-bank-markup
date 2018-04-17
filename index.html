@@ -580,14 +580,14 @@
                         <h5 class="mb-0">
                             <button class="btn btn-link" data-toggle="collapse"
                                     data-target="#collapseOne-first,#collapseOne-second" aria-expanded="true"
-                                    aria-controls="collapseOne">
+                                    aria-controls="collapseOne" >
                                 Idle Value of Digital Assets
                             </button>
                         </h5>
                     </div>
 
-                    <div id="collapseOne-second" class="collapse" aria-labelledby="headingOne">
-                        <div class="card-body">
+                    <div id="collapseOne-second" class="collapse" aria-labelledby="headingOne" data-parent="#accordion-two">
+                        <div class="card-body" data-parent=".accordion">
                             <div class="top-part">
                                 <i class="fas fa-check"></i>
                                 <p class="text">A lot of assets are remain idle</p>
@@ -612,8 +612,8 @@
                             </button>
                         </h5>
                     </div>
-                    <div id="collapseTwo-second" class="collapse" aria-labelledby="headingTwo">
-                        <div class="card-body">
+                    <div id="collapseTwo-second" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion-two">
+                        <div class="card-body" >
                             <div class="top-part">
                                 <i class="fas fa-check"></i>
                                 <p class="text">A lot of assets are remain idle</p>
@@ -638,7 +638,7 @@
                             </button>
                         </h5>
                     </div>
-                    <div id="collapseThree-second" class="collapse" aria-labelledby="headingThree">
+                    <div id="collapseThree-second" class="collapse" aria-labelledby="headingThree" data-parent="#accordion-two">
                         <div class="card-body">
                             <div class="top-part">
                                 <i class="fas fa-check"></i>
@@ -659,7 +659,7 @@
 </section>
 
 <section id="road-map">
-    <div class="container roadmap-block">
+    <div class="container-fluid roadmap-block">
         <h2 class="header-roadmap">RepoBank System</h2>
         <p class="roadmap-solution">This is a Repobank system of interactions with customers.Here you can see the main
             functionality of the System</p>
@@ -671,7 +671,7 @@
                             <button class="btn btn-link" data-toggle="collapse"
                                     data-target="#collapseOne-first,#collapseOne-second" aria-expanded="true"
                                     aria-controls="collapseOne">
-                                <a href="">Wallet Servicing</a>
+                                <a href="">Wallet Destro</a>
                             </button>
                         </h5>
                     </div>
@@ -699,7 +699,7 @@
                             <button class="btn btn-link collapsed" data-toggle="collapse"
                                     data-target="#collapseTwo-first,#collapseTwo-second" aria-expanded="false"
                                     aria-controls="collapseTwo">
-                                <a href="">Data Analytics</a>
+                                <a href="">Wallet Destro</a>
                             </button>
                         </h5>
                     </div>
@@ -726,7 +726,7 @@
                             <button class="btn btn-link collapsed" data-toggle="collapse"
                                     data-target="#collapseThree-first,#collapseThree-second" aria-expanded="false"
                                     aria-controls="collapseThree">
-                                <a href="">Funds Distribution</a>
+                                <a href="">Wallet Destro</a>
                             </button>
                         </h5>
                     </div>
@@ -747,10 +747,11 @@
                     </div>
                 </div>
             </div>
-<!--             <img src="images/rollet.png" alt=""> -->
 
             <div id="compas">
-                <img src="images/logo-110.png" class="arrow_c" alt="">
+                <img src="images/arrows.png" class="strela arrow_c" alt="">
+
+                <img src="images/logo-100.png" class="credit-logo" alt="">
             </div>
 
             <div class="accordion-road" id="road-accordion-two">
@@ -760,7 +761,7 @@
                             <button class="btn btn-link" data-toggle="collapse"
                                     data-target="#collapseOne-first,#collapseOne-second" aria-expanded="true"
                                     aria-controls="collapseOne">
-                                <a href="">Automated Notifications</a>
+                                <a href="">Wallet Destro</a>
                             </button>
                         </h5>
                     </div>
@@ -787,7 +788,7 @@
                             <button class="btn btn-link collapsed" data-toggle="collapse"
                                     data-target="#collapseTwo-first,#collapseTwo-second" aria-expanded="false"
                                     aria-controls="collapseTwo">
-                                <a href="">Repayment Analytics</a>
+                                <a href="">Wallet Destro</a>
                             </button>
                         </h5>
                     </div>
@@ -813,7 +814,7 @@
                             <button class="btn btn-link collapsed" data-toggle="collapse"
                                     data-target="#collapseThree-first,#collapseThree-second" aria-expanded="false"
                                     aria-controls="collapseThree">
-                                <a href="">Real-time Asset Monitoring</a>
+                                <a href="">Wallet Destro</a>
                             </button>
                         </h5>
                     </div>
@@ -1764,9 +1765,9 @@
                 $("html").mousemove(function(e) {
                     x1 = e.pageX;
                     y1 = e.pageY;
-                    x = x1-x0;
-                    y = y1-y0;
-                    r = 220 + settings.deg - 180 / Math.PI * Math.atan2(y, x);
+                    x = x1 - x0;
+                    y = y1 - y0;
+                    r = 175 + settings.deg - 180 / Math.PI * Math.atan2(y, x);
                     img.css("transform", "rotate(-" + r + "deg)");
                     img.css("-moz-transform", "rotate(-" + r + "deg)");
                     img.css("-webkit-transform", "rotate(-" + r + "deg)");
@@ -1780,3 +1781,4 @@
         $('.arrow_c').rotateImg({deg : 0});
     });
 </script>
+
