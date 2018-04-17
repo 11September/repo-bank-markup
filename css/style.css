@@ -2154,9 +2154,28 @@ button .btn, button .btn-lg {
     .roadmap_slider {
         padding: 0px 15px;
     }
+
+    .Instant_Crypto_Overdrafts .bank_items_4 p,
+    .left_block_title_2{
+        white-space: nowrap;
+        overflow: hidden; 
+        text-overflow: ellipsis;
+    }
 }
 
 @media (max-width: 1400px){
+    .Instant_Crypto_Overdrafts .block_bg_img,
+    .Instant_Crypto_Overdrafts .block_bg_right_img{
+        height: 257px;
+    }
+
+    .Instant_Crypto_Overdrafts .block_bg_img .left_block {
+        padding: 5px 0 3px;
+    }
+
+    .block_bg_img_text_padding {
+        padding: 21px 0 0;
+    }
 
         .features-p{
             margin-top: 30px;
@@ -2284,6 +2303,11 @@ button .btn, button .btn-lg {
     .input_comparison .arrow_panel {
         width: 150px;
     }
+
+    .block_bg_img img {
+        top: -30px;
+        margin-bottom: -66px;
+    }
 }
 
 @media (max-width: 1050px){
@@ -2316,6 +2340,11 @@ button .btn, button .btn-lg {
 }
 
 @media (max-width: 992px) {
+    .Instant_Crypto_Overdrafts .block_bg_img, 
+    .Instant_Crypto_Overdrafts .block_bg_right_img {
+        height: auto;
+    }
+
     .wrapper-download-block{
         flex-direction: column;
     }
@@ -3766,6 +3795,19 @@ button .btn, button .btn-lg {
         top: -19px;
         margin-right: 15px;
         font-size: 16px;
+    }
+
+    .credit_card, .bank_transfer{
+        padding: 0;
+    }
+
+    .Instant_Crypto_Overdrafts .modal_3 .modal-footer button {
+        width: 100%;
+    }
+
+    .Instant_Crypto_Overdrafts .modal_3 .modal-body, .Instant_Crypto_Overdrafts .modal .modal-footer {
+        padding-right: 10px;
+        padding-left: 15px;
     }
 
     .Instant_Crypto_Overdrafts .input_comparison .span_i {
