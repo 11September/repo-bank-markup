@@ -578,7 +578,7 @@
 
 .Instant_Crypto_Overdrafts .img_item > p{
     padding-top: 15px;
-    font-size: 30px !important;
+    font-size: 28px !important;
 }
 
 .Instant_Crypto_Overdrafts .img_item:hover > p{
@@ -929,7 +929,24 @@
     height: 65px;
 }
 
+.tooltip_select{
+    border: none;
+    color: #fff;
+    background: #bbbbbb;
+    padding: 5px 10px;
+    border-radius: 20px;
+    position: relative;
+    margin-top: -5px;
+    top: -28px;
+    float: right;
+    margin-right: 30px;
+    font-size: 18px;
+}
 
+.tooltip .tooltip-inner {
+    background: #bbbbbb;
+    color: #fff;
+}
 
 .Instant_Crypto_Overdrafts .modal_3 .modal-footer .btn-secondary{
     background: linear-gradient(to right, #fa4f44, #7e2822);
