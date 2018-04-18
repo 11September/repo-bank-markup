@@ -2628,6 +2628,37 @@ button .btn, button .btn-lg {
 
 @media (max-width: 576px){
 
+    .features-p {
+        font-size: 16px;
+    }
+    .blue-bg svg {
+        width: 30px!important;
+        height: 30px!important;
+    }
+
+    .jeniur::before {
+        top: 40px;
+    }
+
+    .jeniur-4::before {
+        top: 250px;
+    }
+
+    .jeniur-2::before {
+        top: 288px;
+    }
+
+    .jeniur-3::before {
+        top: 446px;
+    }
+
+    .jeniur-5::before {
+        top: 412px;
+    }
+
+    .blue-bg{
+        padding: 10px;
+    }
    .btn-download{
        max-width: 70%!important;
    }
@@ -3204,6 +3235,7 @@ button .btn, button .btn-lg {
     .team-item{
         margin-bottom: 80px;
     }
+    
 
     .phone-button{
         width: 60%!important;
@@ -3842,6 +3874,16 @@ button .btn, button .btn-lg {
 }
 
 @media (max-width: 480px) {
+
+    .items-icons{
+        flex-direction: column;
+
+    }
+    .align-items-left-features-new{
+        margin-bottom: 0px;
+    }
+
+
      /* our_vision_slider */
      .tooltip_select {
         padding: 4px 8px;
