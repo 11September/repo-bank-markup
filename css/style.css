@@ -1461,60 +1461,23 @@ button .btn, button .btn-lg {
     color: white;
 }
 
-.jeniur::before{
-    content: "";
-    border-bottom: 2px solid #2CA5E0;
-    width: 35%;
-    height: 0.5em;
-    position: absolute;
-    top:65px;
-    margin-right: 25px;
-}
-
-
-.jeniur-2::before{
-    content: "";
-    border-bottom: 2px solid #2CA5E0;
-    width: 35%;
-    height: 0.5em;
-    position: absolute;
-    top:335px;
-    margin-right: 25px;
-}
-
-.jeniur-3::before{
-    content: "";
-    border-bottom: 2px solid #2CA5E0;
-    width: 35%;
-    height: 0.5em;
-    position: absolute;
-    top: 575px;
-    margin-right: 25px;
-}
 
 .blue-bg svg{
     width: 45px!important;
     height: 45px!important;
 }
-.jeniur-4::before{
-    content: "";
-    border-bottom: 2px solid #2CA5E0;
-    width: 30%;
-    height: 0.5em;
-    position: absolute;
-    top: 285px;
-    margin-right: 25px;
 
-}
-
-.jeniur-5::before{
+.features-p::before{
     content: "";
-    border-bottom: 2px solid #2CA5E0;
-    width: 30%;
-    height: 0.5em;
+    width: 100%;
+    height: 3px;
     position: absolute;
-    top: 490px;
     margin-right: 25px;
+    left: -45px;
+    right: 0;
+
+    background: #2CA5E0;
+    bottom: 0;
 }
 
 .special-marg{
@@ -1549,6 +1512,7 @@ button .btn, button .btn-lg {
     margin-top: 30px;
     margin-left: 45px;
     color:#A4D7FB;
+    position: relative;
 
 }
 
@@ -3096,7 +3060,6 @@ button .btn, button .btn-lg {
 
 @media (max-width: 576px){
 
-
     .card .btn-link {
         font-size: 18px!important;
     }
@@ -3116,6 +3079,41 @@ button .btn, button .btn-lg {
     .accordion-road .btn-link a {
         font-size: 20px;
     }
+
+    .features-p {
+        font-size: 16px;
+    }
+    .blue-bg svg {
+        width: 30px!important;
+        height: 30px!important;
+    }
+
+    .jeniur::before {
+        top: 40px;
+    }
+
+    .jeniur-4::before {
+        top: 250px;
+    }
+
+    .jeniur-2::before {
+        top: 288px;
+    }
+
+    .jeniur-3::before {
+        top: 446px;
+    }
+
+    .jeniur-5::before {
+        top: 412px;
+    }
+
+    .blue-bg{
+        padding: 10px;
+    }
+   .btn-download{
+       max-width: 70%!important;
+   }
 
     .solutions {
         display: flex;
@@ -3779,6 +3777,7 @@ button .btn, button .btn-lg {
     .team-item{
         margin-bottom: 80px;
     }
+
 
     .phone-button{
         width: 60%!important;
@@ -4491,6 +4490,16 @@ button .btn, button .btn-lg {
 }
 
 @media (max-width: 480px) {
+
+    .items-icons{
+        flex-direction: column;
+
+    }
+    .align-items-left-features-new{
+        margin-bottom: 0px;
+    }
+
+
      /* our_vision_slider */
      .tooltip_select {
         padding: 4px 8px;
