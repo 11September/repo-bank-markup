@@ -30,7 +30,7 @@
     border-bottom: 2px solid white;
     width: 100%;
     position: fixed;
-    z-index: 4;
+    z-index: 6;
 }
 
 .header-body  .menu-part{
@@ -41,6 +41,62 @@
     width: 1000px; height: 700px;
     background: url('../images/css_sprites.png') -10px -2630px;
 }
+
+
+
+
+/*CSS*/
+.pulse {
+    /*margin:100px;*/
+    display: block;
+    width: 127px;
+    height: 126px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 0 rgba(204,169,44, 0.4);
+    animation: pulse 2s infinite;
+}
+.pulse:hover {
+    animation: none;
+}
+
+@-webkit-keyframes pulse {
+    0% {
+        -webkit-box-shadow: 0 0 0 0 rgba(255,255,255, 0.4);
+    }
+    70% {
+        -webkit-box-shadow: 0 0 0 50px rgba(255,255,255, 0);
+    }
+    100% {
+        -webkit-box-shadow: 0 0 0 0 rgba(255,255,255, 0);
+    }
+}
+@keyframes pulse {
+    0% {
+        -moz-box-shadow: 0 0 0 0 rgba(255,255,255, 0.4);
+        box-shadow: 0 0 0 0 rgba(255,255,255, 0.4);
+    }
+    70% {
+        -moz-box-shadow: 0 0 0 10px rgba(255,255,255, 0);
+        box-shadow: 0 0 0 50px rgba(255,255,255, 0);
+    }
+    100% {
+        -moz-box-shadow: 0 0 0 0 rgba(255,255,255, 0);
+        box-shadow: 0 0 0 0 rgba(255,255,255, 0);
+    }
+}
+
+.video-container {
+    position: absolute;
+    z-index: 4;
+    right: 0;
+    bottom: 0;
+    width: auto;
+    min-width: 100%;
+    height: auto;
+    min-height: 100%;
+}
+
 
 
 .bg-second_1001 {
@@ -64,6 +120,11 @@
     position: absolute;
     bottom: 30px;
     right: 0;
+    z-index: 5;
+}
+
+.hider {
+    display: none;
 }
 
 .rollet-link{
@@ -80,6 +141,13 @@
 .accordion-road .card{
     background: #cd1620a1;
 }
+
+.particles-js-canvas-el {
+    position: relative;
+    z-index: 0;
+}
+
+
 
 
 
@@ -163,8 +231,8 @@
 }
 
 .btn-login:hover{
-    background: #95989A;
-    color: #A6FF4D!important;
+    background: #4F7B23;
+    color: white!important;
 }
 
 .join-p {
@@ -173,8 +241,8 @@
 
 .btn-login {
     border: 2px solid black;
-    background: #A6FF4D;
-    color: #95989A;
+    background: white;
+    color: #4F7B23;
     border-radius: 10px;
     text-align: center;
     display: inline-block;
@@ -187,6 +255,46 @@
     background: black;
 }
 
+
+.changer-language {
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 150px;
+    z-index: 5;
+    left: 0;
+
+    padding-right: 20px;
+    border-radius: 0 50px 50px 0;
+
+    background: rgba(22,22,22,1);
+    background: -moz-linear-gradient(left, rgba(22,22,22,1) 0%, rgba(77,77,77,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(22,22,22,1)), color-stop(100%, rgba(77,77,77,1)));
+    background: -webkit-linear-gradient(left, rgba(22,22,22,1) 0%, rgba(77,77,77,1) 100%);
+    background: -o-linear-gradient(left, rgba(22,22,22,1) 0%, rgba(77,77,77,1) 100%);
+    background: -ms-linear-gradient(left, rgba(22,22,22,1) 0%, rgba(77,77,77,1) 100%);
+    background: linear-gradient(to right, rgba(22,22,22,1) 0%, rgba(77,77,77,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#161616', endColorstr='#4d4d4d', GradientType=1 );
+}
+
+.changer-language {
+    display: flex;
+    align-items: center;
+}
+
+
+.arrow-lang {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.language-list {
+    display: flex;
+    width: 90px;
+    overflow: hidden;
+}
+
 .Join-now {
     background: #FFFFFF;
 }
@@ -196,8 +304,12 @@
 }
 
 .Repobank-wrapper {
-    background: black;
     height: 100vh;
+    position: relative;
+    background: url(../images/bg-vision.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .Repobank-wrapper .image img{
@@ -288,6 +400,16 @@
     padding: 30px 15px;
 }
 
+.modal_stage_prev .btn-primary:focus,.modal_stage_prev .btn-primary {
+outline: none;
+}
+
+.modal_stage_prev .btn-primary:hover {
+    background: transparent;
+    border-color: transparent;
+    color: #064f73;
+}
+
 .icon_items p{
     padding-top: 25px;
     color: #808080;
@@ -355,6 +477,8 @@
     padding: 18px 0;
     text-align-last: center;
     text-align: center;
+    cursor: pointer;
+    outline: none;
 }
 
 .overdraft_panel select::-ms-expand {
@@ -741,7 +865,8 @@
 }
 
 .overdrafts_slider .slick-dots .slick-active button:hover{
-    box-shadow: 0px 0px 10px 0px #2ca5e0;
+    box-shadow: 0;
+    px 0px 10px 0px #2ca5e0;
     transition-duration: .2s;
 }
 
@@ -800,7 +925,17 @@
     padding-bottom: 20px;
 }
 
+.team-link {
+    outline: none;
+}
 
+.modal-team .modal-dialog {
+    max-width: 50% !important;
+}
+
+.slick-initialized .slick-slide {
+    outline: none;
+}
 
 .block_bg_right{
     display: flex;
@@ -1278,17 +1413,25 @@ button .btn, button .btn-lg {
 .Credit-card{
     min-height: 1200px;
     background: black;
+
+    padding: 100px 0;
+    background: url(../images/bg-vision.png);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-family: 'OpenSans-Regular';
 }
 
 .strela{
-    margin-left: -150px;
+    margin-left: -200px;
 }
 
 .credit-logo{
-    left: 135px;
+    left: 110px;
     z-index: 2;
-    top: 5px!important;
-    width: 150px;
+    top: -35px!important;
+    width: 200px;
 }
 
 
@@ -1298,7 +1441,7 @@ button .btn, button .btn-lg {
     font-family: 'OpenSans-Regular';
     font-size: 60px;
     color: white;
-    padding-top: 90px;
+    padding-top: 20px;
 }
 
 .text-card p{
@@ -1308,6 +1451,7 @@ button .btn, button .btn-lg {
     margin-top: 45px;
     letter-spacing: 1px;
     margin-bottom: 60px;
+    line-height: 40px;
 }
 
 .fa-coffee{
@@ -1344,7 +1488,7 @@ button .btn, button .btn-lg {
     width: 35%;
     height: 0.5em;
     position: absolute;
-    top:585px;
+    top: 575px;
     margin-right: 25px;
 }
 
@@ -1358,7 +1502,7 @@ button .btn, button .btn-lg {
     width: 30%;
     height: 0.5em;
     position: absolute;
-    top:285px;
+    top: 285px;
     margin-right: 25px;
 
 }
@@ -1369,7 +1513,7 @@ button .btn, button .btn-lg {
     width: 30%;
     height: 0.5em;
     position: absolute;
-    top:495px;
+    top: 490px;
     margin-right: 25px;
 }
 
@@ -1379,11 +1523,20 @@ button .btn, button .btn-lg {
 
 .special-margin-fet{
     text-align: left!important;
-    margin-left: 135px !important;}
+    margin-left: 0 !important;}
 
 
 .blue-bg{
     border-radius: 50%;
+}
+
+.blue-bg:hover{
+    transform: rotateY(180deg);
+    perspective: 1000;
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+
 }
 
 .margin-row-about-us{
@@ -1740,6 +1893,7 @@ button .btn, button .btn-lg {
 .whitepaper {
     background-image: url("../images/bg-vision.png");
     background-size: 100% 100%;
+    background-attachment: fixed;
 }
 
 .wrapper-headings {
@@ -1762,6 +1916,7 @@ button .btn, button .btn-lg {
 
 .wrapper-block-whitepaper {
     padding: 0 10%;
+    padding-bottom: 100px;
 }
 
 .wrapper-block {
@@ -1832,12 +1987,14 @@ button .btn, button .btn-lg {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 }
 
 .wrapper-download-text{
     font-family: OpenSans-Regular;
     float: left;
     font-size: 30px;
+    line-height: 40px;
 }
 
 .wrapper-download-button{
@@ -1945,11 +2102,8 @@ button .btn, button .btn-lg {
 
 #road-map .roadmap-solution{
     font-family: OpenSans-Light;
-
     width: 80%;
     margin: 0 auto;
-
-    margin-bottom: 100px;
 }
 
 .roadmap_slider{
@@ -2194,6 +2348,7 @@ button .btn, button .btn-lg {
     background-size: 100% 100%;
     background-repeat: no-repeat;
     font-family: OpenSans-Regular;
+    background-attachment: fixed;
 }
 
     .menu-list .menu-item .link{
@@ -2296,7 +2451,7 @@ button .btn, button .btn-lg {
     }
 
     .menu-list .menu-item .link{
-        font-size: 20px;
+        font-size: 18px;
         color: white;
         margin-left: 50px;
     }
@@ -2388,7 +2543,7 @@ button .btn, button .btn-lg {
         font-size: 14px;
     }
     .menu-list .menu-item .link{
-        font-size: 19px;
+        font-size: 17px;
         color: white;
         margin-left: 40px;
     }
@@ -2409,9 +2564,17 @@ button .btn, button .btn-lg {
 @media (max-width: 1300px){
 
     .menu-list .menu-item .link{
-        font-size: 18px;
+        font-size: 16px;
         color: white;
         margin-left: 30px;
+    }
+
+    .wrapper-team-slider .slick-prev {
+        left: -60px!important;
+    }
+
+    .wrapper-team-slider .slick-next {
+        right: -60px!important;
     }
 
     .text-h1 {
@@ -2436,7 +2599,12 @@ button .btn, button .btn-lg {
     }
 
     .launch-video img{
-        width: 80%;
+        width: 100%;
+    }
+
+    .pulse {
+        width: 90px;
+        height: 90px;
     }
 
     .Repobank-wrapper .image img {
@@ -2449,6 +2617,25 @@ button .btn, button .btn-lg {
 }
 
 @media (max-width: 1200px){
+    .jeniur-4::before{
+        top: 245px;
+    }
+
+    .Repobank-wrapper {
+        background: black;
+        height: auto;
+        padding-bottom: 125px;
+    }
+
+    .features-p {
+        margin-top: 30px;
+    }
+
+  }
+    .blue-bg svg{
+        width: 40px!important;
+    height: 40px!important;
+    }
     .roadmap .draggable {
         /*padding-left: 360px !important;*/
     }
@@ -2466,9 +2653,11 @@ button .btn, button .btn-lg {
         top: 70px;
     }
 
-    .credit-logo {
-        top: -60px !important;
+    .wrapper-download-block .load {
+        font-size: 20px;
+        margin-top: 0;
     }
+
 
     .accordion-road .btn-link a {
         font-size: 22px;
@@ -2519,6 +2708,23 @@ button .btn, button .btn-lg {
 }
 
 @media (max-width: 992px) {
+    .jeniur-3::before{
+        top: 450px;
+    }
+    .jeniur-5::before{
+        top:405px;
+    }
+
+    .jeniur-4::before {
+        top: 255px;
+    }
+    .jeniur-2::before {
+        top: 260px;
+    }
+    .jytis{
+     padding-top: 15px;
+    }
+
     .Instant_Crypto_Overdrafts .block_bg_img, 
     .Instant_Crypto_Overdrafts .block_bg_right_img {
         height: auto;
@@ -2700,6 +2906,49 @@ button .btn, button .btn-lg {
         align-items: center;
     }
 
+    .language-list img {
+        width: 50px;
+    }
+
+    .changer-language{
+        flex-direction: column;
+        padding-left: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-right: 10px;
+    }
+
+    .lang-first{
+        width: 50px;
+    }
+
+    .arrow-lang {
+        width: 35px;
+        height: 35px;
+        cursor: pointer;
+        transform: rotate(90deg);
+    }
+
+
+
+    .language-list{
+        flex-direction: column;
+    }
+
+    .pulse {
+        width: 70px;
+        height: 70px;
+        margin-left: 20px;
+    }
+
+    .wrapper-image img {
+        width: 50%;
+    }
+
+    .whitepaper {
+        padding-bottom: 100px;
+    }
+
     .load {
         font-size: 30px!important;
     }
@@ -2810,7 +3059,7 @@ button .btn, button .btn-lg {
     }
 
     .text-h1-p {
-        margin-left: 0;
+        margin-left: 0!important;
     }
 
     .Repobank-wrapper .image img {
@@ -2838,10 +3087,6 @@ button .btn, button .btn-lg {
     .Launch-p {
         font-size: 26px;
         margin-right: 0;
-    }
-
-    .launch-video img{
-        width: 70%;
     }
 
     .roadmap .draggable {
@@ -2897,7 +3142,8 @@ button .btn, button .btn-lg {
 
     /* our_vision_slider */
     .Instant_Crypto_Overdrafts .modal .modal-header button {
-        right: 0px;
+        right: 10px;
+        top: 15px;
     }
 
     .our_vision_slider .button_position {
@@ -2916,6 +3162,14 @@ button .btn, button .btn-lg {
     .text-h1 {
         font-size: 24px;
         line-height: 50px;
+    }
+
+    .launch-video img {
+        width: 100%;
+    }
+
+    .wrapper-block {
+        padding: 0 20px 30px 20px;
     }
 
     .button_position {
@@ -3141,6 +3395,8 @@ button .btn, button .btn-lg {
     color: #182140;
     border-radius: 20px;
     font-size: 60px;
+    position: relative;
+    z-index: 1;
 }
 
 .roadmap .roadmap_slider h2{
@@ -3152,6 +3408,8 @@ button .btn, button .btn-lg {
     padding-bottom: 60px;
     line-height: 1.4;
     font-size: 24px;
+    position: relative;
+    z-index: 1;
 }
 
 .roadmap_slider .slick-slide {
@@ -3317,6 +3575,7 @@ button .btn, button .btn-lg {
     background-image: url("../images/bg-vision.png");
     background-size: 100% 100%;
     padding: 100px 0 150px 0;
+    background-attachment: fixed;
 }
 
 .team h2{
@@ -3331,7 +3590,21 @@ button .btn, button .btn-lg {
     color: white;
     margin-bottom: 60px;
     font-family: OpenSans-Light;
+    line-height: 40px;
+}
 
+.wrapper-team-slider .slick-prev,.wrapper-team-slider .slick-next{
+    width: auto;
+    height: auto;
+    top: 30%;
+}
+
+.wrapper-team-slider .slick-prev {
+    left: -80px;
+}
+
+.wrapper-team-slider .slick-next {
+    right: -80px;
 }
 
 .wrapper-team-slider{
@@ -3340,7 +3613,7 @@ button .btn, button .btn-lg {
 }
 
 .team-item{
-    height: 650px;
+    height: 580px;
     width:100%;
     background-color: white;
     border-radius: 18px;
@@ -3354,7 +3627,7 @@ button .btn, button .btn-lg {
 
 .team-item-image img{
     max-width: 100%;
-    height:330px;
+    height: auto;
 }
 
 .team-item-info{
@@ -3363,14 +3636,14 @@ button .btn, button .btn-lg {
 
 .team-item-name{
     font-family: OpenSans-Bold;
-    font-size: 35px;
+    font-size: 30px;
     font-weight: bold;
     margin-bottom: 10px;
 }
 
 .team-item-position{
     font-family: OpenSans-Light;
-    font-size: 25px;
+    font-size: 20px;
     margin-bottom: 15px;
 }
 
@@ -3380,6 +3653,9 @@ button .btn, button .btn-lg {
     justify-content: space-around;
     align-items: center;
     height:170px;
+
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .team-item-social > a{
@@ -3392,7 +3668,7 @@ button .btn, button .btn-lg {
 }
 
 .modal-content .team-item-social > a{
-    margin: 0 40px;
+    margin: 0 30px;
 }
 
 .team-item-social-block{
@@ -3452,8 +3728,13 @@ button .btn, button .btn-lg {
 }
 
 .close-modal-button{
-    font-size: 60px;
+    font-size: 45px;
     color: black;
+    outline: none;
+}
+
+.close,.close-button,.close:focus{
+    outline: none;
 }
 
 .modal-line{
@@ -3519,6 +3800,11 @@ button .btn, button .btn-lg {
 
     .team-item-image img{
         width:auto;
+        margin: 0 auto;
+    }
+
+    .modal-content .team-item-social > a {
+        margin: 0 20px;
     }
 
     .modal-team-item-info{
@@ -3552,7 +3838,7 @@ button .btn, button .btn-lg {
     bottom: 0;
     color: #9C9C9C;
     font-size: 20px;
-    padding: 0 15%;
+    padding: 0 14%;
     margin-bottom: 40px;
 }
 
@@ -3580,6 +3866,7 @@ button .btn, button .btn-lg {
     font-size: 30px;
     color: #FFFFFF;
     padding: 0 15%;
+    line-height: 40px;
 }
 
 .footer-container-social{
@@ -3645,7 +3932,14 @@ button .btn, button .btn-lg {
     display: flex;
     width:100%;
     height: 100%;
+    text-decoration: none;
 }
+
+.footer-social-item:hover{
+    text-decoration: none;
+}
+
+
 
 .social-item-facebook{
     width: 90px; height: 90px;
@@ -3684,6 +3978,8 @@ button .btn, button .btn-lg {
     flex-direction: column;
     justify-content:center;
     align-items: center;
+    padding-left: 25px;
+    text-decoration: none;
     /*width: 50px;*/
     /*height: 50px;*/
 }
@@ -3711,12 +4007,14 @@ button .btn, button .btn-lg {
     font-size: 26px;
     color: #FFFFFF;
     padding: 23px 40px;
-    display: block;
     width:340px;
     height:85px;
     background-color: rgb(44, 160, 200);
     border-radius: 43px;
     /*line-height: 20px;*/
+
+    display: flex;
+    align-items: center;
 }
 
 .phone-button:hover{
@@ -3753,6 +4051,23 @@ button .btn, button .btn-lg {
 @media (max-width: 1200px){
     .Instant_Crypto_Overdrafts .modal .modal-footer button{
         width: 25%;
+    }
+
+
+    .modal-team-item-info {
+        align-items: flex-start;
+    }
+
+    .team-item {
+        height: 520px;
+    }
+
+    .team-item-name {
+        font-size: 24px;
+    }
+
+    .team-item-position {
+        font-size: 18px;
     }
 
     .overdraft_panel input {
@@ -3795,6 +4110,10 @@ button .btn, button .btn-lg {
 @media (max-width: 992px) {
     .Instant_Crypto_Overdrafts .modal_3 .modal-footer button {
         width: 80%;
+    }
+
+    .modal-team .modal-dialog {
+        max-width: 70% !important;
     }
 
     .bg-model-second img {
@@ -3885,6 +4204,7 @@ button .btn, button .btn-lg {
     .menu-list .menu-item .link{
         margin: 0;
         font-size: 24px;
+        white-space: nowrap;
     }
 
     .header-body .menu-part {
@@ -3943,6 +4263,18 @@ button .btn, button .btn-lg {
 @media (max-width: 768px) {
     .modal_3 .btn-secondary{
         margin-bottom: 20px;
+    }
+
+    .modal-team-item-info {
+        align-items: center;
+    }
+
+    .modal-team .modal-dialog {
+        max-width: 80% !important;
+    }
+
+    .team-item {
+        height: 620px;
     }
 
     .bg-model-second img {
@@ -4038,10 +4370,6 @@ button .btn, button .btn-lg {
         margin-right: 0;
     }
 
-    .launch-video img{
-        width: 70%;
-    }
-
     .footer-logo{
         width:400px;
 
@@ -4065,6 +4393,15 @@ button .btn, button .btn-lg {
 
     .roadmap_view_p{
         font-size: 18px;
+    }
+
+    .modal-line {
+        margin: 20px auto;
+    }
+
+    .modal-team .modal-dialog {
+        max-width: 90% !important;
+        margin: 0 auto;
     }
 
     .footer-connect-text{
@@ -4161,6 +4498,27 @@ button .btn, button .btn-lg {
         top: -19px;
         margin-right: 15px;
         font-size: 16px;
+    }
+
+    .overdrafts_slider .slick-dots {
+        background: url(../images/overdrafts_slider_bg.png) no-repeat;
+        background-size: cover;
+        border-radius: 20px;
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 40px;
+    }
+
+    .footer-social-item img{
+        width: 70px;
+    }
+
+    .team-item {
+        height: 560px;
+    }
+
+    .roadmap_title {
+        font-size: 26px;
     }
 
     .credit_card, .bank_transfer{
@@ -4288,7 +4646,7 @@ button .btn, button .btn-lg {
     }
 
     .launch-video img{
-        width: 50%;
+        width: 100%;
     }
 
     .footer-logo{
@@ -4304,6 +4662,12 @@ button .btn, button .btn-lg {
 @media (max-width: 480px) {
     .overdraft_panel .new_crypto_overdraft {
         top: 75%;
+    }
+
+    .pulse {
+        width: 50px;
+        height: 50px;
+        margin-left: 40px;
     }
 
     .our_vision_slider {
@@ -4329,8 +4693,8 @@ button .btn, button .btn-lg {
         font-size: 20px!important;
     }
 
-    .load{
-        font-size: 30px!important;
+    .wrapper-download-block .shirne-a{
+        font-size: 20px!important;
     }
 
     .footer-phone-button{
@@ -4344,7 +4708,6 @@ button .btn, button .btn-lg {
 
     .team-item-image img{
         width:100%;
-        height:280px;
     }
 
     .roadmap .slick-center h2{
@@ -4375,6 +4738,27 @@ button .btn, button .btn-lg {
         margin-right: 2px;
     }
 
+    .modal-content .team-item-social > a {
+        margin: 15px;
+    }
+
+    .modal-content .team-item-social {
+        height: auto;
+        margin: 0;
+    }
+
+    .team-item-social {
+        flex-wrap: wrap;
+    }
+
+    .team-item-name {
+        font-size: 20px;
+    }
+
+    .team-item {
+        height: 500px;
+    }
+
     .input_comparison .arrow_panel {
         width: 50px;
         font-size: 18px;
@@ -4400,5 +4784,15 @@ button .btn, button .btn-lg {
 
     .accordion-road .btn-link a {
         font-size: 18px;
+    }
+}
+
+@media (max-width: 340px){
+    .modal-content .team-item-social > a {
+        margin: 10px;
+    }
+
+    .btn-join, .btn-login {
+        font-size: 12px;
     }
 }

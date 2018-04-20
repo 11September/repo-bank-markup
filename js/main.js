@@ -18,5 +18,21 @@ $(document).ready(function() {
 		//анимируем переход на расстояние - top за 1500 мс
 		$('body,html').animate({scrollTop: top}, 1500);
 	});
+
+
+    $(".pulse").click(function () {
+        $(".video-container").slideToggle();
+        $(".video-container").removeClass('hider');
+    });
+
+
+    $(".language-list").animate({width: 'toggle'});
+    $(".arrow-lang").click(function () {
+        $(".language-list").css({width: 'auto'});
+        $(".language-list").animate({width: 'toggle'});
+
+        $(".arrow").toggleClass("hider");
+        $(".cross").toggleClass("hider");
+    });
 });
 
