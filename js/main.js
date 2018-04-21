@@ -20,10 +20,10 @@ $(document).ready(function() {
 	});
 
 
-    $(".pulse").click(function () {
-        $(".video-container").slideToggle();
-        $(".video-container").removeClass('hider');
-    });
+    // $(".pulse").click(function () {
+    //     $(".video-container").slideToggle();
+    //     $(".video-container").removeClass('hider');
+    // });
 
 
     $(".language-list").animate({width: 'toggle'});

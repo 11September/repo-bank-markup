@@ -60,6 +60,10 @@
     animation: none;
 }
 
+.pulse a:focus{
+    outline: none!important;
+}
+
 @-webkit-keyframes pulse {
     0% {
         -webkit-box-shadow: 0 0 0 0 rgba(255,255,255, 0.4);
@@ -87,15 +91,19 @@
 }
 
 .video-container {
-    position: absolute;
-    z-index: 4;
-    right: 0;
-    bottom: 0;
-    width: auto;
-    min-width: 100%;
-    height: auto;
-    min-height: 100%;
+    width: 100%;
 }
+
+/*.video-container {*/
+    /*position: absolute;*/
+    /*z-index: 4;*/
+    /*right: 0;*/
+    /*bottom: 0;*/
+    /*width: auto;*/
+    /*min-width: 100%;*/
+    /*height: auto;*/
+    /*min-height: 100%;*/
+/*}*/
 
 
 
@@ -287,6 +295,7 @@
     width: 50px;
     height: 50px;
     cursor: pointer;
+    transform: rotate(-5deg);
 }
 
 .language-list {
@@ -987,6 +996,10 @@ outline: none;
     padding: 10px 0;
 }
 
+.bg-cards-epic img {
+    width: 100%;
+}
+
 .Instant_Crypto_Overdrafts .right_block p{
     color: #8dceee;
 }
@@ -1371,7 +1384,7 @@ button .btn, button .btn-lg {
 .Business-model h2{
     font-family: 'OpenSans-Regular';
     font-size: 60px;
-    margin-top: 90px;
+    padding-top: 90px;
     color:#182140;
 }
 .Business-model .dont {
@@ -1414,7 +1427,7 @@ button .btn, button .btn-lg {
     min-height: 1200px;
     background: black;
 
-    padding: 100px 0;
+    padding: 90px 0 50px ;
     background: url(../images/bg-vision.png);
     background-size: 100% 100%;
     background-attachment: fixed;
@@ -1441,7 +1454,6 @@ button .btn, button .btn-lg {
     font-family: 'OpenSans-Regular';
     font-size: 60px;
     color: white;
-    padding-top: 20px;
 }
 
 .text-card p{
@@ -1469,11 +1481,11 @@ button .btn, button .btn-lg {
 
 .features-p::before{
     content: "";
-    width: 100%;
+    width: 300px;
     height: 3px;
     position: absolute;
     margin-right: 25px;
-    left: -45px;
+    left: -54px;
     right: 0;
 
     background: #2CA5E0;
@@ -1513,7 +1525,11 @@ button .btn, button .btn-lg {
     margin-left: 45px;
     color:#A4D7FB;
     position: relative;
+    padding-bottom: 15px;
+}
 
+.items-feature-1 {
+    margin-top: 15px;
 }
 
 .block-1-few{
@@ -1530,10 +1546,6 @@ button .btn, button .btn-lg {
     margin-left: 135px;
 }
 
-.align-items-left-features-new{
-    margin-bottom: 200px;
-}
-
 
 
 
@@ -1544,7 +1556,7 @@ button .btn, button .btn-lg {
 }
 .description-fither{
     font-size: 23px;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
     color:white;
     font-family: 'OpenSans-Light';
 }
@@ -1860,15 +1872,13 @@ button .btn, button .btn-lg {
     background-attachment: fixed;
 }
 
-.wrapper-headings {
-    padding: 60px 0;
-}
-
 .whitepaper h2 {
     font-family: OpenSans-Regular;
     font-size: 60px;
     color: #FFFFFF;
     line-height: 82px;
+    margin-bottom: 20px;
+    padding-top: 90px;
 }
 
 .whitepaper h5 {
@@ -1876,6 +1886,7 @@ button .btn, button .btn-lg {
     font-size: 30px;
     color: #FFFFFF;
     line-height: 41px;
+    margin-bottom: 20px;
 }
 
 .wrapper-block-whitepaper {
@@ -1981,7 +1992,7 @@ button .btn, button .btn-lg {
 .header-solution,.header-roadmap{
     font-size: 60px;
     color: white;
-    padding-top: 100px;
+    padding-top: 90px;
     margin-bottom: 15px;
 }
 
@@ -2359,7 +2370,7 @@ button .btn, button .btn-lg {
     }
 
     .solutions{
-        padding-bottom: 100px;
+        padding-bottom: 50px;
     }
 
 @media (min-width: 1700px){
@@ -2504,13 +2515,15 @@ button .btn, button .btn-lg {
 
 
     .description-fither{
-        font-size: 14px;
+        font-size: 16px;
     }
     .menu-list .menu-item .link{
         font-size: 17px;
         color: white;
         margin-left: 40px;
     }
+
+
 
     .btn-login {
         margin-left: 15px;
@@ -2531,6 +2544,7 @@ button .btn, button .btn-lg {
         font-size: 16px;
         color: white;
         margin-left: 30px;
+        white-space: nowrap;
     }
 
     .wrapper-team-slider .slick-prev {
@@ -2583,6 +2597,14 @@ button .btn, button .btn-lg {
 @media (max-width: 1200px){
     .jeniur-4::before{
         top: 245px;
+    }
+
+    .changer-language {
+        top: 80px;
+    }
+
+    .features-p::before {
+        width: 250px;
     }
 
     .Repobank-wrapper {
@@ -2675,6 +2697,73 @@ button .btn, button .btn-lg {
     .jeniur-3::before{
         top: 450px;
     }
+
+    #video-modal .modal-content {
+        padding: 10px;
+    }
+
+    #video-modal .modal-body {
+        padding: 0;
+    }
+
+    #video-modal .modal-dialog {
+        max-width: 90% !important;
+        margin: 0 auto;
+    }
+
+    .header-solution, .header-roadmap {
+        padding-top: 30px!important;
+    }
+
+    .whitepaper h2 {
+        padding-top: 60px;
+    }
+
+    .team {
+        padding: 60px 0 150px 0!important;
+    }
+
+    .Our-vision h2 {
+        padding-top: 60px;
+    }
+
+    .description-out-img {
+        margin-top: 50px;
+    }
+
+    .Instant_Crypto_Overdrafts {
+        padding: 60px 0 70px;
+    }
+
+    .margin-row-about-us {
+        padding-bottom: 0;
+    }
+
+    .header-solution, .header-roadmap {
+        padding-top: 60px;
+    }
+
+    .our_vision_slider {
+        padding: 60px 0;
+    }
+
+    .solutions {
+        padding-top: 60px;
+    }
+
+    .Business-model h2 {
+        padding-top: 60px;
+        margin-top: 0!important;
+    }
+
+    .Credit-card {
+        padding: 60px 0 50px;
+    }
+
+    .bg-cards-epic{
+        display: none;
+    }
+
     .jeniur-5::before{
         top:405px;
     }
@@ -2862,6 +2951,14 @@ button .btn, button .btn-lg {
 }
 
 @media (max-width: 768px) {
+
+    .items-icons{
+        flex-direction: column;
+    }
+
+    .align-items-left-features-new {
+        margin-bottom: 0;
+    }
 
     .padding-rows {
         padding-bottom: 75px;
@@ -3064,6 +3161,14 @@ button .btn, button .btn-lg {
         font-size: 18px!important;
     }
 
+    .features-2{
+        margin-top: 30px;
+    }
+
+    .features-2 p {
+        margin-left: 85px;
+    }
+
     #accordion-one .card-body .top-part .text:after {
         width: 100%;
     }
@@ -3081,7 +3186,7 @@ button .btn, button .btn-lg {
     }
 
     .features-p {
-        font-size: 16px;
+        font-size: 14px;
     }
     .blue-bg svg {
         width: 30px!important;
@@ -3108,12 +3213,10 @@ button .btn, button .btn-lg {
         top: 412px;
     }
 
-    .blue-bg{
-        padding: 10px;
+    .features-p::before {
+        width: 200px;
+        left: -60px;
     }
-   .btn-download{
-       max-width: 70%!important;
-   }
 
     .solutions {
         display: flex;
@@ -3328,6 +3431,49 @@ button .btn, button .btn-lg {
         padding: 0;
     }
 
+    .description-out-img p {
+        padding-left: 20px!important;
+    }
+
+    .first-1001 img {
+         padding-right: 0;
+    }
+
+    .first-1001 img {
+        margin-top: 50px;
+    }
+
+    .whitepaper {
+        padding-bottom: 40px;
+    }
+
+    .whitepaper h2 {
+        padding-top: 0;
+    }
+
+    .footer-phone-button {
+        width: 60%;
+    }
+
+    .phone-button {
+        width: 100% !important;
+    }
+
+    .accordion .solution-head {
+        font-size: 30px;
+    }
+
+    .Credit-card h2 {
+        font-size: 50px;
+    }
+
+    .text-card p {
+        font-size: 28px;
+        margin-top: 30px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
     .accordion-road .btn-link:not(.collapsed) a {
         font-size: 20px;
     }
@@ -3363,7 +3509,7 @@ button .btn, button .btn-lg {
 
 /* roadmap */
 .roadmap{
-    padding: 80px 0 80px;
+    padding: 80px 0 0;
     font-family: OpenSans-Regular;
     color: #182140;
 }
@@ -3778,15 +3924,14 @@ button .btn, button .btn-lg {
         margin-bottom: 80px;
     }
 
-
-    .phone-button{
-        width: 60%!important;
-    }
-
     .footer-phone-button{
         text-align: left;
         display: flex!important;
         justify-content: flex-start!important;
+    }
+
+    .footer-phone-button {
+        width: 60%!important;
     }
 
     .modal-content{
@@ -4491,10 +4636,17 @@ button .btn, button .btn-lg {
 
 @media (max-width: 480px) {
 
-    .items-icons{
-        flex-direction: column;
-
+    .text-card p {
+        font-size: 22px;
+        padding-left: 15px;
+        padding-right: 15px;
+        line-height: 35px;
     }
+
+    .Credit-card h2 {
+        font-size: 36px;
+    }
+
     .align-items-left-features-new{
         margin-bottom: 0px;
     }
