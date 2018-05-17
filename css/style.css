@@ -2461,6 +2461,20 @@ button .btn, button .btn-lg {
         height: 257px;
     }
 
+    .text-card p , .h2-vision p , .text-solution, .roadmap-solution , .description-p , .text-solution,  .whitepaper h5, .roadmap_view_p, .roadmap_view_p,  .jefren, .dont, .team-subheading{
+
+        font-size: 20px!important;
+        line-height: 30px;
+        margin-top: 15px;
+    }
+
+
+    h2 {
+
+        font-size: 40px!important;
+
+    }
+
     .Instant_Crypto_Overdrafts .block_bg_img .left_block {
         padding: 5px 0 3px;
     }
