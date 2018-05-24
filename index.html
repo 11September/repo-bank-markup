@@ -11,11 +11,17 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/jquery.fancybox.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+          integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.css">
     <link rel="stylesheet" type="text/css" href="css/slick.css"/>
     <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+
+
+
+
+
 </head>
 <body>
 
@@ -53,37 +59,50 @@
                 <p class="text-p"> Welcome to RepoBank Welcome to RepoBank </p>
             </div>
 
+
             <div class="image">
-                <img src="images/color_logo.png" alt="">
-
+                <!--<img src="images/color_logo.png" alt="">-->
+                <iframe src="https://sketchfab.com/models/a4ed764a0b194ee4ab8b43ddef9bec83/embed?autostart=1&amp;internal=1&amp;scrollwheel=0&amp;sound_enable=0&amp;transparent=1&amp;ui_animations=0&amp;ui_annotations=0&amp;ui_controls=1&amp;ui_fadeout=0&amp;ui_fullscreen=0&amp;ui_help=0&amp;ui_infos=0&amp;ui_inspector=0&amp;ui_settings=0&amp;ui_snapshots=0&amp;ui_stop=0&amp;ui_theatre=0&amp;ui_watermark=0"
+                        data-src="https://sketchfab.com/models/8d06874aac5246c59edb4adbe3606e0e/embed?autostart=1&amp;internal=1&amp;scrollwheel=0&amp;sound_enable=0&amp;transparent=1&amp;ui_animations=0&amp;ui_annotations=0&amp;ui_controls=1&amp;ui_fadeout=0&amp;ui_fullscreen=0&amp;ui_help=0&amp;ui_infos=0&amp;ui_inspector=0&amp;ui_settings=0&amp;ui_snapshots=0&amp;ui_stop=0&amp;ui_theatre=0&amp;ui_watermark=0"
+                        width="700" height="500" allowtransparency="true" allowfullscreen="" mozallowfullscreen="true"
+                        webkitallowfullscreen="true" onmousewheel="" style=".viewer .controls{display: none!important;}">
+                </iframe>
             </div>
 
-        </div>
+            <div class="changer-language">
+                <a href=""><img src="images/langage-item.png" class="lang-first" alt=""></a>
+                <div class="language-list">
+                    <a href=""><img src="images/lang-item-two.png" alt=""></a>
+                    <a href=""><img src="images/lang-item-three.png" alt=""></a>
+                    <a href=""><img src="images/lang-item-four.png" alt=""></a>
+                    <a href=""><img src="images/lang-item-five.png" alt=""></a>
+                    <a href=""><img src="images/lang-item-six.png" alt=""></a>
+                    <a href=""><img src="images/lang-item-seven.png" alt=""></a>
+                    <a href=""><img src="images/lang-item-eight.png" alt=""></a>
+                </div>
 
-        <div class="changer-language">
-            <a href=""><img src="images/langage-item.png" class="lang-first" alt=""></a>
-            <div class="language-list">
-                <a href=""><img src="images/lang-item-two.png" alt=""></a>
-                <a href=""><img src="images/lang-item-three.png" alt=""></a>
-                <a href=""><img src="images/lang-item-four.png" alt=""></a>
-                <a href=""><img src="images/lang-item-five.png" alt=""></a>
-                <a href=""><img src="images/lang-item-six.png" alt=""></a>
-                <a href=""><img src="images/lang-item-seven.png" alt=""></a>
-                <a href=""><img src="images/lang-item-eight.png" alt=""></a>
+                <img class="arrow-lang arrow angle-right" src="images/angle-right.svg" alt="">
+                <img src="images/times.svg" class="arrow-lang cross hider" alt="">
             </div>
 
-            <img src="images/lang-arrow.png" class="arrow-lang arrow " alt="">
-            <img src="images/white-cross.png" class="arrow-lang cross hider" alt="">
+            <video autoplay controls class="video-container hider">
+                <source src="images/video-bg.mp4" type="video/mp4">
+            </video>
+            <div class="launch-video">
+                <p class="Launch-p"> Launch Video</p> <span class="pulse"> <a href="#" data-toggle="modal"
+                                                                              data-target="#video-modal"> <img
+                    src="images/video.png" alt="video is not find "></a></span>
+            </div>
+
+
+
         </div>
 
-        <video autoplay controls class="video-container hider">
-             <source src="images/video-bg.mp4" type="video/mp4">
-        </video>
-        <div class="launch-video">
-            <p class="Launch-p"> Launch Video</p> <span class="pulse"> <a href="#" data-toggle="modal" data-target="#video-modal"> <img src="images/video.png" alt="video is not find "></a></span>
         </div>
 
-    </div>
+
+
+    <div id="rC_A" class="redCountdownDemo"> </div>
 </section>
 
 <section id="overdraft" class="Instant_Crypto_Overdrafts">
@@ -170,7 +189,7 @@
                                     </div>
                                 </div>
                                 <button class="new_crypto_overdraft" data-toggle="modal"
-                                    data-target="#new_crypto_overdraft_1" type="button">Next
+                                        data-target="#new_crypto_overdraft_1" type="button">Next
                                 </button>
                             </div>
 
@@ -210,10 +229,12 @@
                                                                 <i class="fas fa-caret-down"></i>
                                                             </div>
                                                         </div>
-                                                        <button type="button" class="tooltip_select" data-toggle="tooltip" data-placement="top" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                        <button type="button" class="tooltip_select"
+                                                                data-toggle="tooltip" data-placement="top" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                                                         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                                                         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                                        consequat.">?</button>
+                                                        consequat.">?
+                                                        </button>
                                                     </div>
                                                     <div class="span_i">
                                                         <span><i class="fas fa-chevron-right"></i></span>
@@ -266,7 +287,8 @@
                                         </div>
                                         <div class="modal-footer">
                                             <button data-toggle="modal" data-target="#new_crypto_overdraft_2"
-                                                type="button" class="btn btn-primary" data-dismiss="modal" aria-label="Close">Next
+                                                    type="button" class="btn btn-primary" data-dismiss="modal"
+                                                    aria-label="Close">Next
                                             </button>
                                         </div>
                                     </div>
@@ -290,7 +312,8 @@
                                             </button>
                                             <div class="modal_stage_prev">
                                                 <button data-toggle="modal" data-target="#new_crypto_overdraft_1"
-                                                    type="button" class="btn btn-primary" data-dismiss="modal" aria-label="Close"><i class="fas fa-chevron-left"></i>
+                                                        type="button" class="btn btn-primary" data-dismiss="modal"
+                                                        aria-label="Close"><i class="fas fa-chevron-left"></i>
                                                 </button>
                                                 <span class="modal_stage_title">1/3</span>
                                             </div>
@@ -342,7 +365,8 @@
                                         </div>
                                         <div class="modal-footer">
                                             <button data-toggle="modal" data-target="#new_crypto_overdraft_3"
-                                                type="button" class="btn btn-primary" data-dismiss="modal" aria-label="Close">Next
+                                                    type="button" class="btn btn-primary" data-dismiss="modal"
+                                                    aria-label="Close">Next
                                             </button>
                                         </div>
                                     </div>
@@ -366,7 +390,8 @@
                                             </button>
                                             <div class="modal_stage_prev">
                                                 <button data-toggle="modal" data-target="#new_crypto_overdraft_2"
-                                                    type="button" class="btn btn-primary" data-dismiss="modal" aria-label="Close"><i class="fas fa-chevron-left"></i>
+                                                        type="button" class="btn btn-primary" data-dismiss="modal"
+                                                        aria-label="Close"><i class="fas fa-chevron-left"></i>
                                                 </button>
                                                 <span class="modal_stage_title">2/3</span>
                                             </div>
@@ -410,7 +435,8 @@
                                                     <div class="block_bg block_bg_right">
                                                         <div class="right_block">
                                                             <h3>Bank Transfer</h3>
-                                                            <p class="text_blue">to any personal or business bank account</p>
+                                                            <p class="text_blue">to any personal or business bank
+                                                                account</p>
                                                         </div>
                                                     </div>
 
@@ -492,8 +518,10 @@
         <div class="row margin-row-about-us">
 
             <div class="description-out-img col-md-6">
-                <p>The RepoBank team introduce innovative and adaptable solutions for the financial world. It is an opportunity to make the system as efficient as possible.
-                    The problem of the lack of financing in the digital economy is solved with the help of the introduction of blockchain  technology.
+                <p>The RepoBank team introduce innovative and adaptable solutions for the financial world. It is an
+                    opportunity to make the system as efficient as possible.
+                    The problem of the lack of financing in the digital economy is solved with the help of the
+                    introduction of blockchain technology.
                     Get perspective Crypto Overdrafts from well-experienced RepoBank.<br>
                     We know how must the system works.</p>
             </div>
@@ -687,13 +715,14 @@
                         <h5 class="mb-0">
                             <button class="btn btn-link" data-toggle="collapse"
                                     data-target="#collapseOne-first,#collapseOne-second" aria-expanded="true"
-                                    aria-controls="collapseOne" >
+                                    aria-controls="collapseOne">
                                 Idle Value of Digital Assets
                             </button>
                         </h5>
                     </div>
 
-                    <div id="collapseOne-second" class="collapse" aria-labelledby="headingOne" data-parent="#accordion-two">
+                    <div id="collapseOne-second" class="collapse" aria-labelledby="headingOne"
+                         data-parent="#accordion-two">
                         <div class="card-body" data-parent=".accordion">
                             <div class="top-part">
                                 <img src="images/yes.png" class="glo-image" alt="">
@@ -719,8 +748,9 @@
                             </button>
                         </h5>
                     </div>
-                    <div id="collapseTwo-second" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion-two">
-                        <div class="card-body" >
+                    <div id="collapseTwo-second" class="collapse" aria-labelledby="headingTwo"
+                         data-parent="#accordion-two">
+                        <div class="card-body">
                             <div class="top-part">
                                 <img src="images/yes.png" class="glo-image" alt="">
                                 <p class="text">A lot of assets are remain idle</p>
@@ -745,7 +775,8 @@
                             </button>
                         </h5>
                     </div>
-                    <div id="collapseThree-second" class="collapse" aria-labelledby="headingThree" data-parent="#accordion-two">
+                    <div id="collapseThree-second" class="collapse" aria-labelledby="headingThree"
+                         data-parent="#accordion-two">
                         <div class="card-body">
                             <div class="top-part">
                                 <img src="images/yes.png" class="glo-image" alt="">
@@ -772,7 +803,8 @@
                         </h5>
                     </div>
 
-                    <div id="collapseFour-second" class="collapse" aria-labelledby="headingThree" data-parent="#accordion-two">
+                    <div id="collapseFour-second" class="collapse" aria-labelledby="headingThree"
+                         data-parent="#accordion-two">
                         <div class="card-body">
                             <div class="top-part">
                                 <img src="images/yes.png" class="glo-image" alt="">
@@ -799,7 +831,8 @@
                         </h5>
                     </div>
 
-                    <div id="collapseFive-second" class="collapse" aria-labelledby="headingThree" data-parent="#accordion-two">
+                    <div id="collapseFive-second" class="collapse" aria-labelledby="headingThree"
+                         data-parent="#accordion-two">
                         <div class="card-body">
                             <div class="top-part">
                                 <img src="images/yes.png" class="glo-image" alt="">
@@ -826,7 +859,8 @@
                         </h5>
                     </div>
 
-                    <div id="collapseSix-second" class="collapse" aria-labelledby="headingThree" data-parent="#accordion-two">
+                    <div id="collapseSix-second" class="collapse" aria-labelledby="headingThree"
+                         data-parent="#accordion-two">
                         <div class="card-body">
                             <div class="top-part">
                                 <img src="images/yes.png" class="glo-image" alt="">
@@ -989,7 +1023,7 @@
 
         <div class="row">
 
-            <div class="bg-cards-epic   col-lg-4 col-md-12" >
+            <div class="bg-cards-epic   col-lg-4 col-md-12">
                 <img src="images/bg-card.png" alt="img-is-not-find">
             </div>
 
@@ -997,29 +1031,29 @@
                 <div class="  align-items-left-features-new ">
 
                     <div class="card-item">
-                    <div class="features block-1-few">
-                        <div class="blue-bg front">
-                            <i class="fas fa-star spic-cof"></i>
+                        <div class="features block-1-few">
+                            <div class="blue-bg front">
+                                <i class="fas fa-star spic-cof"></i>
+                            </div>
+
+                            <div>
+                                <p class="features-p "> Peculiarities</p>
+                            </div>
                         </div>
 
-                        <div>
-                            <p class="features-p "> Peculiarities</p>
+                        <div class="features-2 margin-feaure">
+
+                            <div class="items-feature-1">
+                                <p class="description-fither">Credit Card for Free With </p>
+                                <p class="description-fither"> Adaptable Overdraft Limit </p>
+                                <p class="description-fither"> Own Way for Repayment</p>
+                                <p class="description-fither"> Additional Virtual Credit Card </p>
+                                <p class="description-fither">Pay in Local Currencies </p>
+                                <p class="description-fither"> Hidden Fee-Free </p>
+                            </div>
+
                         </div>
                     </div>
-
-                    <div class="features-2 margin-feaure">
-
-                        <div class="items-feature-1">
-                            <p class="description-fither">Credit Card for Free With  </p>
-                            <p class="description-fither"> Adaptable Overdraft Limit </p>
-                            <p class="description-fither"> Own Way for Repayment</p>
-                            <p class="description-fither"> Additional Virtual Credit Card </p>
-                            <p class="description-fither">Pay in Local Currencies </p>
-                            <p class="description-fither"> Hidden Fee-Free </p>
-                        </div>
-
-                    </div>
-                </div>
 
                     <div class="card-item">
                         <div class="features block-1-few">
@@ -1086,7 +1120,7 @@
                         <div class="features-2 margin-feaure">
 
                             <div class="items-feature-1">
-                                <p class="description-fither">Worldwide  Money Transaction</p>
+                                <p class="description-fither">Worldwide Money Transaction</p>
                                 <p class="description-fither">Spending Analytics</p>
                                 <p class="description-fither">Budgeting Tools</p>
                                 <p class="description-fither">Enable/Disable Card Online</p>
@@ -1359,7 +1393,8 @@
                                     <p class="wrapper-download-text">Download Whitepaper in One click</p>
 
                                     <div class=" btn-div">
-                                        <a class="shirne-a load btn-download" href="#"> <i class="fas fa-download"></i> Download </a> </span>
+                                        <a class="shirne-a load btn-download" href="#"> <i class="fas fa-download"></i>
+                                            Download </a> </span>
                                     </div>
                                 </div>
                             </div>
@@ -1380,7 +1415,8 @@
         <h2>roadmap</h2>
 
         <p class="roadmap_view_p">
-            Prior events that the company embodies to <br>improve the operation of the system and the lead in the crypto currency market.
+            Prior events that the company embodies to <br>improve the operation of the system and the lead in the crypto
+            currency market.
         </p>
 
         <div class="roadmap_slider">
@@ -1526,6 +1562,34 @@
                                         </a>
                                     </div>
 
+
+                                        <div class="team-item-info">
+                                            <p class="team-item-name">NAME SURNAME</p>
+                                            <p class="team-item-position">Web developer</p>
+
+                                    </div>
+
+
+                                    <div class="team-item-social">
+                                        <div class=" team-item-social-block team-item-social-facebook"></div>
+                                        <div class="team-item-social-block team-item-social-linked"></div>
+                                        <div class="team-item-social-block team-item-social-twitter"></div>
+                                        <div class="team-item-social-block team-item-social-skype"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="team-item">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="team-item-image">
+                                        <a href="#" data-toggle="modal" data-target="#exampleModal">
+                                            <img src="images/team-image.png" alt="">
+                                        </a>
+                                    </div>
+
                                     <div class="team-item-info">
                                         <p class="team-item-name">NAME SURNAME</p>
                                         <p class="team-item-position">Web developer</p>
@@ -1566,31 +1630,6 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                    <div class="team-item">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="team-item-image">
-                                    <a href="#" data-toggle="modal" data-target="#exampleModal">
-                                        <img src="images/team-image.png" alt="">
-                                    </a>
-                                </div>
-
-                                <div class="team-item-info">
-                                    <p class="team-item-name">NAME SURNAME</p>
-                                    <p class="team-item-position">Web developer</p>
-                                </div>
-
-                                <div class="team-item-social">
-                                    <div class="team-item-social-block team-item-social-facebook"></div>
-                                    <div class="team-item-social-block team-item-social-linked"></div>
-                                    <div class="team-item-social-block team-item-social-twitter"></div>
-                                    <div class="team-item-social-block team-item-social-skype"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
                     <div class="col-md-4">
                         <div class="team-item">
@@ -1703,49 +1742,53 @@
                     <div class="footer-flex">
 
                         <div class="row">
-                            <div class="col-md-3 col-sm-3 hidden-sm-down">
+
+
+                            <div class="col-md-3 col-sm-3 hidden-sm-down connect-que">
                                 <div class="footer-connect-text">
                                     <p>Connect to our social</p>
                                 </div>
                             </div>
-                            <div class="col-md-9 col-sm-9">
-                                <div class="footer-container-social">
-                                    <div class="footer-wrapper-social">
-                                        <a class="footer-social-item" href="#">
-                                            <img src="images/face-ico.png" alt="">
-                                            <div class="footer-social-item-link">
-                                                <p>@repobank</p>
+                            <div class="all-items-fors">
+                                <div class="col-md-9 col-sm-9">
+                                    <div class="footer-container-social">
+                                        <div class="footer-wrapper-social">
+                                            <a class="footer-social-item" href="#">
+                                                <img src="images/face-ico.png" alt="">
+                                                <div class="footer-social-item-link">
+                                                    <p>@repobank</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="footer-wrapper-social">
+                                            <div class="footer-social-item">
+                                                <a class="footer-social-item" href="#">
+                                                    <img src="images/insta-ico.png" alt="">
+                                                    <div class="footer-social-item-link">
+                                                        <p>#repo_bank</p>
+                                                    </div>
+                                                </a>
                                             </div>
-                                        </a>
-                                    </div>
-                                    <div class="footer-wrapper-social">
-                                        <div class="footer-social-item">
-                                            <a class="footer-social-item" href="#">
-                                                <img src="images/insta-ico.png" alt="">
-                                                <div class="footer-social-item-link">
-                                                    <p>#repo_bank</p>
-                                                </div>
-                                            </a>
                                         </div>
-                                    </div>
-                                    <div class="footer-wrapper-social">
-                                        <div class="footer-social-item">
-                                            <a class="footer-social-item" href="#">
-                                                <img src="images/twit-ico.png" alt="">
-                                                <div class="footer-social-item-link">
-                                                    <p>#repobank</p>
-                                                </div>
-                                            </a>
+                                        <div class="footer-wrapper-social">
+                                            <div class="footer-social-item">
+                                                <a class="footer-social-item" href="#">
+                                                    <img src="images/twit-ico.png" alt="">
+                                                    <div class="footer-social-item-link">
+                                                        <p>#repobank</p>
+                                                    </div>
+                                                </a>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="footer-wrapper-social">
-                                        <div class="footer-social-item">
-                                            <a class="footer-social-item" href="#">
-                                                <img src="images/google-ico.png" alt="">
-                                                <div class="footer-social-item-link">
-                                                    <p>@repo_bank</p>
-                                                </div>
-                                            </a>
+                                        <div class="footer-wrapper-social">
+                                            <div class="footer-social-item">
+                                                <a class="footer-social-item" href="#">
+                                                    <img src="images/google-ico.png" alt="">
+                                                    <div class="footer-social-item-link">
+                                                        <p>@repo_bank</p>
+                                                    </div>
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -1754,7 +1797,7 @@
 
 
                         <p class="design">
-                           <a class="design-link" href="http://redbox.in.ua">   Designed by RedBox</a>
+                            <a class="design-link" href="http://redbox.in.ua"> Designed by RedBox</a>
                         </p>
                         <p class="copyright copyright-hiden">
                             Copyright 2017. All rights reserved.
@@ -1778,7 +1821,8 @@
 
 
 <!-- Modal -->
-<div class="modal fade" id="video-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="video-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-body">
@@ -1806,7 +1850,7 @@
                 <div class="col-md-6">
                     <div class="team-item-image">
                         <a href="#" data-toggle="modal" data-target="#exampleModal">
-                            <img src="images/team-image.png" alt="">
+                            <img class="resize-img" src="images/team-image.png" alt="">
                         </a>
                     </div>
                 </div>
@@ -1818,6 +1862,8 @@
                         </div>
                     </div>
                 </div>
+
+
             </div>
 
             <div class="row">
@@ -1965,7 +2011,6 @@
         });
 
 
-
         $('.our_vision_slider_panel').slick({
             centerMode: true,
             centerPadding: '0px',
@@ -2095,44 +2140,112 @@
     });
 
     $('.modal_2').on('shown.bs.modal', function (e) {
-      $('.overdrafts_slider').resize();
+        $('.overdrafts_slider').resize();
     });
 
 </script>
+
+<!--[if IE]><script type="text/javascript" src="3rdparty/excanvas.js"></script><![endif]-->
+<script src="3rdparty/jquery.knob.min.js"></script>
+<script src="3rdparty/jquery.ba-throttle-debounce.min.js"></script>
+
+<script src="js/jquery.redcountdown.js"></script>
 </body>
 </html>
 
 <script>
-    $(document).ready(function(){
-        $.fn.rotateImg = function(options) {
-            var defaults = {deg : 0};
-            var settings = $.extend( {}, defaults, options );
-            return this.each(function() {
+    $(document).ready(function () {
+        $.fn.rotateImg = function (options) {
+            var defaults = {deg: 0};
+            var settings = $.extend({}, defaults, options);
+            return this.each(function () {
                 var img = $(this);
                 var imgpos = img.position();
                 var x0, y0;
-                $(window).load(function() {
+                $(window).load(function () {
                     x0 = imgpos.left + img.width() / 2;
-                    y0 = imgpos.top + img.height() / 2
+                    y0 = imgpos.top + img.height() / 2;
                 });
                 var x, y, x1, y1, r;
-                $("html").mousemove(function(e) {
+                $("html").mousemove(function (e) {
                     x1 = e.pageX;
                     y1 = e.pageY;
                     x = x1 - x0;
-                    y = y1 - y0;
+                    y = y1 -y0;
                     r = 175 + settings.deg - 175 / Math.PI * Math.atan2(y, x);
                     img.css("transform", "rotate(-" + r + "deg)");
                     img.css("-moz-transform", "rotate(-" + r + "deg)");
                     img.css("-webkit-transform", "rotate(-" + r + "deg)");
-                    img.css("-o-transform", "rotate(-" + r + "deg)")})})}
+                    img.css("-o-transform", "rotate(-" + r + "deg)")
+                })
+            })
+        }
+
         function rand(a) {
-            return 50 + Math.floor(Math.random() * (a-200))}
+            return 50 + Math.floor(Math.random() * (a - 200))
+        }
+
         var w = $(window).width(), h = $(window).height();
-        $.each(Array(1),function(indx, element){
+        $.each(Array(1), function (indx, element) {
             $('.arrow_c').appendTo('#compas')
         });
-        $('.arrow_c').rotateImg({deg : 0});
+        $('.arrow_c').rotateImg({deg: 0});
     });
 </script>
+
+<script type="text/javascript">
+
+    $('#rC_A').redCountdown({
+        end: '1388468325',
+        now: '1378441323',
+        labels: true,
+        style: {
+            element: "",
+            textResponsive: .5,
+            daysElement: {
+                gauge: {
+                    thickness: .03,
+                    bgColor: "rgba(0,0,0,0.05)",
+                    fgColor: "white"
+                },
+                textCSS: 'font-family:\'OpenSans-Regular\'; font-size:25px; font-weight:300; color:#34495e;'
+            },
+            hoursElement: {
+                gauge: {
+                    thickness: .03,
+                    bgColor: "rgba(0,0,0,0.05)",
+                    fgColor: "white"
+                },
+                textCSS: 'font-family:\'OpenSans-Regular\'; font-size:25px; font-weight:300; color:#34495e;'
+            },
+            minutesElement: {
+                gauge: {
+                    thickness: .03,
+                    bgColor: "rgba(0,0,0,0.05)",
+                    fgColor: "white"
+                },
+                textCSS: 'font-family:\'OpenSans-Regular\'; font-size:25px; font-weight:300; color:#34495e;'
+            },
+            secondsElement: {
+                gauge: {
+                    thickness: .03,
+                    bgColor: "rgba(0,0,0,0.05)",
+                    fgColor: "white"
+                },
+                textCSS: 'font-family:\'OpenSans-Regular\'; font-size:25px; font-weight:300; color:#34495e;'
+            }
+
+        },
+        onEndCallback: function() { console.log("Time out!"); }
+    });
+
+
+</script>
+
+<script>
+    $(function() {
+        $("#sampleRedCountdownContainer").redCountdown({ preset: "flat-colors", end: 1414821973  });
+    });
+</script>
+
 

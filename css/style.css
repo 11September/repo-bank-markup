@@ -43,9 +43,8 @@
 }
 
 
+.options b { display:block; border-bottom:1px solid #666; margin-top:8px; }
 
-
-/*CSS*/
 .pulse {
     /*margin:100px;*/
     display: block;
@@ -2417,6 +2416,25 @@ button .btn, button .btn-lg {
 
 @media (max-width: 1600px){
 
+
+
+
+    .footer-phone-button {
+            bottom:90px!important;
+    }
+
+    .footer-phone img {
+
+        width: 70%!important;
+        height: 70% !important;
+    }
+    .phone-button {
+        font-size: 24px!important;
+        width: 295px!important;
+    }
+    .footer-container-social {
+        padding-bottom: 25px!important;
+    }
     .bg-first_1001{
         background-position-x: 1%;
         background-size: 874px 979px;
@@ -2456,6 +2474,67 @@ button .btn, button .btn-lg {
 }
 
 @media (max-width: 1400px){
+
+
+
+
+
+    .footer-about-company
+    {
+        font-family: 'OpenSans-Light';
+        font-size: 30px;
+        color: #FFFFFF;
+        padding: 0 5%!important;
+        line-height: 0px;
+        padding-top: 150px!important;
+    }
+
+    .footer-flex
+    {
+        padding-bottom: 100px;
+    }
+    .connect-que {
+        padding-left: 0!important;
+    }
+    .footer-social-item-link{
+        height: auto!important;
+    }
+    .all-items-fors
+    {
+        padding-top: 0;
+    }
+    .footer-container-social
+    {
+        padding-top: 0;
+    }
+    .footer-phone{
+        padding-top: 50px;
+    }
+
+    .footer-wrapper-social img {
+        width: 50px!important;
+        height: 50px!important;
+    }
+
+
+        .all-items-fors {
+            padding-bottom: 25px;
+            padding-top: 25px;
+        }
+    .connect-que {
+        padding-top:25px;
+    }
+    .phone-button {
+        width: 260px!important;
+
+        height: 60px!important;
+    }
+    .footer-phone-button {
+        bottom: 70px!important;
+    }
+    .footer-phone-button {
+        width: 91% !important;
+    }
     .Instant_Crypto_Overdrafts .block_bg_img,
     .Instant_Crypto_Overdrafts .block_bg_right_img{
         height: 257px;
@@ -2609,8 +2688,16 @@ button .btn, button .btn-lg {
 }
 
 @media (max-width: 1200px){
+
+    .modal-description p {
+        font-size: 18px;
+        color: #182140;
+    }
     .jeniur-4::before{
         top: 245px;
+    }
+    .resize-img {
+        width: 80%;
     }
 
     .changer-language {
@@ -3392,6 +3479,22 @@ button .btn, button .btn-lg {
     .Instant_Crypto_Overdrafts .bank_items{
         font-size: 12px;
     }
+
+    .footer-connect-text {
+        padding-left: 130px!important;
+        color: white;
+        transform: rotate(270deg);
+        width: 100%;
+        position: relative;
+        left: 0;
+        bottom: -460px;
+        top: auto;
+    }
+
+    .resize-img {
+        width: 80%;
+    }
+
 }
 
 @media (max-width: 1200px) {
@@ -3903,6 +4006,7 @@ button .btn, button .btn-lg {
 
 .modal-content{
     padding: 30px 40px 30px 40px;
+    box-shadow: 0px 6px 74px 12px #1d1d1d;
 }
 
 .modal-content .team-item-image{
@@ -3941,7 +4045,6 @@ button .btn, button .btn-lg {
     .footer-phone-button{
         text-align: left;
         display: flex!important;
-        justify-content: flex-start!important;
     }
 
     .footer-phone-button {
@@ -4029,6 +4132,8 @@ button .btn, button .btn-lg {
 
 .footer-container-social{
     /*position: relative;*/
+    padding-left: 100px;
+    padding-top: 50px;
 }
 
 .footer-connect-text{
@@ -4046,7 +4151,9 @@ button .btn, button .btn-lg {
 
 .footer-connect-text p{
     white-space: nowrap;
-    font-size: 45px;
+    font-size: 42px;
+    font-weight: bold;
+
 }
 
 .footer-wrapper{
@@ -4083,7 +4190,15 @@ button .btn, button .btn-lg {
 .footer-wrapper-social{
     /*height:90px;*/
     width:100%;
-    margin-bottom: 40px;
+    margin-bottom: 25px;
+}
+
+.connect-que{
+    padding-left: 150px;
+}
+.footer-wrapper-social img{
+    width: 80px;
+    height: 80px;
 }
 
 .footer-social-item{
@@ -4144,35 +4259,37 @@ button .btn, button .btn-lg {
 
 .footer-phone{
     width:100%;
+    margin: 0 auto;
+    text-align: right;
 }
 
 .footer-phone img{
-    width: 100%;
+    width: 65%;
     position: relative;
-    height:100%;
+    height:65%;
+    margin-right: 15px;
 }
 
 .footer-phone-button{
     position: absolute;
-    bottom: 100px;
+    bottom: 110px;
     display: flex;
-    width:100%;
+    width: 91%;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-end;
 }
 
 .phone-button{
     font-size: 26px;
     color: #FFFFFF;
-    padding: 23px 40px;
-    width:340px;
-    height:85px;
+    padding: 0;
+    width: 315px;
+    height: 85px;
     background-color: rgb(44, 160, 200);
     border-radius: 43px;
-    /*line-height: 20px;*/
-
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .phone-button:hover{
@@ -4191,6 +4308,32 @@ button .btn, button .btn-lg {
 }
 /* footer end */
 
+@media(max-width: 1400px){
+    .modal-description p {
+        font-size: 20px;
+        color: #182140;
+    }
+
+    .footer-connect-text {
+        padding-left: 130px!important;
+        color: white;
+        transform: rotate(270deg);
+        width: 100%;
+        position: relative;
+        left: 0;
+        bottom: -435px;
+        top: auto;
+    }
+
+    .footer-connect-text p {
+        white-space: nowrap;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+
+}
+
 @media (max-width: 1201px){
     .overdraft_panel .new_crypto_overdraft {
         top: 77px;
@@ -4207,11 +4350,69 @@ button .btn, button .btn-lg {
 
 
 @media (max-width: 1200px){
+
+
+    .footer-connect-text p{
+        font-size: 28px;
+    }
     .Instant_Crypto_Overdrafts .modal .modal-footer button{
         width: 25%;
     }
 
+    .footer-container-social{
+        padding-left: 130px!important;
+    }
 
+    .footer-flex {
+        padding-bottom: 0;
+    }
+    .footer-phone img{
+        width: 75%!important;
+        height: 75% !important;
+        padding-top: 200px;
+    }
+    .footer-logo-block{
+        margin-top:150px;
+    }
+
+
+    .footer-connect-text{
+        padding-left: 93px;
+        font-size: 21px;
+        color: white;
+        transform: rotate(270deg);
+        width: 100%;
+        position: relative;
+        left: 0;
+        bottom: -485px;
+        top: auto;
+    }
+
+
+
+    .footer-about-company{
+        font-size: 24px;
+    }
+
+    .footer-social-item-link{
+        height: auto;
+    }
+    .footer-wrapper-social img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .footer-container-social{
+        padding-top: 0;
+    }
+    .footer-phone-button {
+        width: 90% !important;
+    }
+
+    .phone-button {
+        width: 70%!important;
+        height: 60px!important;
+    }
     .modal-team-item-info {
         align-items: flex-start;
     }
@@ -4244,14 +4445,12 @@ button .btn, button .btn-lg {
         height: 710px;
     }
 
-    .footer-logo{
-        top: -120px;
-    }
-
     .footer-social-item-link{
         font-size: 30px;
     }
-
+    .all-items-fors{
+        padding-bottom: 0;
+    }
     .footer-phone-button{
         margin: 0;
         bottom: 60px;
@@ -4259,9 +4458,17 @@ button .btn, button .btn-lg {
 
     .phone-button{
         width:100%;
-        border-radius: 0;
-        font-size: 26px;
-        padding: 20px 20px;
+        font-size: 19px!important;
+    }
+    .all-items-fors{
+        padding-top: 125px;
+    }
+    .connect-que {
+        padding-top: 75px;
+        padding-left: 0;
+    }
+    .footer-connect-text{
+        padding-left: 0;
     }
 }
 
@@ -4270,6 +4477,35 @@ button .btn, button .btn-lg {
         width: 80%;
     }
 
+    .phone-button{
+        font-size: 18px!important;
+        width: 60%!important;
+        height: 60px!important;
+    }
+
+    .footer-phone img{
+        width: 65%!important;
+        height: 65% !important;
+
+    }
+    .footer-phone-button {
+        width: 92% !important;
+    }
+        .footer-phone-button{
+        bottom: 40px!important;
+    }
+    .footer-phone img{
+    padding-top: 0;
+    }
+
+    .all-items-fors {
+        padding-top: 0;
+    }
+
+    .footer-connect-text{
+        padding-top: 0;
+        bottom: -355px;
+    }
     .modal-team .modal-dialog {
         max-width: 70% !important;
     }
@@ -4419,6 +4655,28 @@ button .btn, button .btn-lg {
 }
 
 @media (max-width: 768px) {
+
+    .footer-phone img {
+        width: 100%!important;
+        height: 100% !important;
+    }
+
+    .footer-phone-button {
+        width: 100% !important;
+    }
+    .phone-button {
+        font-size: 18px!important;
+        width: 215px;
+        height: 50px;
+        text-align: center;
+        margin: 0 auto;
+        margin-left: 0;
+        /* margin-right: 0; */
+        margin-right: 105px;
+        /* text-align: center; */
+        /* display: flex; */
+        /* justify-content: center; */
+    }
     .modal_3 .btn-secondary{
         margin-bottom: 20px;
     }
@@ -4543,7 +4801,7 @@ button .btn, button .btn-lg {
 
     .footer-phone{
         margin-top: 70px;
-        padding: 0 20%;
+        padding: 0 10%;
     }
 }
 
@@ -4553,6 +4811,21 @@ button .btn, button .btn-lg {
         font-size: 18px;
     }
 
+    .footer-phone-button{
+        right: 0;
+        left: 0;
+    }
+    .phone-button {
+        width: 50%!important;
+        margin-right: 100px;
+
+
+    }
+
+    .footer-phone img {
+        width: 75%!important;
+        height: 75% !important;
+    }
     .modal-line {
         margin: 20px auto;
     }
@@ -4873,8 +5146,7 @@ button .btn, button .btn-lg {
     }
 
     .footer-phone-button{
-        bottom: 20px;
-        color: #ffffff;
+
     }
 
     .phone-button span{
@@ -4970,4 +5242,17 @@ button .btn, button .btn-lg {
     .btn-join, .btn-login {
         font-size: 12px;
     }
+}
+
+
+
+#rC_A {   width: 50%;    height: 200px;     }
+.redCountdownValue{
+    font-size: 45px!important;
+    margin-top: -55px!important;
+    color: #f8f9fa!important;
+}
+canvas{
+    width: 159px!important;
+    height: 159px!important;
 }
