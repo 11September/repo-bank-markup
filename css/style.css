@@ -2552,12 +2552,71 @@ button .btn, button .btn-lg {
     }
 }
 
+
+@media (max-width: 1540px){
+
+
+    .footer-phone-button {
+        bottom: 70px!important;
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;}
+
+    .footer-phone-button {
+        position: absolute;
+        bottom: 110px;
+        display: flex;
+        width: 93%;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .phone-button {
+        font-size: 24px!important;
+        width: 280px!important;
+        height: 70px!important;
+    }
+
+}
+
+@media (max-width: 1440px){
+
+    .phone-button{
+
+        font-size: 22px!important;
+        width: 255px!important;
+        height: 70px!important;
+    }
+
+}
 @media (max-width: 1400px){
 
+    .footer-wrapper-social img {
+        width: 70px;
+        height: 70px;
+        margin-top: 15px;
+    }
 
+    .footer-flex{
+        margin-top:25px;
+      height: auto!important;
+    }
 
-
-
+    .footer-phone img {
+        width: 75%!important;
+        height: 75% !important;
+    }
+    .copyright, .design {
+        position: absolute;
+        bottom: 0;
+        color: #9C9C9C;
+        font-size: 20px;
+        padding: 0 14%;
+        margin-bottom: 20px;
+    }
+    .connect-que{
+        padding-top: 20px;
+    }
     .footer-about-company
     {
         font-family: 'OpenSans-Light';
@@ -2605,14 +2664,13 @@ button .btn, button .btn-lg {
     }
     .phone-button {
         width: 260px!important;
-
-        height: 60px!important;
+        height: 65px!important;
     }
     .footer-phone-button {
         bottom: 70px!important;
     }
     .footer-phone-button {
-        width: 91% !important;
+        width: 89% !important;
     }
     .Instant_Crypto_Overdrafts .block_bg_img,
     .Instant_Crypto_Overdrafts .block_bg_right_img{
@@ -4555,6 +4613,7 @@ button .btn, button .btn-lg {
     .Instant_Crypto_Overdrafts .modal_3 .modal-footer button {
         width: 80%;
     }
+
 
     .phone-button{
         font-size: 18px!important;
