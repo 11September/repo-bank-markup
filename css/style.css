@@ -1583,14 +1583,16 @@ button .btn, button .btn-lg {
     border-radius: 50%;
 }
 
-.blue-bg:hover{
-    transform: rotateY(180deg);
-    perspective: 1000;
-    transition: 0.6s;
-    transform-style: preserve-3d;
-    cursor: pointer;
+/*.blue-bg:hover{*/
+    /*transform: rotateY(180deg);*/
+    /*perspective: 1000;*/
+    /*transition: 0.6s;*/
+    /*transform-style: preserve-3d;*/
+    /*cursor: pointer;*/
+    /*animation-direction: alternate;*/
+/*}*/
 
-}
+
 
 .margin-row-about-us{
     padding-bottom: 100px;
@@ -2557,7 +2559,7 @@ button .btn, button .btn-lg {
 
 
     .footer-phone-button {
-        bottom: 70px!important;
+        bottom: 155px!important;
         text-align: center;
         width: 100%;
         margin: 0 auto;}
@@ -3617,6 +3619,11 @@ button .btn, button .btn-lg {
         font-size: 12px;
     }
 
+    .footer-phone-button{
+        bottom: 155px!important;
+
+    }
+
     .footer-connect-text {
         padding-left: 130px!important;
         color: white;
@@ -3626,6 +3633,10 @@ button .btn, button .btn-lg {
         left: 0;
         bottom: -460px;
         top: auto;
+    }
+
+    .footer-phone img{
+        padding-top: 45px;
     }
 
     .resize-img {
@@ -4425,6 +4436,7 @@ button .btn, button .btn-lg {
     background-color: rgb(44, 160, 200);
     border-radius: 43px;
     display: flex;
+    position:absolute;
     align-items: center;
     justify-content: center;
 }

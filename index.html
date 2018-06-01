@@ -495,7 +495,7 @@ Adaptable Paying Off
 <section class="graphic">
 <div class="container-fluid">
 
-    <h2 class="hard-cap"> Soft Cap $45 million</h2>
+    <h2 class="hard-cap"> Soft Cap $2 million</h2>
 
     <div>
         <p class="jewrc"> Use the funds & Token distribution</p>
@@ -510,7 +510,7 @@ Adaptable Paying Off
         </div>
 
 
-        <h2 class="hard-cap"> Hard Cap $48 million</h2>
+        <h2 class="hard-cap"> Hard Cap $40 million</h2>
 
 
             <div style="width: 100%;">
@@ -1013,7 +1013,7 @@ Digital Assets</p>
 
                     <div class="card-item">
                     <div class="features block-1-few">
-                        <div class="blue-bg front">
+                        <div  id="blue-bgd" class="blue-bg front">
                             <i class="fas fa-star spic-cof"></i>
                         </div>
 
@@ -1767,10 +1767,10 @@ Digital Assets</p>
 
 
                         <p class="design">
-                            <a class="design-link" href="http://redbox.in.ua"> Designed by RedBox</a>
+                            <a class="design-link" href="http://icodevservice.com/"> Designed by icodevservice/</a>
                         </p>
                         <p class="copyright copyright-hiden">
-                            Copyright 2017. All rights reserved.
+                            Copyright 2018. All rights reserved.
                         </p>
                     </div>
                 </div>
@@ -2267,5 +2267,25 @@ Digital Assets</p>
     $(function() {
         $("#sampleRedCountdownContainer").redCountdown({ preset: "flat-colors", end: 1414821973  });
     });
+
+    $(".blue-bg").hover(function(){
+        $(this).css("transform", "rotateY(-180deg)");
+        $(this).css("perspective", "1000");
+        $(this).css("transition", "0.7s");
+        $(this).css("transform-style", "preserve-3d");
+        $(this).css("cursor", "pointer");
+        $(this).css("animation-direction", "alternate");
+    }, function(){
+        $(this).css("transform", "rotateY(180deg)");
+        $(this).css("perspective", "1000");
+        $(this).css("transition", "0.9s");
+        $(this).css("transform-style", "preserve-3d");
+        $(this).css("cursor", "pointer");
+        $(this).css("animation-direction", "alternate-reverse");
+
+
+    });
+
+
 </script>
 
