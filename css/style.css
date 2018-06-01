@@ -2496,19 +2496,14 @@ button .btn, button .btn-lg {
 }
 
 @media (max-width: 1600px){
-
-
-
-
     .footer-phone-button {
             bottom:90px!important;
     }
 
-    .footer-phone img {
-
-        width: 70%!important;
-        height: 70% !important;
+    .footer-phone__phone-position {
+        padding-left: 25% !important;
     }
+
     .phone-button {
         font-size: 24px!important;
         width: 295px!important;
@@ -2556,8 +2551,6 @@ button .btn, button .btn-lg {
 
 
 @media (max-width: 1540px){
-
-
     .footer-phone-button {
         bottom: 155px!important;
         text-align: center;
@@ -2584,7 +2577,6 @@ button .btn, button .btn-lg {
 @media (max-width: 1440px){
 
     .phone-button{
-
         font-size: 22px!important;
         width: 255px!important;
         height: 70px!important;
@@ -2600,13 +2592,7 @@ button .btn, button .btn-lg {
     }
 
     .footer-flex{
-        margin-top:25px;
-      height: auto!important;
-    }
-
-    .footer-phone img {
-        width: 75%!important;
-        height: 75% !important;
+      height: 100%!important;
     }
     .copyright, .design {
         position: absolute;
@@ -2626,12 +2612,16 @@ button .btn, button .btn-lg {
         color: #FFFFFF;
         padding: 0 5%!important;
         line-height: 0px;
-        padding-top: 150px!important;
+        padding-top: 0!important;
+    }
+
+    .footer-phone__phone-position {
+        padding-left: 15% !important;
     }
 
     .footer-flex
     {
-        padding-bottom: 100px;
+        padding-bottom: 85px;
     }
     .connect-que {
         padding-left: 0!important;
@@ -4247,7 +4237,8 @@ button .btn, button .btn-lg {
     bottom: 0;
     color: #9C9C9C;
     font-size: 20px;
-    padding: 0 14%;
+    padding: 0;
+    text-align: center;
     margin-bottom: 40px;
 }
 
@@ -4306,6 +4297,12 @@ button .btn, button .btn-lg {
 
 .footer-wrapper{
     position: relative;
+}
+
+.footer-phone__button-position{
+    height: 0;
+    position: relative;
+    top: -100px;
 }
 
 .footer-logo{
@@ -4412,10 +4409,14 @@ button .btn, button .btn-lg {
 }
 
 .footer-phone img{
-    width: 65%;
+    width: 100%;
     position: relative;
     height:65%;
     margin-right: 15px;
+}
+
+.footer-phone__phone-position{
+    padding-left: 30%;
 }
 
 .footer-phone-button{
@@ -4436,9 +4437,9 @@ button .btn, button .btn-lg {
     background-color: rgb(44, 160, 200);
     border-radius: 43px;
     display: flex;
-    position:absolute;
     align-items: center;
     justify-content: center;
+    margin: 0 auto 0;
 }
 
 .phone-button:hover{
@@ -4516,8 +4517,6 @@ button .btn, button .btn-lg {
         padding-bottom: 0;
     }
     .footer-phone img{
-        width: 75%!important;
-        height: 75% !important;
         padding-top: 200px;
     }
     .footer-logo-block{
@@ -4559,7 +4558,7 @@ button .btn, button .btn-lg {
     }
 
     .phone-button {
-        width: 70%!important;
+        width: 75%!important;
         height: 60px!important;
     }
     .modal-team-item-info {
@@ -4626,17 +4625,21 @@ button .btn, button .btn-lg {
         width: 80%;
     }
 
+    .footer-logo-block {
+        margin-top: 45px;
+    }
+
+    .footer-about-company {
+        margin: 25px 0;
+    }
 
     .phone-button{
         font-size: 18px!important;
-        width: 60%!important;
-        height: 60px!important;
+        width: 75%!important;
+        height: 65px!important;
     }
-
-    .footer-phone img{
-        width: 65%!important;
-        height: 65% !important;
-
+    .footer-phone__phone-position {
+        padding-left: 10% !important;
     }
     .footer-phone-button {
         width: 92% !important;
@@ -4787,7 +4790,7 @@ button .btn, button .btn-lg {
     }
 
     .footer-about-company{
-        margin: 100px 0;
+        margin: 130px 0 15px;
         text-align: center;
     }
 
@@ -4805,6 +4808,9 @@ button .btn, button .btn-lg {
 }
 
 @media (max-width: 768px) {
+    .connect-que {
+        padding-top: 0;
+    }
 
     .footer-phone img {
         width: 100%!important;
@@ -4815,17 +4821,11 @@ button .btn, button .btn-lg {
         width: 100% !important;
     }
     .phone-button {
-        font-size: 18px!important;
+        font-size: 22px!important;
         width: 215px;
         height: 50px;
         text-align: center;
         margin: 0 auto;
-        margin-left: 0;
-        /* margin-right: 0; */
-        margin-right: 105px;
-        /* text-align: center; */
-        /* display: flex; */
-        /* justify-content: center; */
     }
     .modal_3 .btn-secondary{
         margin-bottom: 20px;
@@ -4937,7 +4937,7 @@ button .btn, button .btn-lg {
     }
 
     .footer-logo{
-        width:400px;
+        width:430px;
 
     }
 
@@ -4966,16 +4966,13 @@ button .btn, button .btn-lg {
         left: 0;
     }
     .phone-button {
-        width: 50%!important;
-        margin-right: 100px;
-
-
-    }
-
-    .footer-phone img {
         width: 75%!important;
-        height: 75% !important;
     }
+
+    .footer-container-social {
+        padding-left: 0 !important;
+    }
+
     .modal-line {
         margin: 20px auto;
     }
@@ -5297,6 +5294,16 @@ button .btn, button .btn-lg {
 
     .footer-phone-button{
 
+    }
+
+    .phone-button {
+        width: 30%!important;
+        /*background-color: transparent;*/
+    }
+
+    .phone-button svg{
+        font-size: 30px;
+        /*color: rgb(44, 160, 200);*/
     }
 
     .phone-button span{
