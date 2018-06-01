@@ -318,20 +318,52 @@ background: none!important;
     height: 50px;
     cursor: pointer;
 }
-.blockwe, .blockwe-2{
+
+
+ /*.blockwe-2{*/
+
+     /*display: flex;*/
+     /*justify-content: flex-end;*/
+/*}*/
+
+/*.blockwe {*/
+    /*display: flex;*/
+    /*justify-content: normal;*/
+/*}*/
+
+
+.blockwe{
+
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+}
+
+.blockwe-2{
+    display: flex;
+    justify-content: flex-start;
 }
 
 .hard-cap {
     font-size: 40px;
     padding-top: 100px;
     padding-bottom: 25px;
-    text-align: center;
     width: 100%;
 
 }
 
+
+
+.cass {
+    font-size: 30px;
+    list-style-type: none;
+    padding-top: 100px;
+
+}
+
+.cass li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 .social-hard-cap
 {
 
@@ -372,7 +404,7 @@ font-size: 25px;
 }
 
 .jewrc
-{
+{     padding-bottom: 50px;
     padding-top: 50px;
     font-size: 30px;
 }
