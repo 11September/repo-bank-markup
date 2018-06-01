@@ -4176,6 +4176,8 @@ button .btn, button .btn-lg {
 }
 
 @media (max-width: 768px) {
+
+
     .team-item{
         margin-bottom: 80px;
     }
@@ -4484,6 +4486,8 @@ button .btn, button .btn-lg {
 
 }
 
+
+
 @media (max-width: 1201px){
     .overdraft_panel .new_crypto_overdraft {
         top: 77px;
@@ -4617,6 +4621,17 @@ button .btn, button .btn-lg {
     }
     .footer-connect-text{
         padding-left: 0;
+    }
+}
+
+
+@media (max-width: 1060px){
+
+    .phone-button{
+        width:80%!important;
+    }
+    .all-items-fors {
+        padding-top: 100px;
     }
 }
 
@@ -4808,6 +4823,19 @@ button .btn, button .btn-lg {
 }
 
 @media (max-width: 768px) {
+
+    .footer-connect-text {
+        padding-top: 0;
+        bottom: -380px;
+    }
+    .footer-phone img {
+       padding-top: 20px;
+    }
+    .phone-button{
+
+        width: 85%!important;
+        font-size: 20px!important;
+    }
     .connect-que {
         padding-top: 0;
     }
@@ -4821,7 +4849,7 @@ button .btn, button .btn-lg {
         width: 100% !important;
     }
     .phone-button {
-        font-size: 22px!important;
+        font-size: 18px!important;
         width: 215px;
         height: 50px;
         text-align: center;
@@ -4957,6 +4985,16 @@ button .btn, button .btn-lg {
 
 @media (max-width: 576px) {
 
+
+
+    .phone-button{
+        height: 70px!important;
+
+    }
+
+    .phone-button .svg-inline--fa{
+        margin: 15px;
+    }
     .roadmap_view_p{
         font-size: 18px;
     }
@@ -5059,7 +5097,6 @@ button .btn, button .btn-lg {
     .phone-button{
         height: 60px;
         font-size: 22px;
-        padding: 15px ;
     }
 
     .phone-button svg{
@@ -5259,6 +5296,12 @@ button .btn, button .btn-lg {
         top: 75%;
     }
 
+    .phone-button span{
+        font-size: 20px!important;
+    }
+
+
+
     .pulse {
         width: 50px;
         height: 50px;
@@ -5306,9 +5349,12 @@ button .btn, button .btn-lg {
         /*color: rgb(44, 160, 200);*/
     }
 
-    .phone-button span{
-        display: none;
+
+    .phone-button {
+        width: 80%!important;
+        height: 70px!important;
     }
+
 
     .team-item-image img{
         width:100%;
@@ -5370,6 +5416,24 @@ button .btn, button .btn-lg {
 }
 
 @media (max-width: 382px){
+
+    .phone-button{
+        width: 85%!important;
+        height: 60px!important;
+
+    }
+
+    .phone-button .svg-inline--fa {
+        margin: 5px;
+    }
+
+    .type-pes{
+        margin: 5px;
+    }
+
+    .phone-button span {
+        font-size: 18px!important;
+    }
     .overdraft_panel .new_crypto_overdraft {
         top: 80%;
     }

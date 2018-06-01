@@ -17,11 +17,13 @@
     <link rel="stylesheet" href="css/owl.theme.default.css">
     <link rel="stylesheet" type="text/css" href="css/slick.css"/>
     <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+    <link rel="stylesheet" href="css/morris.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/prettify/r224/prettify.min.css">
+
+
 </head>
 <body>
-<style>
-    .viewer .transparent-pattern{
-    background-image:transparent;}</style>
+
 <header class="header-wrapper">
     <div class="container-fluid header-body">
         <span class="mobile-btn">
@@ -493,6 +495,8 @@ Adaptable Paying Off
 </section>
 
 <section class="graphic">
+
+
 <div class="container-fluid">
 
     <h2 class="hard-cap"> Soft Cap $2 million</h2>
@@ -503,25 +507,34 @@ Adaptable Paying Off
 
         <div class="row">
         <div class="blockwe col-lg-12">
-            <div id="piechart" style=" font-size:30px; width: 900px; height: 500px;">
+            <div id="graph" style=" font-size:30px; width: 900px; height: 500px;">
 
 
             </div>
         </div>
 
 
-        <h2 class="hard-cap"> Hard Cap $40 million</h2>
+            <div class="blof">
+                <h2 class="hard-cap"> Hard Cap $2 million</h2>
+
+                <div>
+                    <p class="jewrc"> Use the funds & Token distribution</p>
+                </div>
+
+                <div class="row">
+
+                    <div class="blockwe col-lg-12">
+                        <div id="graph-number2" style=" font-size:30px; width: 900px; height: 500px;">
 
 
-            <div style="width: 100%;">
-                <p class="jf"> Use the funds & Token distribution</p>
+                        </div>
+
+                    </div>
+
             </div>
-        <div class="blockwe-2  col-lg-12">
-            <div id="piechart2" style="width:900px; height: 500px;"></div>
-        </div>
 
 
-        </div>
+
 
 </div>
 
@@ -1766,12 +1779,18 @@ Digital Assets</p>
                         </div>
 
 
+
+                        <div class="sky-copyright">
+
+
                         <p class="design">
                             <a class="design-link" href="http://icodevservice.com/"> Designed by icodevservice/</a>
                         </p>
                         <p class="copyright copyright-hiden">
                             Copyright 2018. All rights reserved.
                         </p>
+                        </div>
+
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 col-xl-4">
@@ -1782,7 +1801,7 @@ Digital Assets</p>
                                 <div class="footer-phone__button-position">
                                     
                                 
-                                    <a class="phone-button" href=""><span>Join in Telegram </span><i
+                                    <a class="phone-button" href=""><span> <p class="type-pes"> Join in Telegram </p> </span><i
                                             class="fab fa-telegram"></i>
                                     </a>
                                 </div>
@@ -2124,8 +2143,12 @@ Digital Assets</p>
 <!--[if IE]><script type="text/javascript" src="3rdparty/excanvas.js"></script><![endif]-->
 <script src="3rdparty/jquery.knob.min.js"></script>
 <script src="3rdparty/jquery.ba-throttle-debounce.min.js"></script>
-
 <script src="js/jquery.redcountdown.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.2/raphael-min.js"></script>
+<script src="js/morris.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/prettify/r224/prettify.min.js"></script>
+
 </body>
 </html>
 
@@ -2294,4 +2317,32 @@ Digital Assets</p>
 
 
 </script>
+
+<script>
+    Morris.Donut({
+        element: 'graph',
+        data: [
+            {value: 70, label: 'foo', formatted: 'at least 70%' },
+            {value: 15, label: 'bar', formatted: 'approx. 15%' },
+            {value: 10, label: 'baz', formatted: 'approx. 10%' },
+            {value: 5, label: 'A really really long label', formatted: 'at most 5%' }
+        ],
+        formatter: function (x, data) { return data.formatted; }
+    });
+
+    Morris.Donut({
+        element: 'graph-number2',
+        data: [
+            {value: 70, label: 'foo', formatted: 'at least 70%' },
+            {value: 15, label: 'bar', formatted: 'approx. 15%' },
+            {value: 10, label: 'baz', formatted: 'approx. 10%' },
+            {value: 5, label: 'A really really long label', formatted: 'at most 5%' }
+        ],
+        formatter: function (x, data) { return data.formatted; }
+    });
+
+
+
+</script>
+
 
