@@ -2656,7 +2656,7 @@ button .btn, button .btn-lg {
 }
 @media (max-width: 1400px){
     #rC_A {
-        width: 52%;
+        width: 52% !important;
     }
 
     .footer-wrapper-social img {
