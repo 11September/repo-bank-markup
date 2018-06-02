@@ -5629,7 +5629,10 @@ button .btn, button .btn-lg {
 
 
 
-#rC_A {   width: 50%;    height: 200px;     }
+#rC_A {   
+    width: 45%;    
+    height: 200px;     
+}
 .redCountdownValue{
     font-size: 45px!important;
     margin-top: -55px!important;
