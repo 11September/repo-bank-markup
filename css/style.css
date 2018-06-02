@@ -3675,9 +3675,43 @@ button .btn, button .btn-lg {
     .Instant_Crypto_Overdrafts .bank_items{
         font-size: 14px;
     }
+
+    .sky-copyright .design {
+        text-align: left;
+        width: 100%;
+    }
 }
 
 @media (max-width: 1400px){
+    .footer-logo-text {
+        font-size: 40px !important;
+        padding-left: 20px;
+    }
+
+    .footer-logo-block{
+        padding-top: 10px;
+    }
+
+    .footer-about-company{
+        font-size: 20px !important;
+    }
+
+    .footer-social-item-link {
+        padding-top: 13px;
+    }
+
+    .footer-social-item-link{
+        font-size: 30px !important;
+    }
+
+    .footer-phone {
+        padding-top: 0px;
+    }
+
+    .footer-logo-block img{
+        height: 120px;
+    }
+
     .Instant_Crypto_Overdrafts .bank_items{
         font-size: 12px;
     }
@@ -4596,9 +4630,25 @@ button .btn, button .btn-lg {
     .footer-flex {
         padding-bottom: 0;
     }
-    .footer-phone img{
-        padding-top: 200px;
+
+    .footer-logo {
+        position: absolute;
+        width: 540px;
+        height: auto; 
+        margin-left: auto;
+        margin-right: auto;
+        top: -135px;
+        left: 0;
+        right: 0;
+        display: table;
+        background-color: transparent; 
+        border-radius: 45px;
     }
+
+    .footer-phone img {
+        padding-top: 65px;
+    }
+
     .footer-logo-block{
         margin-top:150px;
     }
@@ -4689,7 +4739,8 @@ button .btn, button .btn-lg {
         font-size: 19px!important;
     }
     .all-items-fors{
-        padding-top: 125px;
+        padding-top: 75px;
+        padding-bottom: 40px;
     }
     .connect-que {
         padding-top: 75px;
@@ -4712,12 +4763,16 @@ button .btn, button .btn-lg {
 }
 
 @media (max-width: 992px) {
+    .wrapper-team-slider .slick-dots{
+        display: none !important;
+    }
+
     .Instant_Crypto_Overdrafts .modal_3 .modal-footer button {
         width: 80%;
     }
 
     .footer-logo-block {
-        margin-top: 45px;
+        margin-top: 135px;
     }
 
     .footer-about-company {
@@ -4881,7 +4936,7 @@ button .btn, button .btn-lg {
     }
 
     .footer-about-company{
-        margin: 130px 0 15px;
+        margin: 200px 0 15px;
         text-align: center;
     }
 
@@ -5182,6 +5237,17 @@ button .btn, button .btn-lg {
 }
 
 @media (max-width: 480px) {
+    .sky-copyright .design {
+        text-align: center;
+    }
+
+    .footer-phone__phone-position {
+        padding-left: 0% !important;
+    }
+
+    .footer-phone img {
+        margin-right: 0 !important;
+    }
 
     .text-card p {
         font-size: 22px;
@@ -5359,7 +5425,7 @@ button .btn, button .btn-lg {
 
     .footer-logo{
         width:300px;
-        top: -80px;
+        top: -110px;
     }
 
     .footer-logo-text{
@@ -5370,6 +5436,18 @@ button .btn, button .btn-lg {
 @media (max-width: 480px) {
     .overdraft_panel .new_crypto_overdraft {
         top: 75%;
+    }
+
+    .footer-container-social {
+        padding-bottom: 0!important;
+    }
+
+    .footer-phone {
+        margin-top: 35px;
+    }
+
+    .all-items-fors {
+        padding-bottom: 0;
     }
 
     .phone-button span{
