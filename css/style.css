@@ -403,12 +403,17 @@ font-size: 25px;
 }
 
 .Repobank-wrapper {
-    height: 100vh;
+    height: 1100px;
     position: relative;
     background: url(../images/bg-vision.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
+}
+.color-logo{
+    width: 600px;
+    height: 500px;
+    margin: 100px auto 0;
 }
 
 .Repobank-wrapper .image img{
@@ -1459,7 +1464,9 @@ button .btn, button .btn-lg {
 
 .padding-rows{
     padding-bottom: 75px;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
 }
 .btn-download {
     border-radius: 50px;
@@ -2157,7 +2164,7 @@ button .btn, button .btn-lg {
 
 .roadmap{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
 
     background-repeat: no-repeat;
     background-position: center;
@@ -3421,109 +3428,6 @@ button .btn, button .btn-lg {
     }
 }
 
-@media (max-width: 576px){
-
-    .card .btn-link {
-        font-size: 18px!important;
-    }
-
-    .features-2{
-        margin-top: 30px;
-    }
-
-    .features-2 p {
-        margin-left: 85px;
-    }
-
-    #accordion-one .card-body .top-part .text:after {
-        width: 100%;
-    }
-
-    #accordion-two .card-body .top-part .text:after {
-        width: 100%;
-    }
-
-    .accordion-road {
-        width: 45%;
-    }
-
-    .accordion-road .btn-link a {
-        font-size: 20px;
-    }
-
-    .features-p {
-        font-size: 14px;
-    }
-    .blue-bg svg {
-        width: 30px!important;
-        height: 30px!important;
-    }
-
-    .jeniur::before {
-        top: 40px;
-    }
-
-    .jeniur-4::before {
-        top: 250px;
-    }
-
-    .jeniur-2::before {
-        top: 288px;
-    }
-
-    .jeniur-3::before {
-        top: 446px;
-    }
-
-    .jeniur-5::before {
-        top: 412px;
-    }
-
-    .features-p::before {
-        width: 200px;
-        left: -60px;
-    }
-
-    .solutions {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .accordion {
-        width: 100%;
-        margin-top: 30px;
-    }
-
-    .solutions {
-        padding-top: 0;
-    }
-
-    .header-solution {
-        font-size: 40px;
-    }
-
-    .text-solution {
-        font-size: 20px;
-    }
-
-    /* our_vision_slider */
-    .Instant_Crypto_Overdrafts .modal .modal-header button {
-        right: 10px;
-        top: 15px;
-    }
-
-    .our_vision_slider .button_position {
-        display: block;
-    }
-
-    .our_vision_slider .button_position .row {
-        width: auto;
-    }
-
-
-    /* our_vision_slider end */
-}
 
 @media (max-width: 480px) {
     .text-h1 {
@@ -5080,7 +4984,12 @@ button .btn, button .btn-lg {
 @media (max-width: 576px) {
 
 
-
+    .color-logo
+    {
+        width: 100%;
+        height: auto;
+        margin: 135px 0 40px 0;
+    }
     .phone-button{
         height: 70px!important;
 
@@ -5181,7 +5090,113 @@ button .btn, button .btn-lg {
    .Instant_Crypto_Overdrafts .modal.fade .modal-dialog{
         max-width: 100% !important
     }
+
+
+
+
+
+
+    .card .btn-link {
+        font-size: 18px!important;
+    }
+
+    .features-2{
+        margin-top: 30px;
+    }
+
+    .features-2 p {
+        margin-left: 85px;
+    }
+
+    #accordion-one .card-body .top-part .text:after {
+        width: 100%;
+    }
+
+    #accordion-two .card-body .top-part .text:after {
+        width: 100%;
+    }
+
+    .accordion-road {
+        width: 45%;
+    }
+
+    .accordion-road .btn-link a {
+        font-size: 20px;
+    }
+
+    .features-p {
+        font-size: 14px;
+    }
+    .blue-bg svg {
+        width: 30px!important;
+        height: 30px!important;
+    }
+
+    .jeniur::before {
+        top: 40px;
+    }
+
+    .jeniur-4::before {
+        top: 250px;
+    }
+
+    .jeniur-2::before {
+        top: 288px;
+    }
+
+    .jeniur-3::before {
+        top: 446px;
+    }
+
+    .jeniur-5::before {
+        top: 412px;
+    }
+
+    .features-p::before {
+        width: 200px;
+        left: -60px;
+    }
+
+    .solutions {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .accordion {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .solutions {
+        padding-top: 0;
+    }
+
+    .header-solution {
+        font-size: 40px;
+    }
+
+    .text-solution {
+        font-size: 20px;
+    }
+
+    /* our_vision_slider */
+    .Instant_Crypto_Overdrafts .modal .modal-header button {
+        right: 10px;
+        top: 15px;
+    }
+
+    .our_vision_slider .button_position {
+        display: block;
+    }
+
+    .our_vision_slider .button_position .row {
+        width: auto;
+    }
+
 }
+
+
 
 @media (max-width: 540px) {
     .footer-phone-button{
