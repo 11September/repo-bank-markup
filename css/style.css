@@ -25,6 +25,10 @@
     src: url(../fonts/OpenSans-Light.ttf);
 }
 
+.redCountdownWrapper .redCountdownValue {
+    top: 40% !important;
+}
+
 .jevik canvas{
     background: none!important;
 
@@ -178,7 +182,10 @@ background: none!important;
 }
 
 
-
+#particles-js .particles-js-canvas-el{
+    width: 100% !important;
+    height: 100% !important;
+}
 
 
 .credit-items{
@@ -2495,6 +2502,12 @@ button .btn, button .btn-lg {
     .solutions{
         padding-bottom: 50px;
     }
+@media (max-width: 1800px){
+    .redCountdownWrapper .redCountdownValue {
+        top: 45% !important;
+        line-height: 0.95em;
+    }
+}
 
 @media (min-width: 1700px){
 
@@ -2592,8 +2605,12 @@ button .btn, button .btn-lg {
     }
 }
 
-
 @media (max-width: 1540px){
+    .redCountdownWrapper .redCountdownValue {
+        top: 48% !important;
+        line-height: 0.9em;
+    }
+
     .footer-phone-button {
         bottom: 155px!important;
         text-align: center;
@@ -2618,6 +2635,28 @@ button .btn, button .btn-lg {
 }
 
 @media (max-width: 1440px){
+    .Repobank-wrapper {
+        height: auto;
+        padding-bottom: 25px;
+    }
+
+    #rC_A {
+        margin-left: 180px;
+    }
+
+    .Repobank-wrapper .image{
+        width: 100%;
+    }
+
+    .text-p {
+        padding-bottom: 45px;
+    }
+
+    #rC_A {
+        width: 55%;
+        height: 200px;
+        padding-top: 25px;
+    }
 
     .phone-button{
         font-size: 22px!important;
@@ -2627,6 +2666,9 @@ button .btn, button .btn-lg {
 
 }
 @media (max-width: 1400px){
+    #rC_A {
+        width: 52% !important;
+    }
 
     .footer-wrapper-social img {
         width: 70px;
@@ -2860,7 +2902,6 @@ button .btn, button .btn-lg {
 }
 
 @media (max-width: 1200px){
-
     .modal-description p {
         font-size: 18px;
         color: #182140;
@@ -3645,9 +3686,43 @@ button .btn, button .btn-lg {
     .Instant_Crypto_Overdrafts .bank_items{
         font-size: 14px;
     }
+
+    .sky-copyright .design {
+        text-align: left;
+        width: 100%;
+    }
 }
 
 @media (max-width: 1400px){
+    .footer-logo-text {
+        font-size: 40px !important;
+        padding-left: 20px;
+    }
+
+    .footer-logo-block{
+        padding-top: 10px;
+    }
+
+    .footer-about-company{
+        font-size: 20px !important;
+    }
+
+    .footer-social-item-link {
+        padding-top: 13px;
+    }
+
+    .footer-social-item-link{
+        font-size: 30px !important;
+    }
+
+    .footer-phone {
+        padding-top: 0px;
+    }
+
+    .footer-logo-block img{
+        height: 120px;
+    }
+
     .Instant_Crypto_Overdrafts .bank_items{
         font-size: 12px;
     }
@@ -4018,6 +4093,7 @@ button .btn, button .btn-lg {
     background-size: 100% 100%;
     padding: 100px 0 150px 0;
     background-attachment: fixed;
+    margin-top: 30px;
 }
 
 .team h2{
@@ -4219,7 +4295,9 @@ button .btn, button .btn-lg {
 }
 
 @media (max-width: 768px) {
-
+    .team {
+        margin-top: 0;
+    }
 
     .team-item{
         margin-bottom: 80px;
@@ -4563,9 +4641,25 @@ button .btn, button .btn-lg {
     .footer-flex {
         padding-bottom: 0;
     }
-    .footer-phone img{
-        padding-top: 200px;
+
+    .footer-logo {
+        position: absolute;
+        width: 540px;
+        height: auto; 
+        margin-left: auto;
+        margin-right: auto;
+        top: -135px;
+        left: 0;
+        right: 0;
+        display: table;
+        background-color: transparent; 
+        border-radius: 45px;
     }
+
+    .footer-phone img {
+        padding-top: 65px;
+    }
+
     .footer-logo-block{
         margin-top:150px;
     }
@@ -4656,7 +4750,8 @@ button .btn, button .btn-lg {
         font-size: 19px!important;
     }
     .all-items-fors{
-        padding-top: 125px;
+        padding-top: 75px;
+        padding-bottom: 40px;
     }
     .connect-que {
         padding-top: 75px;
@@ -4679,12 +4774,16 @@ button .btn, button .btn-lg {
 }
 
 @media (max-width: 992px) {
+    .wrapper-team-slider .slick-dots{
+        display: none !important;
+    }
+
     .Instant_Crypto_Overdrafts .modal_3 .modal-footer button {
         width: 80%;
     }
 
     .footer-logo-block {
-        margin-top: 45px;
+        margin-top: 135px;
     }
 
     .footer-about-company {
@@ -4848,7 +4947,7 @@ button .btn, button .btn-lg {
     }
 
     .footer-about-company{
-        margin: 130px 0 15px;
+        margin: 200px 0 15px;
         text-align: center;
     }
 
@@ -5149,6 +5248,17 @@ button .btn, button .btn-lg {
 }
 
 @media (max-width: 480px) {
+    .sky-copyright .design {
+        text-align: center;
+    }
+
+    .footer-phone__phone-position {
+        padding-left: 0% !important;
+    }
+
+    .footer-phone img {
+        margin-right: 0 !important;
+    }
 
     .text-card p {
         font-size: 22px;
@@ -5326,7 +5436,7 @@ button .btn, button .btn-lg {
 
     .footer-logo{
         width:300px;
-        top: -80px;
+        top: -110px;
     }
 
     .footer-logo-text{
@@ -5337,6 +5447,18 @@ button .btn, button .btn-lg {
 @media (max-width: 480px) {
     .overdraft_panel .new_crypto_overdraft {
         top: 75%;
+    }
+
+    .footer-container-social {
+        padding-bottom: 0!important;
+    }
+
+    .footer-phone {
+        margin-top: 35px;
+    }
+
+    .all-items-fors {
+        padding-bottom: 0;
     }
 
     .phone-button span{
@@ -5394,7 +5516,7 @@ button .btn, button .btn-lg {
 
 
     .phone-button {
-        width: 80%!important;
+        width: 85%!important;
         height: 70px!important;
     }
 
@@ -5429,6 +5551,14 @@ button .btn, button .btn-lg {
     .overdraft_panel .new_crypto_overdraft{
         top: 75%;
         margin-right: 2px;
+    }
+
+    #particles-js {
+        height: 1160px;
+    }
+
+    .slick-dotted.slick-slider {
+         margin-bottom: 5px !important; 
     }
 
     .modal-content .team-item-social > a {
@@ -5510,7 +5640,10 @@ button .btn, button .btn-lg {
 
 
 
-#rC_A {   width: 50%;    height: 200px;     }
+#rC_A {   
+    width: 45%;    
+    height: 200px;     
+}
 .redCountdownValue{
     font-size: 45px!important;
     margin-top: -55px!important;
@@ -5519,4 +5652,77 @@ button .btn, button .btn-lg {
 canvas{
 
     background: transparent!important;
+}
+
+@media (max-width: 1440px){
+    .redCountdownWrapper .redCountdownValue {
+        top: 55% !important;
+    }
+}
+
+@media (max-width: 1340px){
+    #rC_A {
+        width: 52%;
+    }
+
+    .redCountdownWrapper .redCountdownValue {
+        left: 5px;
+    }
+}
+
+@media (max-width: 1300px){
+    #rC_A {
+        width: 55%;
+        margin-left: 100px;
+    }
+
+    .redCountdownWrapper .redCountdownValue {
+        top: 59% !important;
+        line-height: 36px !important;
+    }
+
+    .redCountdownValue > div{
+        font-size: 36px;
+    }
+
+    .redCountdownValue span{
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 1200px){
+   #rC_A {
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+
+    .redCountdownWrapper .redCountdownValue {
+        top: 90px !important;
+        line-height: 36px !important;
+    } 
+}
+
+@media (max-width: 768px){
+    .redCountdownWrapper > div {
+        width: calc(33% - 20px) !important;
+    }
+
+    #rC_A {
+        margin-bottom: 0;
+        height: auto; 
+    }
+}
+
+@media (max-width: 576px){
+    .redCountdownWrapper > div {
+        width: calc(50% - 20px) !important;
+    }
+}
+
+@media (max-width: 400px){
+    .redCountdownWrapper > div {
+        width: calc(100% - 20px) !important;
+        height: 200px !important;
+    }
 }
