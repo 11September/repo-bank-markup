@@ -342,12 +342,16 @@ background: none!important;
 .blockwe{
 
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-end;
+    padding-top: 50px;
+    margin: 0 20px;
 }
 
 .blockwe-2{
     display: flex;
     justify-content: flex-start;
+    padding-top: 50px;
+    margin: 0 20px;
 }
 
 .hard-cap {
@@ -362,10 +366,13 @@ background: none!important;
 
 .cass {
     font-size: 30px;
-    list-style-type: none;
+    list-style-image: url(../images/circle-mesh.png);
+
     padding-top: 100px;
 
 }
+
+
 
 .cass li {
     padding-top: 10px;
@@ -466,6 +473,10 @@ font-size: 25px;
     font-size: 40px;
     color:white;
     margin-right: 20px;
+}
+
+.graphic{
+    height: 1000px;
 }
 
 /* Instant_Crypto_Overdrafts */
@@ -5639,9 +5650,8 @@ button .btn, button .btn-lg {
     color: #f8f9fa!important;
 }
 canvas{
-    width: 159px!important;
-    height: 159px!important;
-    background: none!important;
+
+    background: transparent!important;
 }
 
 @media (max-width: 1440px){
