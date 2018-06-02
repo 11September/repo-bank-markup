@@ -5,23 +5,23 @@
 }
 
 @font-face {
-    font-family: Segoue; /* Имя шрифта */
+    font-family: 'Segoue'; /* Имя шрифта */
     src: url(../fonts/Segoe_Bold.ttf); /* Путь к файлу со шрифтом */
 }
 
 @font-face {
-    font-family: OpenSans-Bold; /* Имя шрифта */
+    font-family: 'OpenSans-Bold'; /* Имя шрифта */
     src: url(../fonts/OpenSans-Bold.ttf); /* Путь к файлу со шрифтом */
 
 }
 
 @font-face {
-    font-family: OpenSans-Regular; /* font-family: OpenSans-Regular; Имя шрифта */
+    font-family: 'OpenSans-Regular'; /* font-family: OpenSans-Regular; Имя шрифта */
     src: url(../fonts/OpenSans-Regular.ttf); /* Путь к файлу со шрифтом */
 }
 
 @font-face {
-    font-family: OpenSans-Light;
+    font-family: 'OpenSans-Light';
     src: url(../fonts/OpenSans-Light.ttf);
 }
 
@@ -29,16 +29,8 @@
     top: 40% !important;
 }
 
-.jevik canvas{
-    background: none!important;
 
-}
 
-.jevik .viewer {
-    background: none!important;
-    background-image: none!important;
-
-}
 .viewer.transparent-pattern {
      background-color: transparent!important;
      background-image: none!important;
@@ -120,17 +112,6 @@ background: none!important;
     width: 100%;
 }
 
-/*.video-container {*/
-    /*position: absolute;*/
-    /*z-index: 4;*/
-    /*right: 0;*/
-    /*bottom: 0;*/
-    /*width: auto;*/
-    /*min-width: 100%;*/
-    /*height: auto;*/
-    /*min-height: 100%;*/
-/*}*/
-
 
 
 .bg-second_1001 {
@@ -165,7 +146,7 @@ background: none!important;
     text-align: left;
     font-size: 16px;
     margin-bottom: 10px;
-    font-family: OpenSans-Regular;
+    font-family: 'OpenSans-Regular';
 }
 
 #road-accordion-two .rollet-link{
@@ -258,7 +239,7 @@ background: none!important;
 }
 
 .btn-join, .btn-login {
-    font-family: OpenSans-Regular;
+    font-family: 'OpenSans-Regular';
     font-size: 25px;
 }
 
@@ -277,7 +258,6 @@ background: none!important;
 }
 
 .btn-login {
-    border: 2px solid black;
     background: white;
     color: #4F7B23;
     border-radius: 10px;
@@ -327,18 +307,6 @@ background: none!important;
 }
 
 
- /*.blockwe-2{*/
-
-     /*display: flex;*/
-     /*justify-content: flex-end;*/
-/*}*/
-
-/*.blockwe {*/
-    /*display: flex;*/
-    /*justify-content: normal;*/
-/*}*/
-
-
 .blockwe{
 
     display: flex;
@@ -365,11 +333,9 @@ background: none!important;
 
 
 .cass {
-    font-size: 30px;
+    font-size: 25px;
     list-style-image: url(../images/circle-mesh.png);
-
     padding-top: 100px;
-
 }
 
 
@@ -458,14 +424,14 @@ font-size: 25px;
 
 .text-h1 {
      font-size: 80px;
-     font-family: OpenSans-Bold;
+     font-family: 'OpenSans-Bold';
      margin-top: 200px;
      text-align: left;
  }
 
 .text-p{
     font-size: 80px;
-    font-family: OpenSans-Bold;
+    font-family: 'OpenSans-Bold';
     margin-top: 40px;
 }
 
@@ -484,11 +450,11 @@ font-size: 25px;
     padding: 80px 0 70px;
     color: #182140;
     background: linear-gradient(to bottom, #f9f9f9, #c8c8c8);
-    font-family: OpenSans-Regular;
+    font-family: 'OpenSans-Regula';
 }
 
 .Instant_Crypto_Overdrafts .modal{
-    font-family: OpenSans-Regular;
+    font-family: 'OpenSans-Regular';
 }
 
 .Instant_Crypto_Overdrafts .modal-content{
@@ -1002,8 +968,7 @@ outline: none;
 }
 
 .overdrafts_slider .slick-dots .slick-active button:hover{
-    box-shadow: 0;
-    px 0px 10px 0px #2ca5e0;
+    box-shadow: 0px 0px 10px 0px #2ca5e0;
     transition-duration: .2s;
 }
 
@@ -1554,7 +1519,6 @@ button .btn, button .btn-lg {
 .Credit-card{
     min-height: 1200px;
     background: black;
-
     padding: 90px 0 50px ;
     background: url(../images/bg-vision.png);
     background-size: 100% 100%;
@@ -2976,7 +2940,7 @@ button .btn, button .btn-lg {
         top: -30px;
         margin-bottom: -66px;
     }
-}
+
 
 @media (max-width: 1050px){
     .header-body {
@@ -4805,7 +4769,7 @@ button .btn, button .btn-lg {
         bottom: 40px!important;
     }
     .footer-phone img{
-    padding-top: 0;
+    padding-top: 20px;
     }
 
     .all-items-fors {
