@@ -178,7 +178,10 @@ background: none!important;
 }
 
 
-
+#particles-js .particles-js-canvas-el{
+    width: 100% !important;
+    height: 100% !important;
+}
 
 
 .credit-items{
@@ -4007,6 +4010,7 @@ button .btn, button .btn-lg {
     background-size: 100% 100%;
     padding: 100px 0 150px 0;
     background-attachment: fixed;
+    margin-top: 50px;
 }
 
 .team h2{
@@ -4208,7 +4212,9 @@ button .btn, button .btn-lg {
 }
 
 @media (max-width: 768px) {
-
+    .team {
+        margin-top: 0;
+    }
 
     .team-item{
         margin-bottom: 80px;
@@ -5418,6 +5424,14 @@ button .btn, button .btn-lg {
     .overdraft_panel .new_crypto_overdraft{
         top: 75%;
         margin-right: 2px;
+    }
+
+    #particles-js {
+        height: 1160px;
+    }
+
+    .slick-dotted.slick-slider {
+         margin-bottom: 5px !important; 
     }
 
     .modal-content .team-item-social > a {
