@@ -26,7 +26,7 @@
 }
 
 .redCountdownWrapper .redCountdownValue {
-    top: 40% !important;
+    top: 50% !important;
 }
 
 .jevik canvas{
@@ -2502,12 +2502,6 @@ button .btn, button .btn-lg {
     .solutions{
         padding-bottom: 50px;
     }
-@media (max-width: 1800px){
-    .redCountdownWrapper .redCountdownValue {
-        top: 45% !important;
-        line-height: 0.95em;
-    }
-}
 
 @media (min-width: 1700px){
 
@@ -2611,6 +2605,10 @@ button .btn, button .btn-lg {
         line-height: 0.9em;
     }
 
+    #rC_A {
+        padding: 30px 10% !important;
+    }
+
     .footer-phone-button {
         bottom: 155px!important;
         text-align: center;
@@ -2640,10 +2638,6 @@ button .btn, button .btn-lg {
         padding-bottom: 25px;
     }
 
-    #rC_A {
-        margin-left: 180px;
-    }
-
     .Repobank-wrapper .image{
         width: 100%;
     }
@@ -2653,9 +2647,7 @@ button .btn, button .btn-lg {
     }
 
     #rC_A {
-        width: 55%;
-        height: 200px;
-        padding-top: 25px;
+        margin-bottom: 70px;
     }
 
     .phone-button{
@@ -2666,10 +2658,6 @@ button .btn, button .btn-lg {
 
 }
 @media (max-width: 1400px){
-    #rC_A {
-        width: 52% !important;
-    }
-
     .footer-wrapper-social img {
         width: 70px;
         height: 70px;
@@ -5641,8 +5629,9 @@ button .btn, button .btn-lg {
 
 
 #rC_A {
-    width: 45%;
-    height: 200px;
+    width: 100%;
+    padding: 30px 15%;
+    height: auto;
 }
 .redCountdownValue{
     font-size: 45px!important;
@@ -5661,9 +5650,6 @@ canvas{
 }
 
 @media (max-width: 1340px){
-    #rC_A {
-        width: 52%;
-    }
 
     .redCountdownWrapper .redCountdownValue {
         left: 5px;
@@ -5671,11 +5657,6 @@ canvas{
 }
 
 @media (max-width: 1300px){
-    #rC_A {
-        width: 55%;
-        margin-left: 100px;
-    }
-
     .redCountdownWrapper .redCountdownValue {
         top: 59% !important;
         line-height: 36px !important;
@@ -5698,14 +5679,13 @@ canvas{
     }
 
     .redCountdownWrapper .redCountdownValue {
-        top: 90px !important;
         line-height: 36px !important;
     } 
 }
 
 @media (max-width: 768px){
     .redCountdownWrapper > div {
-        width: calc(33% - 20px) !important;
+        width: calc(50% - 20px) !important;
     }
 
     #rC_A {
